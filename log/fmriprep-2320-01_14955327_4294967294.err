@@ -1,0 +1,3 @@
+slurmstepd: error: *** JOB 14955327 ON hpc069 CANCELLED AT 2024-02-13T16:18:13 ***
+srun: error: Slurm job 14955327 has expired
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 14955327

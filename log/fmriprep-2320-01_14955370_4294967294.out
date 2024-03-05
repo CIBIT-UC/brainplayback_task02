@@ -1,0 +1,57 @@
+* ----------------------------------------------------------------
+* Running PROLOG for fmriprep-2320-01 on Tue Feb 13 16:26:31 WET 2024
+*    JOB_NAME                : fmriprep-2320-01
+*    JOB_ID                  : 14955370
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc071
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 28
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 28
+*    SLURM_MEM_PER_NODE      : 88064
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/fmriprep-batch-2320.sh
+* ----------------------------------------------------------------
+240213-16:27:01,500 nipype.workflow IMPORTANT:
+	 Running fMRIPrep version 23.2.0
+
+         License NOTICE ##################################################
+         fMRIPrep 23.2.0
+         Copyright 2023 The NiPreps Developers.
+         
+         This product includes software developed by
+         the NiPreps Community (https://nipreps.org/).
+         
+         Portions of this software were developed at the Department of
+         Psychology at Stanford University, Stanford, CA, US.
+         
+         This software is also distributed as a Docker container image.
+         The bootstrapping file for the image ("Dockerfile") is licensed
+         under the MIT License.
+         
+         This software may be distributed through an add-on package called
+         "Docker Wrapper" that is under the BSD 3-clause License.
+         #################################################################
+240213-16:27:01,925 nipype.workflow IMPORTANT:
+	 Building fMRIPrep's workflow:
+           * BIDS dataset path: /data.
+           * Participant list: ['01'].
+           * Run identifier: 20240213-162639_03aee86d-38f1-4dbb-90bd-10103ea329e1.
+           * Output spaces: MNI152NLin2009cAsym:res-2.
+           * Searching for derivatives: [PosixPath('/tmp/fmapreg=/out')].
+           * Pre-run FreeSurfer's SUBJECTS_DIR: /out/sourcedata/freesurfer.
+ 
+ ****************************************************************************** 
+ *                                                                            * 
+ *               STARTING 3ce89e43-e46c-3054-bb71-fb8b2dd2043f                * 
+ *                                                                            * 
+ ****************************************************************************** 
+ executing: fmriprep
+fmriPrep is done. Now deleting temporary files in work folder
+Finished with job 14955370

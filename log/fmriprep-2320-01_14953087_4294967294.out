@@ -1,0 +1,650 @@
+* ----------------------------------------------------------------
+* Running PROLOG for fmriprep-2320-01 on Tue Feb 13 14:35:00 WET 2024
+*    JOB_NAME                : fmriprep-2320-01
+*    JOB_ID                  : 14953087
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 28
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 28
+*    SLURM_MEM_PER_NODE      : 88064
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/fmriprep-batch-2320.sh
+* ----------------------------------------------------------------
+240213-14:36:05,204 nipype.workflow IMPORTANT:
+	 Running fMRIPrep version 23.2.0
+
+         License NOTICE ##################################################
+         fMRIPrep 23.2.0
+         Copyright 2023 The NiPreps Developers.
+         
+         This product includes software developed by
+         the NiPreps Community (https://nipreps.org/).
+         
+         Portions of this software were developed at the Department of
+         Psychology at Stanford University, Stanford, CA, US.
+         
+         This software is also distributed as a Docker container image.
+         The bootstrapping file for the image ("Dockerfile") is licensed
+         under the MIT License.
+         
+         This software may be distributed through an add-on package called
+         "Docker Wrapper" that is under the BSD 3-clause License.
+         #################################################################
+240213-14:36:05,703 nipype.workflow IMPORTANT:
+	 Building fMRIPrep's workflow:
+           * BIDS dataset path: /data.
+           * Participant list: ['01'].
+           * Run identifier: 20240213-143520_30127850-65e8-4866-9f5e-1d48a0cedef8.
+           * Output spaces: MNI152NLin2009cAsym:res-2.
+           * Searching for derivatives: [PosixPath('/out')].
+           * Pre-run FreeSurfer's SUBJECTS_DIR: /out/sourcedata/freesurfer.
+240213-14:36:14,725 nipype.workflow INFO:
+	 ANAT Found preprocessed T1w - skipping Stage 1
+240213-14:36:14,727 nipype.workflow INFO:
+	 ANAT Found brain mask
+240213-14:36:14,727 nipype.workflow INFO:
+	 ANAT Skipping Stage 2
+240213-14:36:14,727 nipype.workflow INFO:
+	 ANAT Skipping Stage 3
+240213-14:36:14,727 nipype.workflow INFO:
+	 ANAT Found discrete segmentation
+240213-14:36:14,727 nipype.workflow INFO:
+	 ANAT Found tissue probability maps
+240213-14:36:14,728 nipype.workflow INFO:
+	 ANAT Stage 4: Found pre-computed registrations for {'MNI152NLin2009cAsym': {'forward': '/out/sub-01/ses-01/anat/sub-01_ses-01_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5', 'reverse': '/out/sub-01/ses-01/anat/sub-01_ses-01_from-MNI152NLin2009cAsym_to-T1w_mode-image_xfm.h5'}}
+240213-14:36:14,732 nipype.workflow INFO:
+	 ANAT Stage 5: Preparing surface reconstruction workflow
+240213-14:36:14,767 nipype.workflow INFO:
+	 ANAT Found fsnative-T1w transform - skipping registration
+240213-14:36:14,767 nipype.workflow INFO:
+	 ANAT Found brain mask - skipping Stage 6
+240213-14:36:14,767 nipype.workflow INFO:
+	 ANAT Stage 7: Creating T2w template
+240213-14:36:14,772 nipype.workflow INFO:
+	 ANAT Stage 8: Found pre-converted surfaces for ['white', 'pial', 'midthickness', 'thickness', 'sulc', 'sphere_reg', 'sphere']
+240213-14:36:14,772 nipype.workflow INFO:
+	 ANAT Stage 8a: Creating cortical ribbon mask
+240213-14:36:14,776 nipype.workflow INFO:
+	 ANAT Stage 9: Found pre-computed fsLR registration sphere
+240213-14:36:14,776 nipype.workflow INFO:
+	 ANAT Stage 10: Found pre-computed MSM-Sulc registration sphere
+240213-14:36:15,751 nipype.workflow INFO:
+	 B0 field inhomogeneity map will be estimated with the following 2 estimator(s): [<EstimatorType.PEPOLAR: 2>, <EstimatorType.PEPOLAR: 2>].
+240213-14:36:21,185 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00000" (EstimatorType.PEPOLAR) with <sub-01_ses-01_dir-AP_run-1_epi.nii.gz, sub-01_ses-01_dir-PA_run-1_epi.nii.gz>
+240213-14:36:21,202 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00001" (EstimatorType.PEPOLAR) with <sub-01_ses-01_dir-AP_run-2_epi.nii.gz, sub-01_ses-01_dir-PA_run-2_epi.nii.gz>
+240213-14:36:22,917 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-1_bold.nii.gz.
+240213-14:36:23,398 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-14:36:23,413 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-14:36:23,442 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-14:36:23,544 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-14:36:25,292 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-2_bold.nii.gz.
+240213-14:36:25,340 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-14:36:25,347 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-14:36:25,353 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-14:36:25,415 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-14:36:27,152 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-3_bold.nii.gz.
+240213-14:36:27,201 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-14:36:27,210 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-14:36:27,217 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-14:36:27,285 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.445s.
+240213-14:36:29,49 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-4_bold.nii.gz.
+240213-14:36:29,98 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-14:36:29,106 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-14:36:29,113 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-14:36:29,180 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-14:36:42,179 nipype.workflow INFO:
+	 fMRIPrep workflow graph with 924 nodes built successfully.
+240213-14:37:23,968 nipype.workflow IMPORTANT:
+	 fMRIPrep started!
+240213-14:37:36,642 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-1_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-14:37:37,382 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-2_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-14:37:38,89 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-3_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-14:37:38,834 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-4_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-14:37:47,372 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.fs_isrunning" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/fs_isrunning".
+240213-14:37:47,430 nipype.workflow INFO:
+	 [Node] Executing "fs_isrunning" <nipype.interfaces.utility.wrappers.Function>
+240213-14:37:47,509 nipype.workflow INFO:
+	 [Node] Finished "fs_isrunning", elapsed time 0.003913s.
+240213-14:38:07,182 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/anat/sub-01_ses-01_space-MNI152NLin2009cAsym_res-2_desc-brain_mask.nii.gz dtype from float64 to uint8
+240213-14:38:07,578 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/anat/sub-01_ses-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_dseg.nii.gz dtype from float64 to int16
+240213-14:38:09,643 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.surface_recon_wf.autorecon1" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/autorecon1".
+240213-14:38:09,699 nipype.workflow INFO:
+	 [Node] Executing "autorecon1" <smriprep.interfaces.freesurfer.ReconAll>
+240213-14:38:50,771 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-1_desc-coreg_boldref.nii.gz dtype from int16 to float32
+240213-14:38:52,449 nipype.workflow INFO:
+	 [Node] Setting-up "_ds_coeff0" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00000/ds_coeff/mapflow/_ds_coeff0".
+240213-14:38:52,543 nipype.workflow INFO:
+	 [Node] Executing "_ds_coeff0" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:38:52,670 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-2_desc-coreg_boldref.nii.gz dtype from int16 to float32
+240213-14:38:52,749 nipype.workflow INFO:
+	 [Node] Finished "_ds_coeff0", elapsed time 0.142728s.
+240213-14:38:52,817 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_derivatives_wf_auto_00000.ds_reference" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00000/ds_reference".
+240213-14:38:52,879 nipype.workflow INFO:
+	 [Node] Executing "ds_reference" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:38:53,249 nipype.workflow INFO:
+	 [Node] Finished "ds_reference", elapsed time 0.367355s.
+240213-14:38:54,236 nipype.workflow INFO:
+	 [Node] Setting-up "_ds_coeff0" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00001/ds_coeff/mapflow/_ds_coeff0".
+240213-14:38:54,575 nipype.workflow INFO:
+	 [Node] Executing "_ds_coeff0" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:38:55,204 nipype.workflow INFO:
+	 [Node] Finished "_ds_coeff0", elapsed time 0.426701s.
+240213-14:38:55,400 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.ds_boldreg_wf.raw_sources" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_fit_wf/ds_boldreg_wf/raw_sources".
+240213-14:38:55,410 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.ds_boldreg_wf.raw_sources".
+240213-14:38:55,529 nipype.workflow INFO:
+	 [Node] Executing "raw_sources" <nipype.interfaces.utility.wrappers.Function>
+240213-14:38:55,542 nipype.workflow INFO:
+	 [Node] Finished "raw_sources", elapsed time 0.00319s.
+240213-14:38:56,44 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_fit_wf/func_fit_reports_wf/fmapref_boldref".
+240213-14:38:56,56 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref".
+240213-14:38:56,213 nipype.workflow INFO:
+	 [Node] Executing "fmapref_boldref" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+240213-14:38:57,700 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-3_desc-coreg_boldref.nii.gz dtype from int16 to float32
+240213-14:38:59,859 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_derivatives_wf_auto_00001.ds_reference" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00001/ds_reference".
+240213-14:39:00,47 nipype.workflow INFO:
+	 [Node] Executing "ds_reference" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:39:00,558 nipype.workflow INFO:
+	 [Node] Finished "ds_reference", elapsed time 0.450402s.
+240213-14:39:03,617 nipype.workflow INFO:
+	 [Node] Finished "fmapref_boldref", elapsed time 5.285386s.
+240213-14:39:04,109 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_anat_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_anat_wf/gen_ref".
+240213-14:39:04,201 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_anat_wf.gen_ref".
+240213-14:39:04,671 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:12,656 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_std_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_std_wf/_in_tuple_MNI152NLin2009cAsym.res2/gen_ref".
+240213-14:39:12,666 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_std_wf.gen_ref".
+240213-14:39:12,729 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:12,820 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 0.003266s.
+240213-14:39:12,862 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.ds_boldreg_wf.raw_sources" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_fit_wf/ds_boldreg_wf/raw_sources".
+240213-14:39:12,868 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.ds_boldreg_wf.raw_sources".
+240213-14:39:12,929 nipype.workflow INFO:
+	 [Node] Executing "raw_sources" <nipype.interfaces.utility.wrappers.Function>
+240213-14:39:12,934 nipype.workflow INFO:
+	 [Node] Finished "raw_sources", elapsed time 0.001116s.
+240213-14:39:13,972 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_derivatives_wf_auto_00000.ds_fieldmap" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00000/ds_fieldmap".
+240213-14:39:14,48 nipype.workflow INFO:
+	 [Node] Executing "ds_fieldmap" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:39:14,475 nipype.workflow INFO:
+	 [Node] Finished "ds_fieldmap", elapsed time 0.341842s.
+240213-14:39:17,714 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_fit_wf/func_fit_reports_wf/fmapref_boldref".
+240213-14:39:17,723 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref".
+240213-14:39:17,810 nipype.workflow INFO:
+	 [Node] Executing "fmapref_boldref" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+240213-14:39:21,569 nipype.workflow INFO:
+	 [Node] Finished "fmapref_boldref", elapsed time 2.764011s.
+240213-14:39:22,830 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_anat_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_anat_wf/gen_ref".
+240213-14:39:22,838 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_anat_wf.gen_ref".
+240213-14:39:22,916 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:26,970 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_std_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_std_wf/_in_tuple_MNI152NLin2009cAsym.res2/gen_ref".
+240213-14:39:26,991 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_std_wf.gen_ref".
+240213-14:39:27,129 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:27,215 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 0.004424s.
+240213-14:39:29,404 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-4_desc-coreg_boldref.nii.gz dtype from int16 to float32
+240213-14:39:29,859 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00001.fmap_rpt" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_reports_wf_auto_00001/fmap_rpt".
+240213-14:39:29,945 nipype.workflow INFO:
+	 [Node] Executing "fmap_rpt" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:39:30,245 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.ds_boldreg_wf.raw_sources" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_fit_wf/ds_boldreg_wf/raw_sources".
+240213-14:39:30,251 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.ds_boldreg_wf.raw_sources".
+240213-14:39:30,323 nipype.workflow INFO:
+	 [Node] Executing "raw_sources" <nipype.interfaces.utility.wrappers.Function>
+240213-14:39:30,428 nipype.workflow INFO:
+	 [Node] Finished "raw_sources", elapsed time 0.001711s.
+240213-14:39:30,619 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_native_wf.boldref_fmap" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_native_wf/boldref_fmap".
+240213-14:39:30,627 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_native_wf.boldref_fmap".
+240213-14:39:30,717 nipype.workflow INFO:
+	 [Node] Executing "boldref_fmap" <fmriprep.interfaces.resampling.ReconstructFieldmap>
+240213-14:39:31,775 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_native_wf.boldref_fmap" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_native_wf/boldref_fmap".
+240213-14:39:31,792 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_native_wf.boldref_fmap".
+240213-14:39:31,866 nipype.workflow INFO:
+	 [Node] Finished "boldref_fmap", elapsed time 1.14012s.
+240213-14:39:31,989 nipype.workflow INFO:
+	 [Node] Executing "boldref_fmap" <fmriprep.interfaces.resampling.ReconstructFieldmap>
+240213-14:39:32,680 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_anat_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_anat_wf/gen_ref".
+240213-14:39:32,690 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_anat_wf.gen_ref".
+240213-14:39:32,769 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:33,443 nipype.workflow INFO:
+	 [Node] Finished "boldref_fmap", elapsed time 1.424811s.
+240213-14:39:39,661 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_std_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_std_wf/_in_tuple_MNI152NLin2009cAsym.res2/gen_ref".
+240213-14:39:39,676 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_std_wf.gen_ref".
+240213-14:39:39,849 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:39,929 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 0.017305s.
+240213-14:39:42,572 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_native_wf.boldref_fmap" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_native_wf/boldref_fmap".
+240213-14:39:42,585 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_native_wf.boldref_fmap".
+240213-14:39:42,715 nipype.workflow INFO:
+	 [Node] Executing "boldref_fmap" <fmriprep.interfaces.resampling.ReconstructFieldmap>
+240213-14:39:43,153 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 20.165508s.
+240213-14:39:43,846 nipype.workflow INFO:
+	 [Node] Finished "boldref_fmap", elapsed time 1.1199270000000001s.
+240213-14:39:45,878 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.ds_boldreg_wf.raw_sources" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_fit_wf/ds_boldreg_wf/raw_sources".
+240213-14:39:45,899 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.ds_boldreg_wf.raw_sources".
+240213-14:39:45,947 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_derivatives_wf_auto_00001.ds_fieldmap" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_derivatives_wf_auto_00001/ds_fieldmap".
+240213-14:39:46,73 nipype.workflow INFO:
+	 [Node] Executing "ds_fieldmap" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:39:46,162 nipype.workflow INFO:
+	 [Node] Executing "raw_sources" <nipype.interfaces.utility.wrappers.Function>
+240213-14:39:46,207 nipype.workflow INFO:
+	 [Node] Finished "raw_sources", elapsed time 0.008838s.
+240213-14:39:46,677 nipype.workflow INFO:
+	 [Node] Finished "ds_fieldmap", elapsed time 0.476288s.
+240213-14:39:46,997 nipype.workflow INFO:
+	 [Node] Finished "fmap_rpt", elapsed time 17.044803s.
+240213-14:39:47,436 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_fit_wf/func_fit_reports_wf/fmapref_boldref".
+240213-14:39:47,446 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref".
+240213-14:39:47,550 nipype.workflow INFO:
+	 [Node] Executing "fmapref_boldref" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+240213-14:39:48,337 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_fit_wf/func_fit_reports_wf/fmapref_boldref".
+240213-14:39:48,404 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.fmapref_boldref".
+240213-14:39:48,873 nipype.workflow INFO:
+	 [Node] Executing "fmapref_boldref" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+240213-14:39:49,383 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_native_wf.boldref_fmap" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_native_wf/boldref_fmap".
+240213-14:39:49,394 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_native_wf.boldref_fmap".
+240213-14:39:49,828 nipype.workflow INFO:
+	 [Node] Executing "boldref_fmap" <fmriprep.interfaces.resampling.ReconstructFieldmap>
+240213-14:39:50,779 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_anat_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_anat_wf/gen_ref".
+240213-14:39:50,788 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_anat_wf.gen_ref".
+240213-14:39:50,953 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:52,185 nipype.workflow INFO:
+	 [Node] Finished "boldref_fmap", elapsed time 2.316903s.
+240213-14:39:52,714 nipype.workflow INFO:
+	 [Node] Finished "fmapref_boldref", elapsed time 3.277979s.
+240213-14:39:53,435 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_std_wf.gen_ref" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_std_wf/_in_tuple_MNI152NLin2009cAsym.res2/gen_ref".
+240213-14:39:53,447 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_std_wf.gen_ref".
+240213-14:39:53,557 nipype.workflow INFO:
+	 [Node] Executing "gen_ref" <niworkflows.interfaces.nibabel.GenerateSamplingReference>
+240213-14:39:53,574 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 0.007181s.
+240213-14:39:54,62 nipype.workflow INFO:
+	 [Node] Finished "fmapref_boldref", elapsed time 3.944706s.
+240213-14:40:07,949 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 63.211156s.
+240213-14:40:13,734 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_fit_wf/func_fit_reports_wf/sdecreg_report".
+240213-14:40:13,753 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report".
+240213-14:40:13,852 nipype.workflow INFO:
+	 [Node] Executing "sdecreg_report" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:40:14,601 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 23.633172s.
+240213-14:40:17,126 nipype.workflow INFO:
+	 [Node] Finished "gen_ref", elapsed time 44.332211s.
+240213-14:40:17,278 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_fit_wf/func_fit_reports_wf/sdecreg_report".
+240213-14:40:17,303 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report".
+240213-14:40:17,510 nipype.workflow INFO:
+	 [Node] Executing "sdecreg_report" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:40:17,931 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_native_wf.boldref_bold" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_native_wf/boldref_bold".
+240213-14:40:17,938 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_native_wf.boldref_bold".
+240213-14:40:18,18 nipype.workflow INFO:
+	 [Node] Executing "boldref_bold" <fmriprep.interfaces.resampling.ResampleSeries>
+240213-14:40:18,516 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_native_wf.boldref_bold" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_native_wf/boldref_bold".
+240213-14:40:18,524 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_native_wf.boldref_bold".
+240213-14:40:18,586 nipype.workflow INFO:
+	 [Node] Executing "boldref_bold" <fmriprep.interfaces.resampling.ResampleSeries>
+240213-14:40:20,680 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_native_wf.boldref_bold" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_native_wf/boldref_bold".
+240213-14:40:20,691 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_native_wf.boldref_bold".
+240213-14:40:20,796 nipype.workflow INFO:
+	 [Node] Executing "boldref_bold" <fmriprep.interfaces.resampling.ResampleSeries>
+240213-14:40:20,804 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_native_wf.boldref_bold" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_native_wf/boldref_bold".
+240213-14:40:20,808 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_native_wf.boldref_bold".
+240213-14:40:20,878 nipype.workflow INFO:
+	 [Node] Executing "boldref_bold" <fmriprep.interfaces.resampling.ResampleSeries>
+240213-14:40:20,912 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00001.ds_fmap_report" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_reports_wf_auto_00001/ds_fmap_report".
+240213-14:40:20,920 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00001.ds_fmap_report".
+240213-14:40:20,994 nipype.workflow INFO:
+	 [Node] Executing "ds_fmap_report" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:40:21,73 nipype.workflow INFO:
+	 [Node] Finished "ds_fmap_report", elapsed time 0.075162s.
+240213-14:40:25,309 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_fit_wf/func_fit_reports_wf/sdecreg_report".
+240213-14:40:25,316 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report".
+240213-14:40:25,386 nipype.workflow INFO:
+	 [Node] Executing "sdecreg_report" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:40:27,982 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_fit_wf/func_fit_reports_wf/sdecreg_report".
+240213-14:40:27,989 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.sdecreg_report".
+240213-14:40:28,59 nipype.workflow INFO:
+	 [Node] Executing "sdecreg_report" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:40:29,53 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00000.fmap_rpt" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_reports_wf_auto_00000/fmap_rpt".
+240213-14:40:29,132 nipype.workflow INFO:
+	 [Node] Executing "fmap_rpt" <sdcflows.interfaces.reportlets.FieldmapReportlet>
+240213-14:40:35,920 nipype.workflow INFO:
+	 [Node] Finished "sdecreg_report", elapsed time 22.047521s.
+240213-14:40:37,786 nipype.workflow INFO:
+	 [Node] Finished "sdecreg_report", elapsed time 20.262942s.
+240213-14:40:37,873 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_fit_wf/func_fit_reports_wf/ds_sdcreg_report".
+240213-14:40:37,875 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report".
+240213-14:40:37,920 nipype.workflow INFO:
+	 [Node] Executing "ds_sdcreg_report" <fmriprep.interfaces.DerivativesDataSink>
+240213-14:40:37,957 nipype.workflow INFO:
+	 [Node] Finished "ds_sdcreg_report", elapsed time 0.034414s.
+240213-14:40:41,7 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_fit_wf/func_fit_reports_wf/ds_sdcreg_report".
+240213-14:40:41,10 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report".
+240213-14:40:41,72 nipype.workflow INFO:
+	 [Node] Executing "ds_sdcreg_report" <fmriprep.interfaces.DerivativesDataSink>
+240213-14:40:41,165 nipype.workflow INFO:
+	 [Node] Finished "ds_sdcreg_report", elapsed time 0.056639s.
+240213-14:40:46,261 nipype.workflow INFO:
+	 [Node] Finished "sdecreg_report", elapsed time 20.86933s.
+240213-14:40:46,973 nipype.workflow INFO:
+	 [Node] Finished "fmap_rpt", elapsed time 17.726512s.
+240213-14:40:47,152 nipype.workflow INFO:
+	 [Node] Finished "sdecreg_report", elapsed time 19.080814s.
+240213-14:40:48,608 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_fit_wf/func_fit_reports_wf/ds_sdcreg_report".
+240213-14:40:48,611 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report".
+240213-14:40:48,695 nipype.workflow INFO:
+	 [Node] Executing "ds_sdcreg_report" <fmriprep.interfaces.DerivativesDataSink>
+240213-14:40:48,799 nipype.workflow INFO:
+	 [Node] Finished "ds_sdcreg_report", elapsed time 0.085165s.
+240213-14:40:50,818 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00000.ds_fmap_report" in "/work/fmriprep_23_2_wf/sub_01_wf/fmap_preproc_wf/fmap_reports_wf_auto_00000/ds_fmap_report".
+240213-14:40:50,824 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.fmap_preproc_wf.fmap_reports_wf_auto_00000.ds_fmap_report".
+240213-14:40:50,874 nipype.workflow INFO:
+	 [Node] Executing "ds_fmap_report" <sdcflows.workflows.outputs.DerivativesDataSink>
+240213-14:40:50,956 nipype.workflow INFO:
+	 [Node] Finished "ds_fmap_report", elapsed time 0.026035s.
+240213-14:40:51,114 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_fit_wf/func_fit_reports_wf/ds_sdcreg_report".
+240213-14:40:51,116 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_fit_wf.func_fit_reports_wf.ds_sdcreg_report".
+240213-14:40:51,188 nipype.workflow INFO:
+	 [Node] Executing "ds_sdcreg_report" <fmriprep.interfaces.DerivativesDataSink>
+240213-14:40:51,296 nipype.workflow INFO:
+	 [Node] Finished "ds_sdcreg_report", elapsed time 0.038823s.
+240213-14:41:56,42 nipype.workflow INFO:
+	 [Node] Finished "boldref_bold", elapsed time 97.398481s.
+240213-14:41:57,492 nipype.workflow INFO:
+	 [Node] Finished "boldref_bold", elapsed time 99.469565s.
+240213-14:41:58,998 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.dvars" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_confounds_wf/dvars".
+240213-14:41:59,0 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.dvars".
+240213-14:41:59,42 nipype.workflow INFO:
+	 [Node] Executing "dvars" <nipype.algorithms.confounds.ComputeDVARS>
+240213-14:41:59,365 nipype.workflow INFO:
+	 [Node] Finished "boldref_bold", elapsed time 98.560023s.
+240213-14:41:59,567 nipype.workflow INFO:
+	 [Node] Finished "boldref_bold", elapsed time 98.598963s.
+240213-14:42:38,580 nipype.workflow INFO:
+	 [Node] Finished "dvars", elapsed time 39.535816s.
+240213-14:42:38,947 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcompcor" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_confounds_wf/tcompcor".
+240213-14:42:38,949 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcompcor".
+240213-14:42:39,17 nipype.workflow INFO:
+	 [Node] Executing "tcompcor" <niworkflows.interfaces.patches.RobustTCompCor>
+240213-14:42:58,116 nipype.workflow INFO:
+	 [Node] Finished "tcompcor", elapsed time 19.096833s.
+240213-14:42:59,130 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.dvars" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_confounds_wf/dvars".
+240213-14:42:59,132 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.dvars".
+240213-14:42:59,173 nipype.workflow INFO:
+	 [Node] Executing "dvars" <nipype.algorithms.confounds.ComputeDVARS>
+240213-14:43:01,142 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcc_metadata_filter" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_confounds_wf/tcc_metadata_filter".
+240213-14:43:01,144 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcc_metadata_filter".
+240213-14:43:01,180 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_filter" <fmriprep.interfaces.confounds.FilterDropped>
+240213-14:43:01,621 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_filter", elapsed time 0.424373s.
+240213-14:43:02,965 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcc_metadata_fmt" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_1_wf/bold_confounds_wf/tcc_metadata_fmt".
+240213-14:43:02,967 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_1_wf.bold_confounds_wf.tcc_metadata_fmt".
+240213-14:43:03,7 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_fmt" <niworkflows.interfaces.utility.TSV2JSON>
+240213-14:43:04,702 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_fmt", elapsed time 1.6936520000000002s.
+240213-14:43:38,387 nipype.workflow INFO:
+	 [Node] Finished "dvars", elapsed time 39.197549s.
+240213-14:43:39,739 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcompcor" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_confounds_wf/tcompcor".
+240213-14:43:39,741 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcompcor".
+240213-14:43:39,785 nipype.workflow INFO:
+	 [Node] Executing "tcompcor" <niworkflows.interfaces.patches.RobustTCompCor>
+240213-14:43:59,89 nipype.workflow INFO:
+	 [Node] Finished "tcompcor", elapsed time 19.259748s.
+240213-14:44:01,13 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.dvars" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_confounds_wf/dvars".
+240213-14:44:01,16 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.dvars".
+240213-14:44:01,74 nipype.workflow INFO:
+	 [Node] Executing "dvars" <nipype.algorithms.confounds.ComputeDVARS>
+240213-14:44:01,876 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcc_metadata_filter" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_confounds_wf/tcc_metadata_filter".
+240213-14:44:01,878 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcc_metadata_filter".
+240213-14:44:01,922 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_filter" <fmriprep.interfaces.confounds.FilterDropped>
+240213-14:44:01,939 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_filter", elapsed time 0.01531s.
+240213-14:44:03,14 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcc_metadata_fmt" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_2_wf/bold_confounds_wf/tcc_metadata_fmt".
+240213-14:44:03,16 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_2_wf.bold_confounds_wf.tcc_metadata_fmt".
+240213-14:44:03,52 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_fmt" <niworkflows.interfaces.utility.TSV2JSON>
+240213-14:44:04,790 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_fmt", elapsed time 1.736038s.
+240213-14:44:39,771 nipype.workflow INFO:
+	 [Node] Finished "dvars", elapsed time 38.693872s.
+240213-14:44:41,60 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcompcor" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_confounds_wf/tcompcor".
+240213-14:44:41,61 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcompcor".
+240213-14:44:41,113 nipype.workflow INFO:
+	 [Node] Executing "tcompcor" <niworkflows.interfaces.patches.RobustTCompCor>
+240213-14:45:00,144 nipype.workflow INFO:
+	 [Node] Finished "tcompcor", elapsed time 19.028135s.
+240213-14:45:01,59 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.dvars" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_confounds_wf/dvars".
+240213-14:45:01,64 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.dvars".
+240213-14:45:01,118 nipype.workflow INFO:
+	 [Node] Executing "dvars" <nipype.algorithms.confounds.ComputeDVARS>
+240213-14:45:02,583 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcc_metadata_filter" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_confounds_wf/tcc_metadata_filter".
+240213-14:45:02,585 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcc_metadata_filter".
+240213-14:45:02,626 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_filter" <fmriprep.interfaces.confounds.FilterDropped>
+240213-14:45:02,641 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_filter", elapsed time 0.012896s.
+240213-14:45:03,67 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcc_metadata_fmt" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_3_wf/bold_confounds_wf/tcc_metadata_fmt".
+240213-14:45:03,68 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_3_wf.bold_confounds_wf.tcc_metadata_fmt".
+240213-14:45:03,106 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_fmt" <niworkflows.interfaces.utility.TSV2JSON>
+240213-14:45:03,114 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_fmt", elapsed time 0.006184s.
+240213-14:45:39,731 nipype.workflow INFO:
+	 [Node] Finished "dvars", elapsed time 38.611125s.
+240213-14:45:41,96 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcompcor" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_confounds_wf/tcompcor".
+240213-14:45:41,98 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcompcor".
+240213-14:45:41,149 nipype.workflow INFO:
+	 [Node] Executing "tcompcor" <niworkflows.interfaces.patches.RobustTCompCor>
+240213-14:46:00,238 nipype.workflow INFO:
+	 [Node] Finished "tcompcor", elapsed time 19.086759s.
+240213-14:46:06,389 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcc_metadata_filter" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_confounds_wf/tcc_metadata_filter".
+240213-14:46:06,393 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcc_metadata_filter".
+240213-14:46:06,427 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_filter" <fmriprep.interfaces.confounds.FilterDropped>
+240213-14:46:06,443 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_filter", elapsed time 0.013717s.
+240213-14:46:07,107 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcc_metadata_fmt" in "/work/fmriprep_23_2_wf/sub_01_wf/bold_ses_01_task_02a_run_4_wf/bold_confounds_wf/tcc_metadata_fmt".
+240213-14:46:07,108 nipype.workflow INFO:
+	 [Node] Outdated cache found for "fmriprep_23_2_wf.sub_01_wf.bold_ses_01_task_02a_run_4_wf.bold_confounds_wf.tcc_metadata_fmt".
+240213-14:46:07,141 nipype.workflow INFO:
+	 [Node] Executing "tcc_metadata_fmt" <niworkflows.interfaces.utility.TSV2JSON>
+240213-14:46:08,732 nipype.workflow INFO:
+	 [Node] Finished "tcc_metadata_fmt", elapsed time 1.5889389999999999s.
+240213-14:46:50,544 nipype.workflow INFO:
+	 [Node] Finished "autorecon1", elapsed time 520.842757s.
+240213-14:46:53,267 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.surface_recon_wf.skull_strip_extern" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/skull_strip_extern".
+240213-14:46:53,312 nipype.workflow INFO:
+	 [Node] Executing "skull_strip_extern" <niworkflows.interfaces.freesurfer.FSInjectBrainExtracted>
+240213-14:46:55,941 nipype.workflow INFO:
+	 [Node] Finished "skull_strip_extern", elapsed time 2.62654s.
+240213-14:46:59,507 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.surface_recon_wf.autorecon_resume_wf.gcareg" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/autorecon_resume_wf/gcareg".
+240213-14:46:59,558 nipype.workflow INFO:
+	 [Node] Executing "gcareg" <smriprep.interfaces.freesurfer.ReconAll>
+240213-14:46:59,563 nipype.interface INFO:
+	 resume recon-all : recon-all -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer -gcareg
+240213-14:46:59,563 nipype.interface INFO:
+	 resume recon-all : recon-all -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer -gcareg
+240213-14:49:04,929 nipype.workflow INFO:
+	 [Node] Finished "gcareg", elapsed time 125.368528s.
+240213-14:49:05,513 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.surface_recon_wf.autorecon_resume_wf.autorecon2_vol" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/autorecon_resume_wf/autorecon2_vol".
+240213-14:49:05,556 nipype.workflow INFO:
+	 [Node] Executing "autorecon2_vol" <smriprep.interfaces.freesurfer.ReconAll>
+240213-14:49:05,562 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon2-volonly -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer -nogcareg
+240213-14:49:05,565 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon2-volonly -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer -nogcareg
+240213-16:14:16,803 nipype.workflow INFO:
+	 [Node] Finished "autorecon2_vol", elapsed time 5111.169652s.
+240213-16:14:21,493 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs1" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs1".
+240213-16:14:21,536 nipype.workflow INFO:
+	 [Node] Executing "_autorecon_surfs1" <smriprep.interfaces.freesurfer.ReconAll>
+240213-16:14:21,551 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi rh -noparcstats -noparcstats2 -noparcstats3 -nohyporelabel -nobalabels -rh-only -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer 
+240213-16:14:21,555 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi rh -noparcstats -noparcstats2 -noparcstats3 -nohyporelabel -nobalabels -rh-only -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer 
+240213-16:14:24,546 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs0" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs0".
+240213-16:14:24,612 nipype.workflow INFO:
+	 [Node] Executing "_autorecon_surfs0" <smriprep.interfaces.freesurfer.ReconAll>
+240213-16:14:24,631 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi lh -noparcstats -noparcstats2 -noparcstats3 -nohyporelabel -nobalabels -lh-only -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer 
+240213-16:14:24,637 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi lh -noparcstats -noparcstats2 -noparcstats3 -nohyporelabel -nobalabels -lh-only -openmp 8 -subjid sub-01 -sd /out/sourcedata/freesurfer 

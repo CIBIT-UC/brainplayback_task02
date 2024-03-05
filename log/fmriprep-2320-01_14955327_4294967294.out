@@ -1,0 +1,146 @@
+* ----------------------------------------------------------------
+* Running PROLOG for fmriprep-2320-01 on Tue Feb 13 16:15:41 WET 2024
+*    JOB_NAME                : fmriprep-2320-01
+*    JOB_ID                  : 14955327
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 28
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 28
+*    SLURM_MEM_PER_NODE      : 88064
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/fmriprep-batch-2320.sh
+* ----------------------------------------------------------------
+240213-16:16:28,521 nipype.workflow IMPORTANT:
+	 Running fMRIPrep version 23.2.0
+
+         License NOTICE ##################################################
+         fMRIPrep 23.2.0
+         Copyright 2023 The NiPreps Developers.
+         
+         This product includes software developed by
+         the NiPreps Community (https://nipreps.org/).
+         
+         Portions of this software were developed at the Department of
+         Psychology at Stanford University, Stanford, CA, US.
+         
+         This software is also distributed as a Docker container image.
+         The bootstrapping file for the image ("Dockerfile") is licensed
+         under the MIT License.
+         
+         This software may be distributed through an add-on package called
+         "Docker Wrapper" that is under the BSD 3-clause License.
+         #################################################################
+240213-16:16:29,24 nipype.workflow IMPORTANT:
+	 Building fMRIPrep's workflow:
+           * BIDS dataset path: /data.
+           * Participant list: ['01'].
+           * Run identifier: 20240213-161555_43629d5c-6f34-45ec-80ac-91cae6db2ca5.
+           * Output spaces: MNI152NLin2009cAsym:res-2.
+           * Searching for derivatives: [PosixPath('/out')].
+           * Pre-run FreeSurfer's SUBJECTS_DIR: /out/sourcedata/freesurfer.
+240213-16:16:35,577 nipype.workflow INFO:
+	 ANAT Found preprocessed T1w - skipping Stage 1
+240213-16:16:35,578 nipype.workflow INFO:
+	 ANAT Found brain mask
+240213-16:16:35,579 nipype.workflow INFO:
+	 ANAT Skipping Stage 2
+240213-16:16:35,579 nipype.workflow INFO:
+	 ANAT Skipping Stage 3
+240213-16:16:35,579 nipype.workflow INFO:
+	 ANAT Found discrete segmentation
+240213-16:16:35,579 nipype.workflow INFO:
+	 ANAT Found tissue probability maps
+240213-16:16:35,579 nipype.workflow INFO:
+	 ANAT Stage 4: Found pre-computed registrations for {'MNI152NLin2009cAsym': {'forward': '/out/sub-01/ses-01/anat/sub-01_ses-01_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5', 'reverse': '/out/sub-01/ses-01/anat/sub-01_ses-01_from-MNI152NLin2009cAsym_to-T1w_mode-image_xfm.h5'}}
+240213-16:16:35,583 nipype.workflow INFO:
+	 ANAT Stage 5: Preparing surface reconstruction workflow
+240213-16:16:35,606 nipype.workflow INFO:
+	 ANAT Found fsnative-T1w transform - skipping registration
+240213-16:16:35,606 nipype.workflow INFO:
+	 ANAT Found brain mask - skipping Stage 6
+240213-16:16:35,607 nipype.workflow INFO:
+	 ANAT Stage 7: Creating T2w template
+240213-16:16:35,611 nipype.workflow INFO:
+	 ANAT Stage 8: Found pre-converted surfaces for ['white', 'pial', 'midthickness', 'thickness', 'sulc', 'sphere_reg', 'sphere']
+240213-16:16:35,611 nipype.workflow INFO:
+	 ANAT Stage 8a: Creating cortical ribbon mask
+240213-16:16:35,615 nipype.workflow INFO:
+	 ANAT Stage 9: Found pre-computed fsLR registration sphere
+240213-16:16:35,615 nipype.workflow INFO:
+	 ANAT Stage 10: Found pre-computed MSM-Sulc registration sphere
+240213-16:16:36,600 nipype.workflow INFO:
+	 B0 field inhomogeneity map will be estimated with the following 2 estimator(s): [<EstimatorType.PEPOLAR: 2>, <EstimatorType.PEPOLAR: 2>].
+240213-16:16:40,579 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00000" (EstimatorType.PEPOLAR) with <sub-01_ses-01_dir-AP_run-1_epi.nii.gz, sub-01_ses-01_dir-PA_run-1_epi.nii.gz>
+240213-16:16:40,597 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00001" (EstimatorType.PEPOLAR) with <sub-01_ses-01_dir-AP_run-2_epi.nii.gz, sub-01_ses-01_dir-PA_run-2_epi.nii.gz>
+240213-16:16:42,165 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-1_bold.nii.gz.
+240213-16:16:42,319 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-16:16:42,333 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-16:16:42,354 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-16:16:42,436 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-16:16:44,115 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-2_bold.nii.gz.
+240213-16:16:44,163 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-16:16:44,170 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-16:16:44,176 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-16:16:44,238 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-16:16:45,955 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-3_bold.nii.gz.
+240213-16:16:46,2 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-16:16:46,9 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-16:16:46,15 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-16:16:46,247 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.445s.
+240213-16:16:47,888 nipype.workflow INFO:
+	 No single-band-reference found for sub-01_ses-01_task-02a_run-4_bold.nii.gz.
+240213-16:16:47,935 nipype.workflow INFO:
+	 Stage 1: Adding HMC boldref workflow
+240213-16:16:47,943 nipype.workflow INFO:
+	 Stage 2: Adding motion correction workflow
+240213-16:16:47,949 nipype.workflow INFO:
+	 Stage 3: Adding coregistration boldref workflow
+240213-16:16:48,10 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.446s.
+240213-16:17:01,459 nipype.workflow INFO:
+	 fMRIPrep workflow graph with 924 nodes built successfully.
+240213-16:17:44,886 nipype.workflow IMPORTANT:
+	 fMRIPrep started!
+240213-16:17:55,168 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-1_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-16:17:55,892 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-2_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-16:17:56,573 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-3_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-16:17:57,384 nipype.interface WARNING:
+	 Changing /out/sub-01/ses-01/func/sub-01_ses-01_task-02a_run-4_desc-hmc_boldref.nii.gz dtype from int16 to float32
+240213-16:18:05,984 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.fs_isrunning" in "/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/fs_isrunning".
+240213-16:18:06,46 nipype.workflow INFO:
+	 [Node] Executing "fs_isrunning" <nipype.interfaces.utility.wrappers.Function>
+240213-16:18:06,135 nipype.workflow INFO:
+	 [Node] Finished "fs_isrunning", elapsed time 0.008987s.
+240213-16:18:06,135 nipype.workflow WARNING:
+	 Storing result file without outputs
+240213-16:18:06,141 nipype.workflow WARNING:
+	 [Node] Error on "fmriprep_23_2_wf.sub_01_wf.anat_fit_wf.fs_isrunning" (/work/fmriprep_23_2_wf/sub_01_wf/anat_fit_wf/fs_isrunning)

@@ -1,0 +1,19 @@
+name: mvpa
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - ipython
+  - jupyter
+  - matplotlib
+  - openssl
+  - pip
+  - python=3.11
+  - setuptools
+  - pip:
+      - nilearn
+      - scikit-learn
+      - statsmodels
+      - statannotations
+      - mni-to-atlas

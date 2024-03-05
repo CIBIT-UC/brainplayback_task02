@@ -1,0 +1,193 @@
+# %% [markdown]
+# # GLM analysis on the main tasks
+# It uses nilearn and performs the following steps:
+# 1. Load the data from fmriPrep in BIDS format
+# 2. Iterate on the subjects to:
+#    1. Select the predictors and confounds for the design matrix
+#    2. Generate 1st level model
+#    3. Estimate contrast maps
+# 3. Generate group level maps
+# 4. Generate hMT+ mask
+
+# %%
+# Imports
+import os
+import glob
+from nilearn.glm.first_level import first_level_from_bids
+from nilearn.interfaces.bids import save_glm_to_bids
+from nilearn.glm import threshold_stats_img
+from nilearn import plotting
+from nilearn.plotting.cm import _cmap_d as nilearn_cmaps
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from nilearn.glm.second_level import SecondLevelModel
+from nilearn.reporting import get_clusters_table
+from nilearn.image import math_img
+from nilearn.masking import apply_mask
+
+# %%
+# Settings
+data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+space_label = "MNI152NLin2009cAsym"
+derivatives_folder = "derivatives/fmriprep23"
+task_label = "02a"
+smoothing_fwhm = 4.0
+high_pass_hz = 0.007
+out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
+
+# %% [markdown]
+# ## 1. Load the data from fmriPrep in BIDS format
+
+# %%
+# import first level data automatically from fmriPrep derivatives
+(
+    models,
+    models_run_imgs,
+    models_events,
+    models_confounds,
+) = first_level_from_bids(
+    data_dir,
+    task_label,
+    space_label,
+    hrf_model="spm",
+    noise_model="ar2",
+    smoothing_fwhm=smoothing_fwhm,
+    high_pass=high_pass_hz,
+    slice_time_ref=None,
+    n_jobs=20,
+    minimize_memory = True,
+    derivatives_folder=derivatives_folder,
+    #sub_labels=['13'], # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+)
+
+# %%
+# condition names
+condition_names = ['JoyfulActivation', 'Nostalgia', 'Peacefulness', 'Power', 'Sadness', 'Tenderness', 'Tension', 'Transcendence', 'Wonder']
+
+# create strings for contrasts in the format of "condition_name - Noise"
+contrasts = []
+
+# add contrast all conditions vs. noise
+contrasts.append("Peacefulness + Tenderness + Transcendence + Nostalgia + Power + JoyfulActivation + Tension + Sadness + Wonder - Noise*9")
+
+# iterate to add the other contrasts
+for condition in condition_names:
+    contrasts.append(condition + " - Noise")
+
+# add more contrasts based on the grouping variables Sublimity, Vitality, and Unease
+contrasts.append("Wonder + Transcendence + Tenderness + Nostalgia + Peacefulness - Noise*5") # sublimity
+contrasts.append("Power + JoyfulActivation - Noise*2") # vitality
+contrasts.append("Tension + Sadness - Noise*2") # unease
+
+# and between the grouping variables
+contrasts.append("Wonder*0.2 + Transcendence*0.2 + Tenderness*0.2 + Nostalgia*0.2 + Peacefulness*0.2 - Power*0.5 - JoyfulActivation*0.5") # sublimity vs. vitality
+contrasts.append("Power + JoyfulActivation - Tension - Sadness") # vitality vs. unease
+contrasts.append("Tension*0.5 + Sadness*0.5 - Wonder*0.2 - Transcendence*0.2 - Tenderness*0.2 - Nostalgia*0.2 - Peacefulness*0.2") # unease vs. sublimity
+
+contrasts
+
+
+# %%
+# Rename the contrasts list to remove white spaces and replace '-' with 'minus' and '+' with 'plus' and remove '*' and remove numbers
+contrasts_renamed = []
+for contrast in contrasts:
+    contrast = contrast.replace(" ", "")
+    contrast = contrast.replace("-", "Minus")
+    contrast = contrast.replace("+", "Plus")
+    contrast = contrast.replace("*", "")
+    contrast = ''.join((x for x in contrast if not x.isdigit()))
+    contrast = contrast.replace(".", "")
+    
+    contrasts_renamed.append(contrast)
+
+contrasts_renamed
+
+
+# %% [markdown]
+# ## 2. Iterate on the subjects
+
+# %%
+for idx in range(len(models)):
+
+    # fetch model
+    model, imgs, events, confounds = (
+        models[idx],
+        models_run_imgs[idx],
+        models_events[idx],
+        models_confounds[idx],
+    )
+
+    # edit events to remove intersong noise intervals
+    for ii in range(len(models_events[idx])):
+        # Identify all Noise trials which duration is 6 seconds
+        intersong_trials = models_events[idx][ii].query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
+
+        # rename noise_trials to 'intersong'
+        models_events[idx][ii].loc[intersong_trials.index, "trial_type"] = "Intersong"
+
+        # remove all 'intersong' trials
+        models_events[idx][ii] = models_events[idx][ii][models_events[idx][ii].trial_type != 'Intersong']
+
+    subject = f"sub-{model.subject_label}"
+
+    print(f"Computing 1st level model for subject: {subject}")
+
+    # trim confounds and replace NaNs with 0
+    for ii in range(len(confounds)):
+        confounds[ii] = confounds[ii][['trans_x', 'trans_x_derivative1', 'trans_x_power2', 'trans_x_derivative1_power2',
+                                            'trans_y', 'trans_y_derivative1', 'trans_y_power2', 'trans_y_derivative1_power2',
+                                            'trans_z', 'trans_z_derivative1', 'trans_z_power2', 'trans_z_derivative1_power2',
+                                            'rot_x', 'rot_x_derivative1', 'rot_x_power2', 'rot_x_derivative1_power2',
+                                            'rot_y', 'rot_y_derivative1', 'rot_y_power2', 'rot_y_derivative1_power2',
+                                            'rot_z', 'rot_z_derivative1', 'rot_z_power2', 'rot_z_derivative1_power2',
+                                            ]]
+    
+        confounds[ii] = confounds[ii].fillna(0)
+    
+    # Fit and contrasts
+    model.fit(imgs, events, confounds)
+
+    # create and save z_map, t_map, and beta_map to nifti files for every contrast
+    for ii in range(len(contrasts)):
+
+        z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+        t_map = model.compute_contrast(contrasts[ii], output_type="stat")
+        beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+
+        z_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-z_con-{contrasts_renamed[ii]}.nii.gz"))
+        t_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-t_con-{contrasts_renamed[ii]}.nii.gz"))
+        beta_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-beta_con-{contrasts_renamed[ii]}.nii.gz"))
+
+        # create figure with thresholded map for fun
+        clean_map, threshold = threshold_stats_img(
+            z_map, alpha=0.05, height_control="bonferroni", cluster_threshold=25
+        )
+
+        plotting.plot_glass_brain(
+            clean_map,
+            colorbar=True,
+            threshold=threshold,
+            plot_abs=False,
+            display_mode="ortho",
+            figure=plt.figure(figsize=(10, 4)),
+        )
+
+        plt.savefig(os.path.join(
+            out_dir,
+            f"{subject}_task-{task_label}_plot-z_con-{contrasts_renamed[ii]}_c-bonferroni_p-0.05_clusterk-25.png"
+            )
+        )
+
+        # Export cluster table
+        table = get_clusters_table(z_map, threshold, 25)
+        table.to_csv(os.path.join(
+            out_dir,
+            f"{subject}_task-{task_label}_table-clusters_con-{contrasts_renamed[ii]}_c-bonferroni_p-0.05_clusterk-25.tsv"
+            ),
+            sep='\t'
+        )
+
+    # Attempt to free memory
+    del model, imgs, events, confounds
+    

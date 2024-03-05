@@ -1,0 +1,19 @@
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/conda/envs/fmriprep/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/conda/envs/fmriprep/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/fmriprep/cli/workflow.py", line 115, in build_workflow
+    retval["workflow"] = init_fmriprep_wf()
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/fmriprep/workflows/base.py", line 94, in init_fmriprep_wf
+    single_subject_wf = init_single_subject_wf(subject_id)
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/fmriprep/workflows/base.py", line 258, in init_single_subject_wf
+    collect_anat_derivatives(
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/smriprep/utils/bids.py", line 41, in collect_derivatives
+    layout = BIDSLayout(derivatives_dir, config=["bids", "derivatives"], validate=False)
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/bids/layout/layout.py", line 135, in __init__
+    root, description = validate_root(root, validate)
+  File "/opt/conda/envs/fmriprep/lib/python3.10/site-packages/bids/layout/validation.py", line 70, in validate_root
+    raise ValueError("BIDS root does not exist: %s" % root)
+ValueError: BIDS root does not exist: /tmp/fmapreg=/out
