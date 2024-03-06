@@ -55,7 +55,7 @@ out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
     smoothing_fwhm=smoothing_fwhm,
     high_pass=high_pass_hz,
     slice_time_ref=None,
-    n_jobs=20,
+    n_jobs=12,
     minimize_memory = True,
     derivatives_folder=derivatives_folder,
     #sub_labels=['13'], # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -103,31 +103,19 @@ for contrast in contrasts:
 
 contrasts_renamed
 
-
-# %% [markdown]
-# ## 2. Iterate on the subjects
-
-# %%
-for idx in range(len(models)):
-
-    # fetch model
-    model, imgs, events, confounds = (
-        models[idx],
-        models_run_imgs[idx],
-        models_events[idx],
-        models_confounds[idx],
-    )
+# %% Define function
+def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, out_dir):
 
     # edit events to remove intersong noise intervals
-    for ii in range(len(models_events[idx])):
+    for ii in range(len(events)):
         # Identify all Noise trials which duration is 6 seconds
-        intersong_trials = models_events[idx][ii].query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
+        intersong_trials = events[ii].query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
 
         # rename noise_trials to 'intersong'
-        models_events[idx][ii].loc[intersong_trials.index, "trial_type"] = "Intersong"
+        events[ii].loc[intersong_trials.index, "trial_type"] = "Intersong"
 
         # remove all 'intersong' trials
-        models_events[idx][ii] = models_events[idx][ii][models_events[idx][ii].trial_type != 'Intersong']
+        events[ii] = events[ii][events[ii].trial_type != 'Intersong']
 
     subject = f"sub-{model.subject_label}"
 
@@ -189,5 +177,11 @@ for idx in range(len(models)):
         )
 
     # Attempt to free memory
-    del model, imgs, events, confounds
-    
+    # del model, imgs, events, confounds
+
+# %% [markdown]
+# ## 2. Iterate on the subjects
+
+from joblib import Parallel, delayed
+
+Parallel(n_jobs=6)(delayed(glm_function)(models[idx], models_run_imgs[idx], models_events[idx], models_confounds[idx], contrasts, contrasts_renamed, out_dir) for idx in range(len(models)))

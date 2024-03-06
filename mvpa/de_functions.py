@@ -7,7 +7,7 @@ from scipy.stats import zscore
 from nilearn.image import mean_img, clean_img, concat_imgs, clean_img
 
 from nilearn import masking
-from nilearn.glm.first_level import FirstLevelModel
+from nilearn.glm.first_level import FirstLevelModel, make_first_level_design_matrix
 
 # define function to extract data from a single subject
 def extract_data(root_dir, subj, task, run, brain_resampled, mask_resampled):
@@ -154,7 +154,7 @@ def ls_a(root_dir, subj, task, run):
                               hrf_model='spm', 
                               mask_img=epi_mask, 
                               drift_model=None, 
-                              n_jobs=2, # beware that this is going to be paralelized outside of the function
+                              n_jobs=2, # beware that this is going to be paralelized outside of the function, sim01 is still young
                               standardize=False)
 
     lsa_glm.fit(func_file, events, confounds)
@@ -184,83 +184,124 @@ def ls_a(root_dir, subj, task, run):
 
     print('Done for subject ' + subj + ' and run ' + run + '\n')
 
-
 def ls_a_musicnoise(root_dir, subj, task, run):
 
-    print('Extracting data for subject ' + subj + ' and run ' + run)
+    print('Extracting data std for subject ' + subj + ' and run ' + run)
 
     # define paths
-    fmriprep_dir = os.path.join(root_dir, 'derivatives/fmriprep23')
-    output_dir = os.path.join(root_dir, 'derivatives/mvpa_ls_a_data')
+    fmriprep_dir = os.path.join(root_dir, 'derivatives','fmriprep23')
+    output_dir = os.path.join(root_dir, 'derivatives','mvpa_ls_a_data')
 
     # load data
     func_dir = os.path.join(fmriprep_dir, subj, 'ses-01', 'func')
     func_file = os.path.join(func_dir, subj + '_ses-01_task-' + task + '_run-' + run + '_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz')
+
+    # clean and stardardize image
+    # func_clean = clean_img(func_file, standardize=True, detrend=True)
+    # func_clean = nb.load(func_file)
+
+    # print(f'Max: {np.max(func_clean.get_fdata())} | Min: {np.min(func_clean.get_fdata())}')
 
     # Load events file
     events_file = os.path.join(root_dir,subj,'ses-01','func',
                                 subj + '_ses-01_task-' + task + '_run-' + run + '_events.tsv')
     events = pd.read_csv(events_file, sep='\t')
 
-    # rename all trial_types except 'Noise' to 'Music'
-    events['trial_type'] = events['trial_type'].replace(events['trial_type'].unique()[1:], 'Music')
-
-    # extract trial_type to list (before messing with the names)
-    trial_types = np.ravel(events['trial_type'].tolist())
-
-    # Add counter to each trial_type in the format '___01'
-    events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
-
     # round onset and duration to integer
     events['onset'] = events['onset'].round(0).astype(int)
     events['duration'] = events['duration'].round(0).astype(int)
 
-    # fetch confounds to clean image
-    confounds_file = os.path.join(fmriprep_dir,subj,'ses-01','func',
-                                subj + '_ses-01_task-' + task + '_run-' + run + '_desc-confounds_timeseries.tsv')
+    # Identify all Noise trials which duration is 6 seconds
+    intersong_trials = events.query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
 
-    confounds = pd.read_csv(confounds_file, sep='\t')
+    # rename noise_trials to 'intersong'
+    events.loc[intersong_trials.index, "trial_type"] = "Intersong"
+
+    # remove all 'intersong' trials
+    events = events[events.trial_type != 'Intersong']
+
+    # rename all trial_types except 'Noise' to 'Music'
+    events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+
+    # remove first and last row of events
+    # events = events.iloc[1:-1]
+
+    # extract trial_type to list (before messing with the names)
+    #trial_types = np.ravel(events['trial_type'].tolist())
+
+    # Add counter to each trial_type in the format '01'
+    events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+
+    trialwise_conditions = events["trial_type"].unique()
+
+    # fetch confounds to clean image
+    #confounds_file = os.path.join(fmriprep_dir,subj,'ses-01','func',
+    #                            subj + '_ses-01_task-' + task + '_run-' + run + '_desc-confounds_timeseries.tsv')
+
+    #confounds = pd.read_csv(confounds_file, sep='\t')
 
     # only consider confounds that start with 'trans', 'rot', and 'cosine'
-    confounds = confounds.filter(regex='trans|rot|cosine')
+    #confounds = confounds.filter(regex='trans|rot|cosine')
 
-    confounds = confounds.fillna(0)
+    #confounds = confounds.fillna(0)
 
     # Create a EPI mask
-    fmri_img_mean = mean_img(func_file)
-    epi_mask = masking.compute_epi_mask(fmri_img_mean)
+    # fmri_img_mean = mean_img(func_file)
+    # epi_mask = masking.compute_epi_mask(fmri_img_mean)
+
+    # Design matrix
+    print('Creating design matrix')
+    lsa_design = make_first_level_design_matrix(np.arange(660),
+                                                events,
+                                                drift_model='cosine',
+                                                high_pass=0.007,
+                                                hrf_model='spm')
 
     # GLM
+    print('Creating GLM')
     lsa_glm = FirstLevelModel(t_r=1, 
-                              hrf_model='spm', 
-                              mask_img=epi_mask, 
-                              drift_model=None, 
-                              n_jobs=2, # beware that this is going to be paralelized outside of the function
-                              standardize=False)
+                              standardize=True, 
+                              signal_scaling=False, 
+                              minimize_memory=True, 
+                              n_jobs=2)
 
-    lsa_glm.fit(func_file, events, confounds)
+    print('Fitting GLM')
+    lsa_glm.fit(func_file, design_matrices = lsa_design) # to do: confounds
 
-    contrast_mat_lsa = np.eye(len(events), len(events))  # +1 to account for the constant term
+    # clear func_clean from memory
+    #print('Uncaching...')
+    #func_clean.uncache()
+    #print('Uncached')
 
     # Estimate statistical maps for each condition of interest and trial
     z_maps_lsa = []
 
-    for contrast in contrast_mat_lsa:
+    for contrast in trialwise_conditions:
         z_map = lsa_glm.compute_contrast(contrast, output_type='z_score')
 
-        # Drop the trial number from the condition name to get the original name
         z_maps_lsa.append(z_map)
 
     # 4D image with all the beta maps
     img_lsa = concat_imgs(z_maps_lsa)   
 
+    # check if image exists - if so delete it
+    newimage = os.path.join(output_dir, subj + '_ses-01_task-' + task + '_run-' + run + '_musicnoise_dataset.nii.gz')
+    
+    if os.path.exists(newimage):
+        os.remove(newimage)
+        print('Deleted existing image file')
+
     # save concatenated images
-    img_lsa.to_filename(os.path.join(output_dir, 
-                                         subj + '_ses-01_task-' + task + '_run-' + run + '_musicnoise_dataset.nii.gz'))
+    img_lsa.to_filename(newimage)
+
+    # check if trial_types file exists - if so delete it
+    newtrialtypes = os.path.join(output_dir, subj + '_ses-01_task-' + task + '_run-' + run + '_musicnoise_trial_types.txt')
+    
+    if os.path.exists(newtrialtypes):
+        os.remove(newtrialtypes)
+        print('Deleted existing trial_types file')
 
     # save trial_types
-    np.savetxt(os.path.join(output_dir,
-                            subj + '_ses-01_task-' + task + '_run-' + run + '_musicnoise_trial_types.txt'),
-                        trial_types, fmt='%s')
+    np.savetxt(newtrialtypes, trialwise_conditions, fmt='%s')
 
     print('Done for subject ' + subj + ' and run ' + run + '\n')
