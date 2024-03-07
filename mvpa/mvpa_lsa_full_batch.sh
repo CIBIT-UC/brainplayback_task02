@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=mvpa-lsa
+#SBATCH --job-name=mvpa-lsa-full
 #SBATCH --time=01:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -15,6 +15,6 @@
 conda activate mvpa
 
 # Do
-python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa.py
+python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa_lsa_full.py
 
 echo "Finished with job $SLURM_JOBID"

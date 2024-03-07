@@ -1,12 +1,12 @@
 * ----------------------------------------------------------------
-* Running PROLOG for mvpa on Tue Mar  5 17:10:58 WET 2024
-*    JOB_NAME                : mvpa
-*    JOB_ID                  : 15266709
+* Running PROLOG for DE_full on Thu Mar  7 18:45:41 WET 2024
+*    JOB_NAME                : DE_full
+*    JOB_ID                  : 15292217
 *    JOB_PARTITION           : hpc
 *    JOB_USER                : alexsayal
 *    JOB_ACCOUNT             : uccibit
 *    JOB_QOS                 : normal
-*    NODE_LIST               : hpc071
+*    NODE_LIST               : hpc070
 *    SLURM_NNODES            : 1
 *    SLURM_NPROCS            : 1
 *    SLURM_NTASKS            : 1
@@ -14,27 +14,15 @@
 *    SLURM_TASKS_PER_NODE    : 1
 *    SLURM_JOB_CPUS_PER_NODE : 26
 *    SLURM_MEM_PER_NODE      : 262144
-*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
 *    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
-*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-batch.sh
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/dataextract_ls-a_full-batch.sh
 * ----------------------------------------------------------------
-Extracting data std for subject sub-01 and run 3
+Extracting data std for subject sub-02 and run 4
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-01 and run 3
-
-Extracting data std for subject sub-04 and run 4
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-04 and run 4
-
-Extracting data std for subject sub-01 and run 4
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-01 and run 4
+Done for subject sub-02 and run 4
 
 Extracting data std for subject sub-04 and run 2
 Creating design matrix
@@ -42,11 +30,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-04 and run 2
 
-Extracting data std for subject sub-04 and run 1
+Extracting data std for subject sub-01 and run 2
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-04 and run 1
+Done for subject sub-01 and run 2
 
 Extracting data std for subject sub-04 and run 3
 Creating design matrix
@@ -54,23 +42,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-04 and run 3
 
-Extracting data std for subject sub-02 and run 2
+Extracting data std for subject sub-01 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-02 and run 2
-
-Extracting data std for subject sub-05 and run 4
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-05 and run 4
-
-Extracting data std for subject sub-01 and run 1
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-01 and run 1
+Done for subject sub-01 and run 3
 
 Extracting data std for subject sub-05 and run 1
 Creating design matrix
@@ -78,11 +54,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-05 and run 1
 
-Extracting data std for subject sub-02 and run 4
+Extracting data std for subject sub-02 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-02 and run 4
+Done for subject sub-02 and run 3
 
 Extracting data std for subject sub-05 and run 2
 Creating design matrix
@@ -90,11 +66,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-05 and run 2
 
-Extracting data std for subject sub-01 and run 2
+Extracting data std for subject sub-02 and run 2
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-01 and run 2
+Done for subject sub-02 and run 2
 
 Extracting data std for subject sub-05 and run 3
 Creating design matrix
@@ -108,23 +84,47 @@ Creating GLM
 Fitting GLM
 Done for subject sub-03 and run 2
 
+Extracting data std for subject sub-04 and run 4
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-04 and run 4
+
+Extracting data std for subject sub-04 and run 1
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-04 and run 1
+
 Extracting data std for subject sub-06 and run 1
 Creating design matrix
 Creating GLM
 Fitting GLM
 Done for subject sub-06 and run 1
 
-Extracting data std for subject sub-02 and run 3
+Extracting data std for subject sub-01 and run 4
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-02 and run 3
+Done for subject sub-01 and run 4
 
-Extracting data std for subject sub-07 and run 1
+Extracting data std for subject sub-06 and run 2
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-07 and run 1
+Done for subject sub-06 and run 2
+
+Extracting data std for subject sub-03 and run 3
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-03 and run 3
+
+Extracting data std for subject sub-05 and run 4
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-05 and run 4
 
 Extracting data std for subject sub-02 and run 1
 Creating design matrix
@@ -150,18 +150,6 @@ Creating GLM
 Fitting GLM
 Done for subject sub-07 and run 2
 
-Extracting data std for subject sub-03 and run 3
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-03 and run 3
-
-Extracting data std for subject sub-06 and run 2
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-06 and run 2
-
 Extracting data std for subject sub-03 and run 1
 Creating design matrix
 Creating GLM
@@ -173,6 +161,18 @@ Creating design matrix
 Creating GLM
 Fitting GLM
 Done for subject sub-06 and run 3
+
+Extracting data std for subject sub-01 and run 1
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-01 and run 1
+
+Extracting data std for subject sub-07 and run 1
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-07 and run 1
 
 Extracting data std for subject sub-07 and run 4
 Creating design matrix
@@ -186,17 +186,29 @@ Creating GLM
 Fitting GLM
 Done for subject sub-10 and run 4
 
-Extracting data std for subject sub-08 and run 2
+Extracting data std for subject sub-07 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-08 and run 2
+Done for subject sub-07 and run 3
 
 Extracting data std for subject sub-11 and run 1
 Creating design matrix
 Creating GLM
 Fitting GLM
 Done for subject sub-11 and run 1
+
+Extracting data std for subject sub-08 and run 2
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-08 and run 2
+
+Extracting data std for subject sub-11 and run 3
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-11 and run 3
 
 Extracting data std for subject sub-08 and run 1
 Creating design matrix
@@ -210,11 +222,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-11 and run 2
 
-Extracting data std for subject sub-08 and run 4
+Extracting data std for subject sub-09 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-08 and run 4
+Done for subject sub-09 and run 3
 
 Extracting data std for subject sub-11 and run 4
 Creating design matrix
@@ -222,23 +234,11 @@ Creating GLM
 Fitting GLM
 Done for subject sub-11 and run 4
 
-Extracting data std for subject sub-07 and run 3
+Extracting data std for subject sub-10 and run 1
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-07 and run 3
-
-Extracting data std for subject sub-11 and run 3
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-11 and run 3
-
-Extracting data std for subject sub-08 and run 3
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-08 and run 3
+Done for subject sub-10 and run 1
 
 Extracting data std for subject sub-12 and run 1
 Creating design matrix
@@ -246,29 +246,29 @@ Creating GLM
 Fitting GLM
 Done for subject sub-12 and run 1
 
-Extracting data std for subject sub-09 and run 1
+Extracting data std for subject sub-08 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-09 and run 1
+Done for subject sub-08 and run 3
 
-Extracting data std for subject sub-12 and run 2
+Extracting data std for subject sub-13 and run 4
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-12 and run 2
+Done for subject sub-13 and run 4
 
-Extracting data std for subject sub-09 and run 2
+Extracting data std for subject sub-08 and run 4
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-09 and run 2
+Done for subject sub-08 and run 4
 
-Extracting data std for subject sub-12 and run 3
+Extracting data std for subject sub-13 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-12 and run 3
+Done for subject sub-13 and run 3
 
 Extracting data std for subject sub-10 and run 2
 Creating design matrix
@@ -276,35 +276,23 @@ Creating GLM
 Fitting GLM
 Done for subject sub-10 and run 2
 
-Extracting data std for subject sub-12 and run 4
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-12 and run 4
-
-Extracting data std for subject sub-09 and run 3
-Creating design matrix
-Creating GLM
-Fitting GLM
-Done for subject sub-09 and run 3
-
 Extracting data std for subject sub-13 and run 1
 Creating design matrix
 Creating GLM
 Fitting GLM
 Done for subject sub-13 and run 1
 
-Extracting data std for subject sub-10 and run 1
+Extracting data std for subject sub-09 and run 1
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-10 and run 1
+Done for subject sub-09 and run 1
 
-Extracting data std for subject sub-13 and run 3
+Extracting data std for subject sub-12 and run 3
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-13 and run 3
+Done for subject sub-12 and run 3
 
 Extracting data std for subject sub-09 and run 4
 Creating design matrix
@@ -318,6 +306,18 @@ Creating GLM
 Fitting GLM
 Done for subject sub-13 and run 2
 
+Extracting data std for subject sub-09 and run 2
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-09 and run 2
+
+Extracting data std for subject sub-12 and run 2
+Creating design matrix
+Creating GLM
+Fitting GLM
+Done for subject sub-12 and run 2
+
 All done!
 Extracting data std for subject sub-10 and run 3
 Creating design matrix
@@ -325,10 +325,10 @@ Creating GLM
 Fitting GLM
 Done for subject sub-10 and run 3
 
-Extracting data std for subject sub-13 and run 4
+Extracting data std for subject sub-12 and run 4
 Creating design matrix
 Creating GLM
 Fitting GLM
-Done for subject sub-13 and run 4
+Done for subject sub-12 and run 4
 
-Finished with job 15266709
+Finished with job 15292217

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --job-name=mvpa
-#SBATCH --time=00:30:00
+#SBATCH --job-name=mvpa-lsa-spacenet
+#SBATCH --time=01:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=26
+#SBATCH --cpus-per-task=30
 #SBATCH --mem=256G
 #SBATCH --partition=hpc
 #SBATCH --output=/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/log/%x_%A_%a.out
@@ -15,6 +15,6 @@
 conda activate mvpa
 
 # Do
-python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/data_extract_ls-a_test2.py
+python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-spacenet.py
 
 echo "Finished with job $SLURM_JOBID"
