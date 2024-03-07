@@ -67,12 +67,12 @@ masked_epi = masker.inverse_transform(samples)
 # %%
 # generate an array of chunk labels
 # 13 subjects, 9 x 2 music for each of the 4 runs
-chunks = np.repeat(np.arange(1,14), 9*2*4)
+chunks = np.repeat(np.arange(1,14), 10*4 + 9*2*4)
 
 # %%
 # Let's specify the classifier
 from sklearn.svm import LinearSVC
-clf = LinearSVC(penalty='l2', loss='squared_hinge', max_iter=1000)
+clf = LinearSVC(penalty='l2', loss='squared_hinge', max_iter=1000, multi_class='ovr', dual='auto')
 
 # %%
 # Perform the cross validation (takes time to compute)

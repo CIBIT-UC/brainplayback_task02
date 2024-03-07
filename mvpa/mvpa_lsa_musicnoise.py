@@ -22,11 +22,11 @@ mask_dir = os.path.join(root_dir, 'derivatives','mni_icbm152_t1_tal_nlin_asym_09
 # list datasets and concatenate
 
 # find all *_dataset.nii.gz files in dataset_dir
-dataset_files = [os.path.join(dataset_dir, f) for f in os.listdir(dataset_dir) if f.endswith('_musicnoise_dataset.nii.gz')]
+dataset_files = [os.path.join(dataset_dir, f) for f in os.listdir(dataset_dir) if f.endswith('_musicnoise_confounds_dataset.nii.gz')]
 dataset_files.sort()
 
 # find all *_trial_types.txt files in dataset_dir
-label_files = [os.path.join(dataset_dir, f) for f in os.listdir(dataset_dir) if f.endswith('_musicnoise_trial_types.txt')]
+label_files = [os.path.join(dataset_dir, f) for f in os.listdir(dataset_dir) if f.endswith('_musicnoise_confounds_trial_types.txt')]
 label_files.sort()
 
 # %%
@@ -92,8 +92,8 @@ print('Accuracy per fold:', cv_scores, sep='\n')
 # %% export results
 import pandas as pd
 results1 = pd.DataFrame({'accuracy': cv_scores})
-results1.to_csv(os.path.join(dataset_dir, 'mvpa-lsa-results-1.csv'), index=False)
-print('saved accuracy results to mvpa-lsa-results-1.csv')
+results1.to_csv(os.path.join(dataset_dir, 'mvpa-lsa-musicnoise-confounds-results-1.csv'), index=False)
+print('saved accuracy results to mvpa-musicnoise-confounds-results-1.csv')
 
 # # %%
 # # Import the permuation function

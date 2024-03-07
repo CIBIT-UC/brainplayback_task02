@@ -156,7 +156,7 @@ def ls_a_musicnoise_confounds(root_dir, subj, task, run):
     print('Creating design matrix')
     lsa_design = make_first_level_design_matrix(np.arange(660),
                                                 events,
-                                                confounds=confounds,
+                                                add_regs=confounds,
                                                 drift_model='cosine',
                                                 high_pass=0.007,
                                                 hrf_model='spm')
@@ -228,13 +228,27 @@ def ls_a_full(root_dir, subj, task, run):
     events['onset'] = events['onset'].round(0).astype(int)
     events['duration'] = events['duration'].round(0).astype(int)
 
+    # Identify all Noise trials which duration is 6 seconds and remove them
+    intersong_trials = events.query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
+
+    # rename noise_trials to 'intersong'
+    events.loc[intersong_trials.index, "trial_type"] = "Intersong"
+
+    # remove all 'intersong' trials
+    events = events[events.trial_type != 'Intersong']
+    #print(events)
+
     # remove all noise trials
-    events = events[events.trial_type != 'Noise']
+    #events = events[events.trial_type != 'Noise']
 
     # Add counter to each trial_type in the format '01'
     events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
 
+    print(events)
+
     trialwise_conditions = events["trial_type"].unique()
+
+    print(trialwise_conditions)
 
     # Design matrix
     print('Creating design matrix')

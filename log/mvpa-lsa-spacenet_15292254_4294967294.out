@@ -18,3 +18,28 @@
 *    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
 *    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-spacenet-batch.sh
 * ----------------------------------------------------------------
+starting decoder fit...
+[NiftiMasker.fit] Loading data from None
+[NiftiMasker.fit] Resampling mask
+[NiftiMasker.transform_single_imgs] Loading data from Nifti1Image(
+shape=(97, 115, 97, 1344),
+affine=array([[   2. ,    0. ,    0. ,  -96.5],
+       [   0. ,    2. ,    0. , -132.5],
+       [   0. ,    0. ,    2. ,  -78.5],
+       [   0. ,    0. ,    0. ,    1. ]])
+)
+[NiftiMasker.transform_single_imgs] Extracting region signals
+[NiftiMasker.transform_single_imgs] Cleaning extracted signals
+Time Elapsed: 915.4729619026184 seconds, 15.257882698376973 minutes.
+[NiftiMasker.transform_single_imgs] Loading data from Nifti1Image(
+shape=(97, 115, 97, 112),
+affine=array([[   2. ,    0. ,    0. ,  -96.5],
+       [   0. ,    2. ,    0. , -132.5],
+       [   0. ,    0. ,    2. ,  -78.5],
+       [   0. ,    0. ,    0. ,    1. ]])
+)
+[NiftiMasker.transform_single_imgs] Extracting region signals
+[NiftiMasker.transform_single_imgs] Cleaning extracted signals
+
+TV-l1  classification accuracy : 96.4286%
+Finished with job 15292254
