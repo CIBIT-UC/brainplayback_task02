@@ -1,0 +1,48 @@
+* ----------------------------------------------------------------
+* Running PROLOG for mvpa-lsa-spacenet on Thu Mar  7 20:48:53 WET 2024
+*    JOB_NAME                : mvpa-lsa-spacenet
+*    JOB_ID                  : 15293082
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc076
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 30
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 30
+*    SLURM_MEM_PER_NODE      : 262144
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-spacenet-batch.sh
+* ----------------------------------------------------------------
+starting decoder fit...
+[NiftiMasker.fit] Loading data from None
+[NiftiMasker.fit] Resampling mask
+[NiftiMasker.transform_single_imgs] Loading data from Nifti1Image(
+shape=(97, 115, 97, 1344),
+affine=array([[   2. ,    0. ,    0. ,  -96.5],
+       [   0. ,    2. ,    0. , -132.5],
+       [   0. ,    0. ,    2. ,  -78.5],
+       [   0. ,    0. ,    0. ,    1. ]])
+)
+[NiftiMasker.transform_single_imgs] Extracting region signals
+[NiftiMasker.transform_single_imgs] Cleaning extracted signals
+Time Elapsed: 1477.53147315979 seconds, 24.62552455266317 minutes.
+[NiftiMasker.transform_single_imgs] Loading data from Nifti1Image(
+shape=(97, 115, 97, 112),
+affine=array([[   2. ,    0. ,    0. ,  -96.5],
+       [   0. ,    2. ,    0. , -132.5],
+       [   0. ,    0. ,    2. ,  -78.5],
+       [   0. ,    0. ,    0. ,    1. ]])
+)
+[NiftiMasker.transform_single_imgs] Extracting region signals
+[NiftiMasker.transform_single_imgs] Cleaning extracted signals
+
+TV-l1  classification accuracy : 96.4286%
+saved accuracy results to mvpa-lsa-spacenet-results-1.csv
+saved coef_img to mvpa-lsa-spacenet_coefimg.nii.gz
+python script finished running.
+Finished with job 15293082

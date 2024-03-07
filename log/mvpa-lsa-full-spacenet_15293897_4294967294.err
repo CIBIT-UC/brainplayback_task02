@@ -1,0 +1,3 @@
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-full-spacenet.py:100: UserWarning: Brain mask is bigger than the volume of a standard human brain. This object is probably not tuned to be used on such data.
+  decoder.fit(X_train, y_train)
+[Parallel(n_jobs=30)]: Using backend LokyBackend with 30 concurrent workers.

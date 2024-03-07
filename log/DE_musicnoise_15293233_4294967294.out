@@ -1,0 +1,21 @@
+* ----------------------------------------------------------------
+* Running PROLOG for DE_musicnoise on Thu Mar  7 21:14:26 WET 2024
+*    JOB_NAME                : DE_musicnoise
+*    JOB_ID                  : 15293233
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc074
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 26
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 26
+*    SLURM_MEM_PER_NODE      : 262144
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/dataextract_ls-a_musicnoise-batch.sh
+* ----------------------------------------------------------------
+Finished with job 15293233

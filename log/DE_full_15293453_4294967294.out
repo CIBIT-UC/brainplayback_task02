@@ -1,0 +1,2258 @@
+* ----------------------------------------------------------------
+* Running PROLOG for DE_full on Thu Mar  7 21:33:40 WET 2024
+*    JOB_NAME                : DE_full
+*    JOB_ID                  : 15293453
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc071
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 26
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 26
+*    SLURM_MEM_PER_NODE      : 262144
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/dataextract_ls-a_full-batch.sh
+* ----------------------------------------------------------------
+Extracting data std for subject sub-03 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24        Tenderness01
+3      42        24        Tenderness02
+4      66        18             Noise02
+5      84        24           Tension01
+7     114        24           Tension02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24  JoyfulActivation01
+19    330        24  JoyfulActivation02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Tenderness01' 'Tenderness02' 'Noise02' 'Tension01' 'Tension02'
+ 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04' 'Transcendence01'
+ 'Transcendence02' 'Noise05' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Peacefulness01'
+ 'Peacefulness02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Wonder01'
+ 'Wonder02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-03 and run 3
+
+Extracting data std for subject sub-04 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24      Peacefulness01
+7     114        24      Peacefulness02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24             Power01
+35    618        24             Power02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Peacefulness01'
+ 'Peacefulness02' 'Noise03' 'Wonder01' 'Wonder02' 'Noise04'
+ 'Transcendence01' 'Transcendence02' 'Noise05' 'Tension01' 'Tension02'
+ 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09'
+ 'Power01' 'Power02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-04 and run 3
+
+Extracting data std for subject sub-02 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24           Sadness01
+31    546        24           Sadness02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Tenderness01'
+ 'Tenderness02' 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Nostalgia01' 'Nostalgia02' 'Noise07' 'Tension01' 'Tension02'
+ 'Noise08' 'Sadness01' 'Sadness02' 'Noise09' 'Wonder01' 'Wonder02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-02 and run 1
+
+Extracting data std for subject sub-05 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24  JoyfulActivation01
+23    402        24  JoyfulActivation02
+24    426        18             Noise07
+25    444        24         Nostalgia01
+27    474        24         Nostalgia02
+28    498        18             Noise08
+29    516        24      Peacefulness01
+31    546        24      Peacefulness02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Tenderness01' 'Tenderness02'
+ 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04' 'Tension01'
+ 'Tension02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise07' 'Nostalgia01' 'Nostalgia02' 'Noise08'
+ 'Peacefulness01' 'Peacefulness02' 'Noise09' 'Wonder01' 'Wonder02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-05 and run 4
+
+Extracting data std for subject sub-04 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24           Tension01
+7     114        24           Tension02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24     Transcendence01
+19    330        24     Transcendence02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Tension01' 'Tension02'
+ 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise04'
+ 'Nostalgia01' 'Nostalgia02' 'Noise05' 'Transcendence01' 'Transcendence02'
+ 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Tenderness01' 'Tenderness02'
+ 'Noise08' 'Power01' 'Power02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-04 and run 1
+
+Extracting data std for subject sub-05 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24           Tension01
+7     114        24           Tension02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24  JoyfulActivation01
+19    330        24  JoyfulActivation02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Tension01'
+ 'Tension02' 'Noise03' 'Tenderness01' 'Tenderness02' 'Noise04'
+ 'Transcendence01' 'Transcendence02' 'Noise05' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise06' 'Nostalgia01' 'Nostalgia02' 'Noise07'
+ 'Wonder01' 'Wonder02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-05 and run 1
+
+Extracting data std for subject sub-03 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24           Sadness01
+15    258        24           Sadness02
+16    282        18             Noise05
+17    300        24            Wonder01
+19    330        24            Wonder02
+20    354        18             Noise06
+21    372        24           Tension01
+23    402        24           Tension02
+24    426        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24         Nostalgia01
+35    618        24         Nostalgia02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Tenderness01'
+ 'Tenderness02' 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise04' 'Sadness01' 'Sadness02' 'Noise05' 'Wonder01' 'Wonder02'
+ 'Noise06' 'Tension01' 'Tension02' 'Noise07' 'Peacefulness01'
+ 'Peacefulness02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Nostalgia01'
+ 'Nostalgia02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-03 and run 4
+
+Extracting data std for subject sub-04 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24  JoyfulActivation01
+3      42        24  JoyfulActivation02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24      Peacefulness01
+19    330        24      Peacefulness02
+20    354        18             Noise06
+21    372        24     Transcendence01
+23    402        24     Transcendence02
+24    426        18             Noise07
+25    444        24         Nostalgia01
+27    474        24         Nostalgia02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise02'
+ 'Tenderness01' 'Tenderness02' 'Noise03' 'Wonder01' 'Wonder02' 'Noise04'
+ 'Tension01' 'Tension02' 'Noise05' 'Peacefulness01' 'Peacefulness02'
+ 'Noise06' 'Transcendence01' 'Transcendence02' 'Noise07' 'Nostalgia01'
+ 'Nostalgia02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-04 and run 4
+
+Extracting data std for subject sub-01 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24      Peacefulness01
+31    546        24      Peacefulness02
+32    570        18             Noise09
+33    588        24     Transcendence01
+35    618        24     Transcendence02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise03' 'Tenderness01' 'Tenderness02' 'Noise04'
+ 'Tension01' 'Tension02' 'Noise05' 'Power01' 'Power02' 'Noise06'
+ 'Nostalgia01' 'Nostalgia02' 'Noise07' 'Wonder01' 'Wonder02' 'Noise08'
+ 'Peacefulness01' 'Peacefulness02' 'Noise09' 'Transcendence01'
+ 'Transcendence02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-01 and run 3
+
+Extracting data std for subject sub-05 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24             Power01
+3      42        24             Power02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24           Sadness01
+11    186        24           Sadness02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    427        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24        Tenderness01
+31    546        24        Tenderness02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Power01' 'Power02' 'Noise02' 'Wonder01' 'Wonder02' 'Noise03'
+ 'Sadness01' 'Sadness02' 'Noise04' 'Transcendence01' 'Transcendence02'
+ 'Noise05' 'Tension01' 'Tension02' 'Noise06' 'Nostalgia01' 'Nostalgia02'
+ 'Noise07' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise08'
+ 'Tenderness01' 'Tenderness02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-05 and run 3
+
+Extracting data std for subject sub-01 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    427        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    619        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Sadness01'
+ 'Sadness02' 'Noise03' 'Tension01' 'Tension02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07' 'Wonder01' 'Wonder02'
+ 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09' 'Peacefulness01'
+ 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-01 and run 2
+
+Extracting data std for subject sub-04 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24             Power01
+3      42        24             Power02
+4      66        18             Noise02
+5      84        24         Nostalgia01
+7     114        24         Nostalgia02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24        Tenderness01
+31    546        24        Tenderness02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Power01' 'Power02' 'Noise02' 'Nostalgia01' 'Nostalgia02'
+ 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Tension01'
+ 'Tension02' 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Wonder01'
+ 'Wonder02' 'Noise08' 'Tenderness01' 'Tenderness02' 'Noise09'
+ 'Peacefulness01' 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-04 and run 2
+
+Extracting data std for subject sub-02 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24      Peacefulness01
+19    330        24      Peacefulness02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24             Power01
+35    618        24             Power02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Sadness01'
+ 'Sadness02' 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04' 'Wonder01'
+ 'Wonder02' 'Noise05' 'Peacefulness01' 'Peacefulness02' 'Noise06'
+ 'Tenderness01' 'Tenderness02' 'Noise07' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise08' 'Tension01' 'Tension02' 'Noise09'
+ 'Power01' 'Power02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-02 and run 3
+
+Extracting data std for subject sub-05 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Tension01
+3      42        24           Tension02
+4      66        18             Noise02
+5      84        24      Peacefulness01
+7     114        24      Peacefulness02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24        Tenderness01
+15    258        24        Tenderness02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24     Transcendence01
+35    618        24     Transcendence02
+36    642        18             Noise10
+['Noise01' 'Tension01' 'Tension02' 'Noise02' 'Peacefulness01'
+ 'Peacefulness02' 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise04' 'Tenderness01' 'Tenderness02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Wonder01' 'Wonder02'
+ 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09' 'Transcendence01'
+ 'Transcendence02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-05 and run 2
+
+Extracting data std for subject sub-02 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24  JoyfulActivation01
+3      42        24  JoyfulActivation02
+4      66        18             Noise02
+5      84        24     Transcendence01
+7     114        24     Transcendence02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24      Peacefulness01
+15    258        24      Peacefulness02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24        Tenderness01
+35    618        24        Tenderness02
+36    642        18             Noise10
+['Noise01' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise02'
+ 'Transcendence01' 'Transcendence02' 'Noise03' 'Nostalgia01' 'Nostalgia02'
+ 'Noise04' 'Peacefulness01' 'Peacefulness02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Wonder01' 'Wonder02'
+ 'Noise08' 'Tension01' 'Tension02' 'Noise09' 'Tenderness01' 'Tenderness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-02 and run 2
+
+Extracting data std for subject sub-06 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24         Nostalgia01
+19    330        24         Nostalgia02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24           Sadness01
+31    546        24           Sadness02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Power01'
+ 'Power02' 'Noise03' 'Tension01' 'Tension02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Nostalgia01'
+ 'Nostalgia02' 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07'
+ 'Wonder01' 'Wonder02' 'Noise08' 'Sadness01' 'Sadness02' 'Noise09'
+ 'Peacefulness01' 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-06 and run 3
+
+Extracting data std for subject sub-01 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24        Tenderness01
+3      42        24        Tenderness02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    187        24         Nostalgia02
+12    210        18             Noise04
+13    228        24      Peacefulness01
+15    258        24      Peacefulness02
+16    282        18             Noise05
+17    300        24     Transcendence01
+19    330        24     Transcendence02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24             Power01
+27    474        24             Power02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24  JoyfulActivation01
+35    618        24  JoyfulActivation02
+36    642        18             Noise10
+['Noise01' 'Tenderness01' 'Tenderness02' 'Noise02' 'Wonder01' 'Wonder02'
+ 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04' 'Peacefulness01'
+ 'Peacefulness02' 'Noise05' 'Transcendence01' 'Transcendence02' 'Noise06'
+ 'Sadness01' 'Sadness02' 'Noise07' 'Power01' 'Power02' 'Noise08'
+ 'Tension01' 'Tension02' 'Noise09' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-01 and run 1
+
+Extracting data std for subject sub-07 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24           Tension01
+7     114        24           Tension02
+8     138        18             Noise03
+9     156        24      Peacefulness01
+11    186        24      Peacefulness02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24     Transcendence01
+23    402        24     Transcendence02
+24    426        18             Noise07
+25    444        24           Sadness01
+27    474        24           Sadness02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24        Tenderness01
+35    618        24        Tenderness02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Tension01' 'Tension02'
+ 'Noise03' 'Peacefulness01' 'Peacefulness02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Transcendence01' 'Transcendence02' 'Noise07' 'Sadness01'
+ 'Sadness02' 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09'
+ 'Tenderness01' 'Tenderness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-07 and run 1
+
+Extracting data std for subject sub-03 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24           Sadness01
+11    186        24           Sadness02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24           Tension01
+23    402        24           Tension02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Tenderness01'
+ 'Tenderness02' 'Noise03' 'Sadness01' 'Sadness02' 'Noise04' 'Wonder01'
+ 'Wonder02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'Tension01'
+ 'Tension02' 'Noise07' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise08'
+ 'Nostalgia01' 'Nostalgia02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-03 and run 1
+
+Extracting data std for subject sub-06 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24        Tenderness01
+19    330        24        Tenderness02
+20    354        18             Noise06
+21    372        24     Transcendence01
+23    402        24     Transcendence02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24  JoyfulActivation01
+31    546        24  JoyfulActivation02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Power01' 'Power02'
+ 'Noise03' 'Tension01' 'Tension02' 'Noise04' 'Nostalgia01' 'Nostalgia02'
+ 'Noise05' 'Tenderness01' 'Tenderness02' 'Noise06' 'Transcendence01'
+ 'Transcendence02' 'Noise07' 'Wonder01' 'Wonder02' 'Noise08'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-06 and run 2
+
+Extracting data std for subject sub-03 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24         Nostalgia01
+3      42        24         Nostalgia02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24            Wonder01
+23    402        24            Wonder02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24        Tenderness01
+31    546        24        Tenderness02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Nostalgia01' 'Nostalgia02' 'Noise02' 'Sadness01' 'Sadness02'
+ 'Noise03' 'Tension01' 'Tension02' 'Noise04' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'Wonder01'
+ 'Wonder02' 'Noise07' 'Transcendence01' 'Transcendence02' 'Noise08'
+ 'Tenderness01' 'Tenderness02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-03 and run 2
+
+Extracting data std for subject sub-06 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24           Tension01
+7     114        24           Tension02
+8     138        18             Noise03
+9     156        24           Sadness01
+11    186        24           Sadness02
+12    210        18             Noise04
+13    228        24        Tenderness01
+15    258        24        Tenderness02
+16    282        18             Noise05
+17    300        24         Nostalgia01
+19    330        24         Nostalgia02
+20    354        18             Noise06
+21    372        24            Wonder01
+23    402        24            Wonder02
+24    426        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24  JoyfulActivation01
+31    546        24  JoyfulActivation02
+32    570        18             Noise09
+33    588        24             Power01
+35    618        24             Power02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Tension01'
+ 'Tension02' 'Noise03' 'Sadness01' 'Sadness02' 'Noise04' 'Tenderness01'
+ 'Tenderness02' 'Noise05' 'Nostalgia01' 'Nostalgia02' 'Noise06' 'Wonder01'
+ 'Wonder02' 'Noise07' 'Peacefulness01' 'Peacefulness02' 'Noise08'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise09' 'Power01' 'Power02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-06 and run 1
+
+Extracting data std for subject sub-02 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24             Power01
+23    402        24             Power02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24  JoyfulActivation01
+31    546        24  JoyfulActivation02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Tenderness01'
+ 'Tenderness02' 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04'
+ 'Tension01' 'Tension02' 'Noise05' 'Sadness01' 'Sadness02' 'Noise06'
+ 'Power01' 'Power02' 'Noise07' 'Transcendence01' 'Transcendence02'
+ 'Noise08' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise09' 'Wonder01'
+ 'Wonder02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-02 and run 4
+
+Extracting data std for subject sub-07 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24        Tenderness01
+7     114        24        Tenderness02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24           Tension01
+23    402        24           Tension02
+24    426        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Tenderness01' 'Tenderness02'
+ 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Power01' 'Power02'
+ 'Noise06' 'Tension01' 'Tension02' 'Noise07' 'Peacefulness01'
+ 'Peacefulness02' 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09'
+ 'Wonder01' 'Wonder02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-07 and run 2
+
+Extracting data std for subject sub-01 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24      Peacefulness01
+7     114        24      Peacefulness02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24        Tenderness01
+15    258        24        Tenderness02
+16    282        18             Noise05
+17    300        24            Wonder01
+19    330        24            Wonder02
+20    354        18             Noise06
+21    372        24  JoyfulActivation01
+23    402        24  JoyfulActivation02
+24    426        18             Noise07
+25    444        24             Power01
+27    474        24             Power02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24           Tension01
+35    618        24           Tension02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Peacefulness01'
+ 'Peacefulness02' 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04'
+ 'Tenderness01' 'Tenderness02' 'Noise05' 'Wonder01' 'Wonder02' 'Noise06'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise07' 'Power01' 'Power02'
+ 'Noise08' 'Nostalgia01' 'Nostalgia02' 'Noise09' 'Tension01' 'Tension02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-01 and run 4
+
+Extracting data std for subject sub-06 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24             Power01
+3      42        24             Power02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24      Peacefulness01
+19    330        24      Peacefulness02
+20    354        18             Noise06
+21    372        24            Wonder01
+23    402        24            Wonder02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24  JoyfulActivation01
+35    618        24  JoyfulActivation02
+36    642        18             Noise10
+['Noise01' 'Power01' 'Power02' 'Noise02' 'Sadness01' 'Sadness02' 'Noise03'
+ 'Tenderness01' 'Tenderness02' 'Noise04' 'Transcendence01'
+ 'Transcendence02' 'Noise05' 'Peacefulness01' 'Peacefulness02' 'Noise06'
+ 'Wonder01' 'Wonder02' 'Noise07' 'Tension01' 'Tension02' 'Noise08'
+ 'Nostalgia01' 'Nostalgia02' 'Noise09' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-06 and run 4
+
+Extracting data std for subject sub-07 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24     Transcendence01
+7     114        24     Transcendence02
+8     138        18             Noise03
+9     156        24             Power01
+11    186        24             Power02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24         Nostalgia01
+27    474        24         Nostalgia02
+28    498        18             Noise08
+29    516        24            Wonder01
+31    546        24            Wonder02
+32    570        18             Noise09
+33    588        24           Tension01
+35    618        24           Tension02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Transcendence01'
+ 'Transcendence02' 'Noise03' 'Power01' 'Power02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Sadness01'
+ 'Sadness02' 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07'
+ 'Nostalgia01' 'Nostalgia02' 'Noise08' 'Wonder01' 'Wonder02' 'Noise09'
+ 'Tension01' 'Tension02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-07 and run 3
+
+Extracting data std for subject sub-10 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24      Peacefulness01
+11    186        24      Peacefulness02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24  JoyfulActivation01
+19    330        24  JoyfulActivation02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24     Transcendence01
+31    546        24     Transcendence02
+32    570        18             Noise09
+33    588        24        Tenderness01
+35    618        24        Tenderness02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Power01' 'Power02' 'Noise03'
+ 'Peacefulness01' 'Peacefulness02' 'Noise04' 'Wonder01' 'Wonder02'
+ 'Noise05' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise06'
+ 'Nostalgia01' 'Nostalgia02' 'Noise07' 'Tension01' 'Tension02' 'Noise08'
+ 'Transcendence01' 'Transcendence02' 'Noise09' 'Tenderness01'
+ 'Tenderness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-10 and run 4
+
+Extracting data std for subject sub-09 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24           Sadness01
+11    186        24           Sadness02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24        Tenderness01
+19    330        24        Tenderness02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24             Power01
+35    618        24             Power02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise03' 'Sadness01'
+ 'Sadness02' 'Noise04' 'Wonder01' 'Wonder02' 'Noise05' 'Tenderness01'
+ 'Tenderness02' 'Noise06' 'Nostalgia01' 'Nostalgia02' 'Noise07'
+ 'Transcendence01' 'Transcendence02' 'Noise08' 'Tension01' 'Tension02'
+ 'Noise09' 'Power01' 'Power02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-09 and run 2
+
+Extracting data std for subject sub-11 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24      Peacefulness01
+11    186        24      Peacefulness02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24     Transcendence01
+23    402        24     Transcendence02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24        Tenderness01
+31    546        24        Tenderness02
+32    570        18             Noise09
+33    588        24  JoyfulActivation01
+35    618        24  JoyfulActivation02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Wonder01' 'Wonder02'
+ 'Noise03' 'Peacefulness01' 'Peacefulness02' 'Noise04' 'Nostalgia01'
+ 'Nostalgia02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'Transcendence01'
+ 'Transcendence02' 'Noise07' 'Tension01' 'Tension02' 'Noise08'
+ 'Tenderness01' 'Tenderness02' 'Noise09' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-11 and run 2
+
+Extracting data std for subject sub-09 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24         Nostalgia01
+7     114        24         Nostalgia02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24        Tenderness01
+15    258        24        Tenderness02
+16    282        18             Noise05
+17    300        24     Transcendence01
+19    330        24     Transcendence02
+20    354        18             Noise06
+21    372        24           Tension01
+23    402        24           Tension02
+24    427        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24  JoyfulActivation01
+35    618        24  JoyfulActivation02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'Nostalgia01' 'Nostalgia02'
+ 'Noise03' 'Wonder01' 'Wonder02' 'Noise04' 'Tenderness01' 'Tenderness02'
+ 'Noise05' 'Transcendence01' 'Transcendence02' 'Noise06' 'Tension01'
+ 'Tension02' 'Noise07' 'Peacefulness01' 'Peacefulness02' 'Noise08'
+ 'Power01' 'Power02' 'Noise09' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-09 and run 3
+
+Extracting data std for subject sub-11 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24     Transcendence01
+31    546        24     Transcendence02
+32    570        18             Noise09
+33    588        24           Tension01
+35    618        24           Tension02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Sadness01'
+ 'Sadness02' 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise04'
+ 'Nostalgia01' 'Nostalgia02' 'Noise05' 'Power01' 'Power02' 'Noise06'
+ 'Tenderness01' 'Tenderness02' 'Noise07' 'Wonder01' 'Wonder02' 'Noise08'
+ 'Transcendence01' 'Transcendence02' 'Noise09' 'Tension01' 'Tension02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-11 and run 1
+
+Extracting data std for subject sub-09 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24           Sadness01
+15    258        24           Sadness02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24  JoyfulActivation01
+31    546        24  JoyfulActivation02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Wonder01'
+ 'Wonder02' 'Noise03' 'Tension01' 'Tension02' 'Noise04' 'Sadness01'
+ 'Sadness02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'Nostalgia01'
+ 'Nostalgia02' 'Noise07' 'Tenderness01' 'Tenderness02' 'Noise08'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise09' 'Peacefulness01'
+ 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-09 and run 1
+
+Extracting data std for subject sub-11 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24     Transcendence01
+31    546        24     Transcendence02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Power01' 'Power02'
+ 'Noise03' 'Wonder01' 'Wonder02' 'Noise04' 'Nostalgia01' 'Nostalgia02'
+ 'Noise05' 'Tension01' 'Tension02' 'Noise06' 'Tenderness01' 'Tenderness02'
+ 'Noise07' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise08'
+ 'Transcendence01' 'Transcendence02' 'Noise09' 'Sadness01' 'Sadness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-11 and run 3
+
+Extracting data std for subject sub-09 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Sadness01
+3      42        24           Sadness02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24             Power01
+11    186        24             Power02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24            Wonder01
+19    330        24            Wonder02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Sadness01' 'Sadness02' 'Noise02' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise03' 'Power01' 'Power02' 'Noise04'
+ 'Nostalgia01' 'Nostalgia02' 'Noise05' 'Wonder01' 'Wonder02' 'Noise06'
+ 'Tenderness01' 'Tenderness02' 'Noise07' 'Transcendence01'
+ 'Transcendence02' 'Noise08' 'Tension01' 'Tension02' 'Noise09'
+ 'Peacefulness01' 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-09 and run 4
+
+Extracting data std for subject sub-13 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24  JoyfulActivation01
+23    402        24  JoyfulActivation02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24         Nostalgia01
+31    546        24         Nostalgia02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Power01' 'Power02' 'Noise03'
+ 'Transcendence01' 'Transcendence02' 'Noise04' 'Tension01' 'Tension02'
+ 'Noise05' 'Sadness01' 'Sadness02' 'Noise06' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise07' 'Tenderness01' 'Tenderness02' 'Noise08'
+ 'Nostalgia01' 'Nostalgia02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-13 and run 2
+
+Extracting data std for subject sub-08 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24         Nostalgia01
+7     114        24         Nostalgia02
+8     138        18             Noise03
+9     156        24     Transcendence01
+11    186        24     Transcendence02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24      Peacefulness01
+19    330        24      Peacefulness02
+20    354        18             Noise06
+21    372        24             Power01
+23    402        24             Power02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Nostalgia01' 'Nostalgia02'
+ 'Noise03' 'Transcendence01' 'Transcendence02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Peacefulness01'
+ 'Peacefulness02' 'Noise06' 'Power01' 'Power02' 'Noise07' 'Tenderness01'
+ 'Tenderness02' 'Noise08' 'Tension01' 'Tension02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-08 and run 1
+
+Extracting data std for subject sub-12 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24      Peacefulness01
+3      42        24      Peacefulness02
+4      66        18             Noise02
+5      84        24         Nostalgia01
+7     114        24         Nostalgia02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24           Sadness01
+15    258        24           Sadness02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Peacefulness01' 'Peacefulness02' 'Noise02' 'Nostalgia01'
+ 'Nostalgia02' 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise04' 'Sadness01' 'Sadness02' 'Noise05' 'Tension01' 'Tension02'
+ 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07' 'Transcendence01'
+ 'Transcendence02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Wonder01'
+ 'Wonder02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-12 and run 2
+
+Extracting data std for subject sub-07 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24         Nostalgia01
+3      42        24         Nostalgia02
+4      66        18             Noise02
+5      84        24     Transcendence01
+7     114        24     Transcendence02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24      Peacefulness01
+23    402        24      Peacefulness02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Nostalgia01' 'Nostalgia02' 'Noise02' 'Transcendence01'
+ 'Transcendence02' 'Noise03' 'Tenderness01' 'Tenderness02' 'Noise04'
+ 'Wonder01' 'Wonder02' 'Noise05' 'Tension01' 'Tension02' 'Noise06'
+ 'Peacefulness01' 'Peacefulness02' 'Noise07' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-07 and run 4
+
+Extracting data std for subject sub-12 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24  JoyfulActivation01
+3      42        24  JoyfulActivation02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24            Wonder01
+31    546        24            Wonder02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise02' 'Power01'
+ 'Power02' 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04'
+ 'Transcendence01' 'Transcendence02' 'Noise05' 'Sadness01' 'Sadness02'
+ 'Noise06' 'Tenderness01' 'Tenderness02' 'Noise07' 'Tension01' 'Tension02'
+ 'Noise08' 'Wonder01' 'Wonder02' 'Noise09' 'Peacefulness01'
+ 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-12 and run 3
+
+Extracting data std for subject sub-10 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24      Peacefulness01
+7     114        24      Peacefulness02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24           Sadness01
+15    258        24           Sadness02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24        Tenderness01
+23    402        24        Tenderness02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24         Nostalgia01
+35    618        24         Nostalgia02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Peacefulness01'
+ 'Peacefulness02' 'Noise03' 'Wonder01' 'Wonder02' 'Noise04' 'Sadness01'
+ 'Sadness02' 'Noise05' 'Power01' 'Power02' 'Noise06' 'Tenderness01'
+ 'Tenderness02' 'Noise07' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise08' 'Tension01' 'Tension02' 'Noise09' 'Nostalgia01' 'Nostalgia02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-10 and run 2
+
+Extracting data std for subject sub-11 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24  JoyfulActivation01
+3      42        24  JoyfulActivation02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24      Peacefulness01
+15    258        24      Peacefulness02
+16    282        18             Noise05
+17    300        24        Tenderness01
+19    330        24        Tenderness02
+20    354        18             Noise06
+21    372        24             Power01
+23    402        24             Power02
+24    426        18             Noise07
+25    444        24     Transcendence01
+27    474        24     Transcendence02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise02' 'Wonder01'
+ 'Wonder02' 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04'
+ 'Peacefulness01' 'Peacefulness02' 'Noise05' 'Tenderness01' 'Tenderness02'
+ 'Noise06' 'Power01' 'Power02' 'Noise07' 'Transcendence01'
+ 'Transcendence02' 'Noise08' 'Tension01' 'Tension02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-11 and run 4
+
+Extracting data std for subject sub-08 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24        Tenderness01
+3      42        24        Tenderness02
+4      66        18             Noise02
+5      84        24         Nostalgia01
+7     114        24         Nostalgia02
+8     138        18             Noise03
+9     156        24  JoyfulActivation01
+11    186        24  JoyfulActivation02
+12    210        18             Noise04
+13    228        24     Transcendence01
+15    258        24     Transcendence02
+16    282        18             Noise05
+17    300        24             Power01
+19    330        24             Power02
+20    354        18             Noise06
+21    372        24      Peacefulness01
+23    402        24      Peacefulness02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24           Sadness01
+31    546        24           Sadness02
+32    570        18             Noise09
+33    588        24           Tension01
+35    618        24           Tension02
+36    643        17             Noise10
+['Noise01' 'Tenderness01' 'Tenderness02' 'Noise02' 'Nostalgia01'
+ 'Nostalgia02' 'Noise03' 'JoyfulActivation01' 'JoyfulActivation02'
+ 'Noise04' 'Transcendence01' 'Transcendence02' 'Noise05' 'Power01'
+ 'Power02' 'Noise06' 'Peacefulness01' 'Peacefulness02' 'Noise07'
+ 'Wonder01' 'Wonder02' 'Noise08' 'Sadness01' 'Sadness02' 'Noise09'
+ 'Tension01' 'Tension02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-08 and run 3
+
+Extracting data std for subject sub-13 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24         Nostalgia01
+3      42        24         Nostalgia02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24            Wonder01
+11    186        24            Wonder02
+12    210        18             Noise04
+13    228        24           Sadness01
+15    258        24           Sadness02
+16    282        18             Noise05
+17    300        24     Transcendence01
+19    330        24     Transcendence02
+20    354        18             Noise06
+21    372        24             Power01
+23    402        24             Power02
+24    426        18             Noise07
+25    444        24           Tension01
+27    474        24           Tension02
+28    498        18             Noise08
+29    516        24        Tenderness01
+31    546        24        Tenderness02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Nostalgia01' 'Nostalgia02' 'Noise02' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise03' 'Wonder01' 'Wonder02' 'Noise04'
+ 'Sadness01' 'Sadness02' 'Noise05' 'Transcendence01' 'Transcendence02'
+ 'Noise06' 'Power01' 'Power02' 'Noise07' 'Tension01' 'Tension02' 'Noise08'
+ 'Tenderness01' 'Tenderness02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-13 and run 1
+
+Extracting data std for subject sub-10 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24      Peacefulness01
+11    186        24      Peacefulness02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24           Tension01
+19    330        24           Tension02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24            Wonder01
+31    546        24            Wonder02
+32    570        18             Noise09
+33    588        24             Power01
+35    618        24             Power02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise03' 'Peacefulness01'
+ 'Peacefulness02' 'Noise04' 'Nostalgia01' 'Nostalgia02' 'Noise05'
+ 'Tension01' 'Tension02' 'Noise06' 'Sadness01' 'Sadness02' 'Noise07'
+ 'Tenderness01' 'Tenderness02' 'Noise08' 'Wonder01' 'Wonder02' 'Noise09'
+ 'Power01' 'Power02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-10 and run 1
+
+Extracting data std for subject sub-12 and run 1
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24     Transcendence01
+3      42        24     Transcendence02
+4      66        18             Noise02
+5      84        24           Sadness01
+7     114        24           Sadness02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24        Tenderness01
+19    330        24        Tenderness02
+20    354        18             Noise06
+21    372        24  JoyfulActivation01
+23    402        24  JoyfulActivation02
+24    426        18             Noise07
+25    444        24            Wonder01
+27    474        24            Wonder02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Transcendence01' 'Transcendence02' 'Noise02' 'Sadness01'
+ 'Sadness02' 'Noise03' 'Tension01' 'Tension02' 'Noise04' 'Nostalgia01'
+ 'Nostalgia02' 'Noise05' 'Tenderness01' 'Tenderness02' 'Noise06'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise07' 'Wonder01' 'Wonder02'
+ 'Noise08' 'Power01' 'Power02' 'Noise09' 'Peacefulness01' 'Peacefulness02'
+ 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-12 and run 1
+
+Extracting data std for subject sub-08 and run 2
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24         Nostalgia01
+3      42        24         Nostalgia02
+4      66        18             Noise02
+5      84        24  JoyfulActivation01
+7     114        24  JoyfulActivation02
+8     138        18             Noise03
+9     156        24           Sadness01
+11    186        24           Sadness02
+12    210        18             Noise04
+13    228        24             Power01
+15    258        24             Power02
+16    282        18             Noise05
+17    300        24            Wonder01
+19    330        24            Wonder02
+20    354        18             Noise06
+21    372        24      Peacefulness01
+23    402        24      Peacefulness02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24     Transcendence01
+31    546        24     Transcendence02
+32    570        18             Noise09
+33    588        24           Tension01
+35    618        24           Tension02
+36    642        18             Noise10
+['Noise01' 'Nostalgia01' 'Nostalgia02' 'Noise02' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise03' 'Sadness01' 'Sadness02' 'Noise04'
+ 'Power01' 'Power02' 'Noise05' 'Wonder01' 'Wonder02' 'Noise06'
+ 'Peacefulness01' 'Peacefulness02' 'Noise07' 'Tenderness01' 'Tenderness02'
+ 'Noise08' 'Transcendence01' 'Transcendence02' 'Noise09' 'Tension01'
+ 'Tension02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-08 and run 2
+
+Extracting data std for subject sub-13 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24      Peacefulness01
+7     114        24      Peacefulness02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24             Power01
+15    258        24             Power02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24     Transcendence01
+23    402        24     Transcendence02
+24    426        18             Noise07
+25    444        24        Tenderness01
+27    474        24        Tenderness02
+28    498        18             Noise08
+29    516        24           Tension01
+31    546        24           Tension02
+32    570        18             Noise09
+33    588        24  JoyfulActivation01
+35    618        24  JoyfulActivation02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Peacefulness01'
+ 'Peacefulness02' 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04'
+ 'Power01' 'Power02' 'Noise05' 'Sadness01' 'Sadness02' 'Noise06'
+ 'Transcendence01' 'Transcendence02' 'Noise07' 'Tenderness01'
+ 'Tenderness02' 'Noise08' 'Tension01' 'Tension02' 'Noise09'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-13 and run 4
+
+Extracting data std for subject sub-08 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24        Tenderness01
+3      42        24        Tenderness02
+4      66        18             Noise02
+5      84        24             Power01
+7     114        24             Power02
+8     138        18             Noise03
+9     156        24         Nostalgia01
+11    186        24         Nostalgia02
+12    210        18             Noise04
+13    228        24            Wonder01
+15    258        24            Wonder02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24           Tension01
+23    402        24           Tension02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24     Transcendence01
+31    546        24     Transcendence02
+32    570        18             Noise09
+33    588        24      Peacefulness01
+35    618        24      Peacefulness02
+36    642        18             Noise10
+['Noise01' 'Tenderness01' 'Tenderness02' 'Noise02' 'Power01' 'Power02'
+ 'Noise03' 'Nostalgia01' 'Nostalgia02' 'Noise04' 'Wonder01' 'Wonder02'
+ 'Noise05' 'Sadness01' 'Sadness02' 'Noise06' 'Tension01' 'Tension02'
+ 'Noise07' 'JoyfulActivation01' 'JoyfulActivation02' 'Noise08'
+ 'Transcendence01' 'Transcendence02' 'Noise09' 'Peacefulness01'
+ 'Peacefulness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-08 and run 4
+
+Extracting data std for subject sub-12 and run 4
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24        Tenderness01
+3      42        24        Tenderness02
+4      66        18             Noise02
+5      84        24     Transcendence01
+7     114        24     Transcendence02
+8     138        18             Noise03
+9     156        24           Tension01
+11    186        24           Tension02
+12    210        18             Noise04
+13    228        24  JoyfulActivation01
+15    258        24  JoyfulActivation02
+16    282        18             Noise05
+17    300        24         Nostalgia01
+19    330        24         Nostalgia02
+20    354        18             Noise06
+21    372        24           Sadness01
+23    402        24           Sadness02
+24    426        18             Noise07
+25    444        24             Power01
+27    474        24             Power02
+28    498        18             Noise08
+29    516        24      Peacefulness01
+31    546        24      Peacefulness02
+32    570        18             Noise09
+33    588        24            Wonder01
+35    618        24            Wonder02
+36    642        18             Noise10
+['Noise01' 'Tenderness01' 'Tenderness02' 'Noise02' 'Transcendence01'
+ 'Transcendence02' 'Noise03' 'Tension01' 'Tension02' 'Noise04'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise05' 'Nostalgia01'
+ 'Nostalgia02' 'Noise06' 'Sadness01' 'Sadness02' 'Noise07' 'Power01'
+ 'Power02' 'Noise08' 'Peacefulness01' 'Peacefulness02' 'Noise09'
+ 'Wonder01' 'Wonder02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-12 and run 4
+
+All done!
+Extracting data std for subject sub-10 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24           Tension01
+3      42        24           Tension02
+4      66        18             Noise02
+5      84        24            Wonder01
+7     114        24            Wonder02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24         Nostalgia01
+15    258        24         Nostalgia02
+16    282        18             Noise05
+17    300        24           Sadness01
+19    330        24           Sadness02
+20    354        18             Noise06
+21    372        24             Power01
+23    402        24             Power02
+24    426        18             Noise07
+25    444        24      Peacefulness01
+27    474        24      Peacefulness02
+28    498        18             Noise08
+29    516        24  JoyfulActivation01
+31    546        24  JoyfulActivation02
+32    570        18             Noise09
+33    588        24     Transcendence01
+35    618        24     Transcendence02
+36    642        18             Noise10
+['Noise01' 'Tension01' 'Tension02' 'Noise02' 'Wonder01' 'Wonder02'
+ 'Noise03' 'Tenderness01' 'Tenderness02' 'Noise04' 'Nostalgia01'
+ 'Nostalgia02' 'Noise05' 'Sadness01' 'Sadness02' 'Noise06' 'Power01'
+ 'Power02' 'Noise07' 'Peacefulness01' 'Peacefulness02' 'Noise08'
+ 'JoyfulActivation01' 'JoyfulActivation02' 'Noise09' 'Transcendence01'
+ 'Transcendence02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-10 and run 3
+
+Extracting data std for subject sub-13 and run 3
+    onset  duration          trial_type
+0       0        12             Noise01
+1      12        24            Wonder01
+3      42        24            Wonder02
+4      66        18             Noise02
+5      84        24     Transcendence01
+7     114        24     Transcendence02
+8     138        18             Noise03
+9     156        24        Tenderness01
+11    186        24        Tenderness02
+12    210        18             Noise04
+13    228        24           Tension01
+15    258        24           Tension02
+16    282        18             Noise05
+17    300        24      Peacefulness01
+19    330        24      Peacefulness02
+20    354        18             Noise06
+21    372        24         Nostalgia01
+23    402        24         Nostalgia02
+24    426        18             Noise07
+25    444        24  JoyfulActivation01
+27    474        24  JoyfulActivation02
+28    498        18             Noise08
+29    516        24             Power01
+31    546        24             Power02
+32    570        18             Noise09
+33    588        24           Sadness01
+35    618        24           Sadness02
+36    642        18             Noise10
+['Noise01' 'Wonder01' 'Wonder02' 'Noise02' 'Transcendence01'
+ 'Transcendence02' 'Noise03' 'Tenderness01' 'Tenderness02' 'Noise04'
+ 'Tension01' 'Tension02' 'Noise05' 'Peacefulness01' 'Peacefulness02'
+ 'Noise06' 'Nostalgia01' 'Nostalgia02' 'Noise07' 'JoyfulActivation01'
+ 'JoyfulActivation02' 'Noise08' 'Power01' 'Power02' 'Noise09' 'Sadness01'
+ 'Sadness02' 'Noise10']
+Creating design matrix
+Creating GLM
+Fitting GLM
+Deleted existing image file
+Deleted existing trial_types file
+Done for subject sub-13 and run 3
+
+Finished with job 15293453

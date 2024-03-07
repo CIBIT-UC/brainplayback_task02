@@ -1,0 +1,341 @@
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:137: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py:140: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 589, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 589, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/de_functions.py", line 157, in ls_a_musicnoise_confounds
+    lsa_design = make_first_level_design_matrix(np.arange(660),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: make_first_level_design_matrix() got an unexpected keyword argument 'confounds'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/dataextract_ls-a_musicnoise.py", line 20, in <module>
+    Parallel(n_jobs=13)(delayed(ls_a_musicnoise_confounds)(root_dir, subj, '02a', run) for subj, run in combinations)
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 736, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/parallel.py", line 754, in _return_or_raise
+    raise self._result
+TypeError: make_first_level_design_matrix() got an unexpected keyword argument 'confounds'
