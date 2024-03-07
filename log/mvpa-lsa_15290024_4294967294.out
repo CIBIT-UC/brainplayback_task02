@@ -1,0 +1,29 @@
+* ----------------------------------------------------------------
+* Running PROLOG for mvpa-lsa on Thu Mar  7 16:51:43 WET 2024
+*    JOB_NAME                : mvpa-lsa
+*    JOB_ID                  : 15290024
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc070
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 30
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 30
+*    SLURM_MEM_PER_NODE      : 262144
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-batch.sh
+* ----------------------------------------------------------------
+Average accuracy = 89.56 percent
+
+Accuracy per fold:
+[0.89285714 0.89285714 0.88392857 0.96428571 0.91071429 0.86607143
+ 0.94642857 0.85714286 0.875      0.90178571 0.84821429 0.90178571
+ 0.90178571]
+saved accuracy results to mvpa-lsa-results-1.csv
+python script finished running.
+Finished with job 15290024

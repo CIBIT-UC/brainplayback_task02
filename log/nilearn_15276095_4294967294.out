@@ -1,0 +1,34 @@
+* ----------------------------------------------------------------
+* Running PROLOG for nilearn on Wed Mar  6 16:11:02 WET 2024
+*    JOB_NAME                : nilearn
+*    JOB_ID                  : 15276095
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 12
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 12
+*    SLURM_MEM_PER_NODE      : 102400
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/nilearn-batch.sh
+* ----------------------------------------------------------------
+Computing 1st level model for subject: sub-03
+Computing 1st level model for subject: sub-01
+Computing 1st level model for subject: sub-09
+Computing 1st level model for subject: sub-13
+Computing 1st level model for subject: sub-08
+Computing 1st level model for subject: sub-10
+Computing 1st level model for subject: sub-04
+Computing 1st level model for subject: sub-11
+Computing 1st level model for subject: sub-07
+Computing 1st level model for subject: sub-12
+Computing 1st level model for subject: sub-06
+Computing 1st level model for subject: sub-05
+Computing 1st level model for subject: sub-02
+Finished with job 15276095
