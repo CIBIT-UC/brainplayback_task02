@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=nilearn
+#SBATCH --job-name=firstlevel
 #SBATCH --time=1:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -15,6 +15,6 @@
 conda activate fmriprep
 
 # Do
-python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/nilearn-python.py
+python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/firstlevel.py
 
 echo "Finished with job $SLURM_JOBID"
