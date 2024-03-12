@@ -1,3 +1,10 @@
 /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa-lsa-full-spacenet.py:100: UserWarning: Brain mask is bigger than the volume of a standard human brain. This object is probably not tuned to be used on such data.
   decoder.fit(X_train, y_train)
 [Parallel(n_jobs=30)]: Using backend LokyBackend with 30 concurrent workers.
+slurmstepd: error: *** JOB 15293897 ON hpc071 CANCELLED AT 2024-03-07T23:39:08 DUE TO TIME LIMIT ***
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 2 leaked file objects to clean up at shutdown
+  warnings.warn(
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 36 leaked semlock objects to clean up at shutdown
+  warnings.warn(
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 2 leaked folder objects to clean up at shutdown
+  warnings.warn(

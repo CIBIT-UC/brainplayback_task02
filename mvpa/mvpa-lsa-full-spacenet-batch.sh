@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=mvpa-lsa-full-spacenet
-#SBATCH --time=01:30:00
+#SBATCH --time=02:30:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=30

@@ -13,7 +13,9 @@ dependencies:
   - setuptools
   - pip:
       - nilearn
+      - seaborn
       - scikit-learn
       - statsmodels
       - statannotations
+      - nibabel
       - mni-to-atlas
