@@ -1,0 +1,29 @@
+* ----------------------------------------------------------------
+* Running PROLOG for mvpa-lsa-musicnoise-gm on Tue Mar 12 16:31:09 WET 2024
+*    JOB_NAME                : mvpa-lsa-musicnoise-gm
+*    JOB_ID                  : 15328030
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc068
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 30
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 30
+*    SLURM_MEM_PER_NODE      : 262144
+*    SUBMIT_HOST             : cirrus08.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/mvpa/mvpa_lsa_musicnoise_gm_batch.sh
+* ----------------------------------------------------------------
+Average accuracy = 85.85 percent
+
+Accuracy per fold:
+[0.89285714 0.90178571 0.80357143 0.9375     0.875      0.78571429
+ 0.90178571 0.84821429 0.78571429 0.875      0.83035714 0.82142857
+ 0.90178571]
+saved accuracy results to mvpa-musicnoise-confounds-gm-results-1.csv
+python script finished running.
+Finished with job 15328030

@@ -2,7 +2,7 @@ import os
 import nibabel as nb
 import nibabel.processing as nbp
 from joblib import Parallel, delayed
-from de_functions import ls_a_full
+from de_functions import ls_a_full,ls_a_full_confounds
 
 # define paths
 root_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2'
@@ -17,6 +17,6 @@ runList = ['1','2','3','4']
 combinations = [(subj, run) for subj in subjectList for run in runList]
 
 # iterate on combinations in parallel
-Parallel(n_jobs=13)(delayed(ls_a_full)(root_dir, subj, '02a', run) for subj, run in combinations)
+Parallel(n_jobs=13)(delayed(ls_a_full_confounds)(root_dir, subj, '02a', run) for subj, run in combinations)
 
 print('All done!')
