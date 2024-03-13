@@ -12,7 +12,7 @@
 
 # Load conda environment
 .  /users3/uccibit/alexsayal/miniconda3/etc/profile.d/conda.sh
-conda activate fmriprep
+conda activate mvpa
 
 # Do
 python /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py
