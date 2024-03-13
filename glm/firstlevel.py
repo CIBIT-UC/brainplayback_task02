@@ -25,6 +25,8 @@ from nilearn.glm.second_level import SecondLevelModel
 from nilearn.reporting import get_clusters_table
 from nilearn.image import math_img
 from nilearn.masking import apply_mask
+from mni_to_atlas import AtlasBrowser
+atlas = AtlasBrowser("AAL3")
 
 # %%
 # Settings
@@ -54,6 +56,7 @@ out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
     noise_model="ar2",
     smoothing_fwhm=smoothing_fwhm,
     high_pass=high_pass_hz,
+    drift_model='cosine',
     slice_time_ref=None,
     n_jobs=12,
     minimize_memory = True,
@@ -87,19 +90,20 @@ contrasts.append("Tension*0.5 + Sadness*0.5 - Wonder*0.2 - Transcendence*0.2 - T
 
 contrasts
 
-
 # %%
 # Rename the contrasts list to remove white spaces and replace '-' with 'minus' and '+' with 'plus' and remove '*' and remove numbers
-contrasts_renamed = []
-for contrast in contrasts:
-    contrast = contrast.replace(" ", "")
-    contrast = contrast.replace("-", "Minus")
-    contrast = contrast.replace("+", "Plus")
-    contrast = contrast.replace("*", "")
-    contrast = ''.join((x for x in contrast if not x.isdigit()))
-    contrast = contrast.replace(".", "")
+# contrasts_renamed = []
+# for contrast in contrasts:
+#     contrast = contrast.replace(" ", "")
+#     contrast = contrast.replace("-", "Minus")
+#     contrast = contrast.replace("+", "Plus")
+#     contrast = contrast.replace("*", "")
+#     contrast = ''.join((x for x in contrast if not x.isdigit()))
+#     contrast = contrast.replace(".", "")
     
-    contrasts_renamed.append(contrast)
+#     contrasts_renamed.append(contrast)
+contrasts_renamed = ['All','JoyfulActivation', 'Nostalgia', 'Peacefulness', 'Power', 'Sadness', 'Tenderness', 'Tension', 'Transcendence', 'Wonder',
+                     'Sublimity', 'Vitality', 'Unease', 'SublimityMinusVitality', 'VitalityMinusUnease', 'UneaseMinusSublimity']
 
 contrasts_renamed
 
@@ -167,8 +171,15 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
             )
         )
 
-        # Export cluster table
+        # cluster table
         table = get_clusters_table(z_map, threshold, 25)
+
+        # AAL3 labelling
+        coordinates = table[['X','Y','Z']].to_numpy()
+        aal_labels = atlas.find_regions(coordinates, plot=False)
+        table['AAL3'] = aal_labels
+
+        # save table to tsv
         table.to_csv(os.path.join(
             out_dir,
             f"{subject}_task-{task_label}_table-clusters_con-{contrasts_renamed[ii]}_c-bonferroni_p-0.05_clusterk-25.tsv"
