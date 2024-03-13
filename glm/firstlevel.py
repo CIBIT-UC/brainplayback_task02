@@ -12,21 +12,14 @@
 # %%
 # Imports
 import os
-import glob
 from nilearn.glm.first_level import first_level_from_bids
-from nilearn.interfaces.bids import save_glm_to_bids
 from nilearn.glm import threshold_stats_img
 from nilearn import plotting
-from nilearn.plotting.cm import _cmap_d as nilearn_cmaps
 import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-from nilearn.glm.second_level import SecondLevelModel
 from nilearn.reporting import get_clusters_table
-from nilearn.image import math_img
-from nilearn.masking import apply_mask
 from mni_to_atlas import AtlasBrowser
 atlas = AtlasBrowser("AAL3")
+from joblib import Parallel, delayed
 
 # %%
 # Settings
@@ -37,9 +30,6 @@ task_label = "02a"
 smoothing_fwhm = 4.0
 high_pass_hz = 0.007
 out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
-
-# %% [markdown]
-# ## 1. Load the data from fmriPrep in BIDS format
 
 # %%
 # import first level data automatically from fmriPrep derivatives
@@ -91,17 +81,8 @@ contrasts.append("Tension*0.5 + Sadness*0.5 - Wonder*0.2 - Transcendence*0.2 - T
 contrasts
 
 # %%
-# Rename the contrasts list to remove white spaces and replace '-' with 'minus' and '+' with 'plus' and remove '*' and remove numbers
-# contrasts_renamed = []
-# for contrast in contrasts:
-#     contrast = contrast.replace(" ", "")
-#     contrast = contrast.replace("-", "Minus")
-#     contrast = contrast.replace("+", "Plus")
-#     contrast = contrast.replace("*", "")
-#     contrast = ''.join((x for x in contrast if not x.isdigit()))
-#     contrast = contrast.replace(".", "")
-    
-#     contrasts_renamed.append(contrast)
+# Rename the contrasts list to remove white spaces and replace '-'
+
 contrasts_renamed = ['All','JoyfulActivation', 'Nostalgia', 'Peacefulness', 'Power', 'Sadness', 'Tenderness', 'Tension', 'Transcendence', 'Wonder',
                      'Sublimity', 'Vitality', 'Unease', 'SublimityMinusVitality', 'VitalityMinusUnease', 'UneaseMinusSublimity']
 
@@ -128,12 +109,11 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
     # trim confounds and replace NaNs with 0
     for ii in range(len(confounds)):
         confounds[ii] = confounds[ii][['trans_x', 'trans_x_derivative1', 'trans_x_power2', 'trans_x_derivative1_power2',
-                                            'trans_y', 'trans_y_derivative1', 'trans_y_power2', 'trans_y_derivative1_power2',
-                                            'trans_z', 'trans_z_derivative1', 'trans_z_power2', 'trans_z_derivative1_power2',
-                                            'rot_x', 'rot_x_derivative1', 'rot_x_power2', 'rot_x_derivative1_power2',
-                                            'rot_y', 'rot_y_derivative1', 'rot_y_power2', 'rot_y_derivative1_power2',
-                                            'rot_z', 'rot_z_derivative1', 'rot_z_power2', 'rot_z_derivative1_power2',
-                                            ]]
+                                        'trans_y', 'trans_y_derivative1', 'trans_y_power2', 'trans_y_derivative1_power2',
+                                        'trans_z', 'trans_z_derivative1', 'trans_z_power2', 'trans_z_derivative1_power2',
+                                        'rot_x', 'rot_x_derivative1', 'rot_x_power2', 'rot_x_derivative1_power2',
+                                        'rot_y', 'rot_y_derivative1', 'rot_y_power2', 'rot_y_derivative1_power2',
+                                        'rot_z', 'rot_z_derivative1', 'rot_z_power2', 'rot_z_derivative1_power2' ]]
     
         confounds[ii] = confounds[ii].fillna(0)
     
@@ -144,11 +124,11 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
     for ii in range(len(contrasts)):
 
         z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
-        t_map = model.compute_contrast(contrasts[ii], output_type="stat")
+        #t_map = model.compute_contrast(contrasts[ii], output_type="stat")
         beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
 
         z_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-z_con-{contrasts_renamed[ii]}.nii.gz"))
-        t_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-t_con-{contrasts_renamed[ii]}.nii.gz"))
+        #t_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-t_con-{contrasts_renamed[ii]}.nii.gz"))
         beta_map.to_filename(os.path.join(out_dir, f"{subject}_task-{task_label}_stat-beta_con-{contrasts_renamed[ii]}.nii.gz"))
 
         # create figure with thresholded map for fun
@@ -187,12 +167,7 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
             sep='\t'
         )
 
-    # Attempt to free memory
-    # del model, imgs, events, confounds
-
-# %% [markdown]
+# %%
 # ## 2. Iterate on the subjects
-
-from joblib import Parallel, delayed
 
 Parallel(n_jobs=6)(delayed(glm_function)(models[idx], models_run_imgs[idx], models_events[idx], models_confounds[idx], contrasts, contrasts_renamed, out_dir) for idx in range(len(models)))
