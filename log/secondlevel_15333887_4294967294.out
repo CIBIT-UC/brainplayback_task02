@@ -1,0 +1,53 @@
+* ----------------------------------------------------------------
+* Running PROLOG for secondlevel on Wed Mar 13 18:51:59 WET 2024
+*    JOB_NAME                : secondlevel
+*    JOB_ID                  : 15333887
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc070
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 18
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 18
+*    SLURM_MEM_PER_NODE      : 196608
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/secondlevel-batch.sh
+* ----------------------------------------------------------------
+Running 2nd level for contrast All
+Finished 2nd level for contrast All
+Running 2nd level for contrast Wonder
+Finished 2nd level for contrast Wonder
+Running 2nd level for contrast Nostalgia
+Finished 2nd level for contrast Nostalgia
+Running 2nd level for contrast Vitality
+Finished 2nd level for contrast Vitality
+Running 2nd level for contrast JoyfulActivation
+Finished 2nd level for contrast JoyfulActivation
+Running 2nd level for contrast Tenderness
+Finished 2nd level for contrast Tenderness
+Running 2nd level for contrast Unease
+Finished 2nd level for contrast Unease
+Running 2nd level for contrast Power
+Finished 2nd level for contrast Power
+Running 2nd level for contrast Transcendence
+Finished 2nd level for contrast Transcendence
+Running 2nd level for contrast UneaseMinusSublimity
+Finished 2nd level for contrast UneaseMinusSublimity
+Running 2nd level for contrast Sadness
+Finished 2nd level for contrast Sadness
+Running 2nd level for contrast Tension
+Finished 2nd level for contrast Tension
+Running 2nd level for contrast SublimityMinusVitality
+Finished 2nd level for contrast SublimityMinusVitality
+Running 2nd level for contrast Peacefulness
+Finished 2nd level for contrast Peacefulness
+Running 2nd level for contrast Sublimity
+Finished 2nd level for contrast Sublimity
+Running 2nd level for contrast VitalityMinusUnease
+Finished 2nd level for contrast VitalityMinusUnease
+Finished with job 15333887

@@ -1,0 +1,908 @@
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1880169409099945
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.182869397025119
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.179826869676446
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1880169409099945
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.182869397025119
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1880169409099945
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.179826869676446
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.181711187872166
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.174735211457
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1858774776532295
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.174735211457
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.181711187872166
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.174735211457
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1858774776532295
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:145: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  figure=plt.figure(figsize=(10, 4)),
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.180328307076265
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.176498520998668
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.185000360868464
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.176498520998668
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.180328307076265
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1793423143137876
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.185000360868464
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.176498520998668
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1793423143137876
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.185000360868464
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.177764331257191
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1793423143137876
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.177942764364008
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.177764331257191
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.177942764364008
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1861761037895775
+  table = get_clusters_table(z_map, threshold, 25)
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:126: UserWarning: One contrast given, assuming it for all 4 runs
+  z_map = model.compute_contrast(contrasts[ii], output_type="z_score")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:128: UserWarning: One contrast given, assuming it for all 4 runs
+  beta_map = model.compute_contrast(contrasts[ii], output_type="effect_size")
+/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py:155: UserWarning: Attention: No clusters with stat higher than 5.1861761037895775
+  table = get_clusters_table(z_map, threshold, 25)

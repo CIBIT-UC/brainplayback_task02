@@ -1,0 +1,8 @@
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/nilearn/glm/_utils.py:205: RuntimeWarning: divide by zero encountered in divide
+  return np.where(X <= 0, 0, 1.0 / X)
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/nilearn/glm/_utils.py:205: RuntimeWarning: divide by zero encountered in divide
+  return np.where(X <= 0, 0, 1.0 / X)
+/users3/uccibit/alexsayal/miniconda3/envs/mvpa/lib/python3.11/site-packages/nilearn/glm/_utils.py:205: RuntimeWarning: divide by zero encountered in divide
+  return np.where(X <= 0, 0, 1.0 / X)
