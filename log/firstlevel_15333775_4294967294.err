@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel.py", line 28, in <module>
-    from mni_to_atlas import AtlasBrowser
-ModuleNotFoundError: No module named 'mni_to_atlas'
