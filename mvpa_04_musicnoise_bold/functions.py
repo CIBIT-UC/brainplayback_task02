@@ -6,9 +6,10 @@ import pandas as pd
 import numpy as np
 from nilearn.image import clean_img, mean_img, concat_imgs
 
-def boldmeansegments_musicnoise(root_dir, output_dir, subj, task, run):
+def boldmeansegments_musicnoise(combinations):
     """Extract BOLD signal for music and noise segments."""
-
+    root_dir, output_dir, subj, task, run = combinations[0], combinations[1], combinations[2], combinations[3], combinations[4]
+    
     print('Starting ' + subj + ' run ' + run)
 
     #%% Settings
@@ -111,6 +112,8 @@ def clean_img_after_check(root_dir, func_file, func_dir, subj, task, run):
         print('Found existing cleaned image file')
         cleaned_img = cleaned_file
     else:
+        print('Cleaning image')
+
         # fetch confounds to clean image
         confounds = pd.read_csv(
                         os.path.join(func_dir, subj + '_ses-01_task-' + task + '_run-' + run +
@@ -122,9 +125,15 @@ def clean_img_after_check(root_dir, func_file, func_dir, subj, task, run):
 
         confounds = confounds.fillna(0)
         
+        # brain mask
+        mask_brain_file = os.path.join(root_dir, 'derivatives', 'mni_icbm152_t1_tal_nlin_asym_09c_res-2_dilated.nii')
+
         # clean the image
-        cleaned_img = clean_img(func_file, confounds=confounds, t_r=1, standardize=True)
+        cleaned_img = clean_img(func_file, confounds=confounds,
+                                t_r=1, standardize=True,
+                                mask_img=mask_brain_file)
 
         # save cleaned image
         cleaned_img.to_filename(cleaned_file)
+
     return cleaned_img

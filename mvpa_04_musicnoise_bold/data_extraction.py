@@ -1,8 +1,10 @@
+#%%
 import os
+#import multiprocessing
 from joblib import Parallel, delayed
 from functions import boldmeansegments_musicnoise
 
-# define paths
+#%% define paths
 root_dir = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
 fmriprep_dir = os.path.join(root_dir, 'derivatives', 'fmriprep23')
 output_dir   = os.path.join(root_dir, 'derivatives', 'mvpa_04_musicnoise_bold')
@@ -15,11 +17,26 @@ subjectList = ['sub-01','sub-02','sub-03','sub-04','sub-05',
 runList     = ['1','2','3','4']
 
 # create combinations of subjects and runs
-combinations = [(subj, run) for subj in subjectList for run in runList]
+combinations = [(root_dir, output_dir, subj, '02a', run) for subj in subjectList for run in runList]
 
+print(combinations[0])
+
+#%%
 # iterate on combinations in parallel
 Parallel(n_jobs=2)(
-    delayed(boldmeansegments_musicnoise)(
-        root_dir, output_dir, subj, '02a', run) for subj, run in combinations)
+    delayed(boldmeansegments_musicnoise)(args) for args in combinations)
+
+
+# if __name__ == '__main__':
+#     manager = multiprocessing.Manager()
+#     processes = []
+
+#     for subj, run in combinations:
+#         p = multiprocessing.Process(target=boldmeansegments_musicnoise, args=(root_dir, output_dir, subj, '02a', run))
+#         processes.append(p)
+#         p.start()
+
+#     for process in processes:
+#         process.join()
 
 print('All done!')
