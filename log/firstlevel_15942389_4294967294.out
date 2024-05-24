@@ -1,0 +1,22 @@
+* ----------------------------------------------------------------
+* Running PROLOG for firstlevel on Wed Apr 17 18:08:01 WEST 2024
+*    JOB_NAME                : firstlevel
+*    JOB_ID                  : 15942389
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc069
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 12
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 12
+*    SLURM_MEM_PER_NODE      : 196608
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/glm/firstlevel-batch.sh
+* ----------------------------------------------------------------
+Computing 1st level model for subject: sub-14
+Finished with job 15942389

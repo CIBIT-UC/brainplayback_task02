@@ -1,0 +1,29 @@
+* ----------------------------------------------------------------
+* Running PROLOG for fmriprep-15 on Thu May  9 12:07:08 WEST 2024
+*    JOB_NAME                : fmriprep-15
+*    JOB_ID                  : 16109342
+*    JOB_PARTITION           : hpc
+*    JOB_USER                : alexsayal
+*    JOB_ACCOUNT             : uccibit
+*    JOB_QOS                 : normal
+*    NODE_LIST               : hpc068
+*    SLURM_NNODES            : 1
+*    SLURM_NPROCS            : 1
+*    SLURM_NTASKS            : 1
+*    SLURM_CPUS_ON_NODE      : 28
+*    SLURM_TASKS_PER_NODE    : 1
+*    SLURM_JOB_CPUS_PER_NODE : 28
+*    SLURM_MEM_PER_NODE      : 88064
+*    SUBMIT_HOST             : cirrus09.a.incd.pt
+*    WORK_DIR                : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code
+*    JOB_SCRIPT              : /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/code/fmriprep/fmriprep-batch.sh
+* ----------------------------------------------------------------
+ 
+ ////////////////////////////////////////////////////////////////////////////// 
+ /                                                                            / 
+ /               STARTING efcd2c35-c66f-38e5-a581-078fef3f4489                / 
+ /                                                                            / 
+ ////////////////////////////////////////////////////////////////////////////// 
+ executing: fmriprep
+fmriPrep is done. Now deleting temporary files in work folder
+Finished with job 16109342

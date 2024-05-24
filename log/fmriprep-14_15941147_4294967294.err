@@ -1,3 +1,4 @@
 You are using fMRIPrep-23.1.2, and a newer version of fMRIPrep is available: 23.2.1.
 Please check out our documentation about how and when to upgrade:
 https://fmriprep.readthedocs.io/en/latest/faq.html#upgrading
+slurmstepd: error: *** JOB 15941147 ON hpc069 CANCELLED AT 2024-04-17T17:36:53 DUE TO TIME LIMIT ***
