@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=fmriprep-15
+#SBATCH --job-name=fmriprep-17
 #SBATCH --time=10:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -18,7 +18,7 @@ module purge
 conda activate fmriprep
 
 # Do
-SUBJECT=15
+SUBJECT=17
 
 udocker run \
     -v /users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2:/data \
