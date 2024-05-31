@@ -1,42 +1,22 @@
-#%%
+#%% Import libraries
 import os
-#import multiprocessing
-from joblib import Parallel, delayed
-from functions import boldmeansegments_musicnoise
+from data_extraction_functions import create_brain_mask, get_mask, clean_func_image, extract_samples, extract_samples_with_atlas, convert_samples_to_features
 
-#%% define paths
-root_dir = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
-fmriprep_dir = os.path.join(root_dir, 'derivatives', 'fmriprep23')
-output_dir   = os.path.join(root_dir, 'derivatives', 'mvpa_04_musicnoise_bold')
+#%% Define paths
+data_root = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
+fmriprep_dir = os.path.join(data_root, 'derivatives','fmriprep23')
+output_func_dir = os.path.join(data_root, 'derivatives', 'mvpa_04_musicnoise_bold', 'func_clean')
+output_feat_dir = os.path.join(data_root, 'derivatives', 'mvpa_04_musicnoise_bold', 'features')
 
-# define subjects
-subjectList = ['sub-01','sub-02','sub-03','sub-04','sub-05',
-               'sub-06','sub-07','sub-08','sub-09','sub-10',
-               'sub-11','sub-12','sub-13','sub-14','sub-15']
+#%% Create brain mask with example functional image
+#img_func = os.path.join(fmriprep_dir, 'sub-01', 'ses-01', 'func', 'sub-01_ses-01_task-02a_run-1_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz')
+#create_brain_mask(data_root, img_func)
 
-runList     = ['1','2','3','4']
-
-# create combinations of subjects and runs
-combinations = [(root_dir, output_dir, subj, '02a', run) for subj in subjectList for run in runList]
-
-print(combinations[0])
-
-#%%
-# iterate on combinations in parallel
-Parallel(n_jobs=2)(
-    delayed(boldmeansegments_musicnoise)(args) for args in combinations)
-
-
-# if __name__ == '__main__':
-#     manager = multiprocessing.Manager()
-#     processes = []
-
-#     for subj, run in combinations:
-#         p = multiprocessing.Process(target=boldmeansegments_musicnoise, args=(root_dir, output_dir, subj, '02a', run))
-#         processes.append(p)
-#         p.start()
-
-#     for process in processes:
-#         process.join()
-
-print('All done!')
+#%% Iterate on the subjects and runs
+img_mask = get_mask(data_root)
+for subject in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17']:
+    for run in ['1', '2', '3', '4']:
+        img_crop = clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, False)
+        #samples = extract_samples(img_crop, img_mask, subject, run)
+        samples = extract_samples_with_atlas(img_crop, 'pauli', subject, run)
+        convert_samples_to_features(samples, data_root, output_feat_dir, subject, run)

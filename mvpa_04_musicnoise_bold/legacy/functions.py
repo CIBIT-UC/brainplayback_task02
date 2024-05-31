@@ -4,6 +4,9 @@
 import os
 import pandas as pd
 import numpy as np
+import nibabel as nib
+import gzip
+import shutil
 from nilearn.image import clean_img, mean_img, concat_imgs
 
 def boldmeansegments_musicnoise(combinations):
@@ -103,14 +106,14 @@ def edit_events(root_dir, subj, task, run):
 
 def clean_img_after_check(root_dir, func_file, func_dir, subj, task, run):
     """Clean image and save it if it does not exist."""
-
+    
     cleaned_file = os.path.join(root_dir, 'derivatives', 'func_clean',
                             subj + '_ses-01_task-' + task +
-                            '_run-' + run + '_musicnoise_bold_cleaned.nii.gz')
+                            '_run-' + run + '_musicnoise_bold_cleaned.npy')
 
     if os.path.exists(cleaned_file):
         print('Found existing cleaned image file')
-        cleaned_img = cleaned_file
+        cleaned_img = nib.load(cleaned_file)
     else:
         print('Cleaning image')
 
@@ -132,8 +135,14 @@ def clean_img_after_check(root_dir, func_file, func_dir, subj, task, run):
         cleaned_img = clean_img(func_file, confounds=confounds,
                                 t_r=1, standardize=True,
                                 mask_img=mask_brain_file)
+        
+        # get the data from cleaned_image and create a numpy array
+        img = cleaned_img.get_fdata()
 
-        # save cleaned image
-        cleaned_img.to_filename(cleaned_file)
+        # save img
+        np.save(cleaned_file, img)
+
+        # save cleaned image as float32, since float64 occupies a lot of disk space
+        # cleaned_img.to_filename(cleaned_file, dtype=np.float32)
 
     return cleaned_img
