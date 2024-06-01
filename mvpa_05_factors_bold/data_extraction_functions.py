@@ -66,7 +66,7 @@ def extract_samples_with_atlas(img_crop, output_samples_dir, atlas_name, subject
 
     # Load atlas
     if atlas_name == 'pauli':
-        atlas = datasets.fetch_atlas_pauli_2017(version='det')
+        atlas = datasets.fetch_atlas_pauli_2017(version='det') #ToDo: compare with version='prob' using NiftiMapsMasker()
         masker = NiftiLabelsMasker(labels_img=atlas.maps, standardize=False, detrend=False)
 
     elif atlas_name == 'power':
@@ -74,6 +74,9 @@ def extract_samples_with_atlas(img_crop, output_samples_dir, atlas_name, subject
         coords = np.vstack((atlas.rois["x"], atlas.rois["y"], atlas.rois["z"])).T
         masker = NiftiSpheresMasker(seeds=coords, radius=5.0, 
                                     standardize=False, detrend=False)
+    elif atlas_name == 'koelsch':
+        atlas_path = os.path.join(os.getcwd(),'data','koelsch','Meta_analysis_C05_1k_clust_MNI.nii.gz')
+        masker = NiftiLabelsMasker(labels_img=atlas_path, standardize=False, detrend=False)
         
     samples = masker.fit_transform(img_crop)
 
@@ -116,11 +119,11 @@ def edit_events(root_dir, subject, run):
     new_events = pd.DataFrame(columns=['onset', 'duration', 'trial_type'])
 
     # loop through the events and split the trials
-    num_segments = 4
+    num_segments = 2
     for _, row in events.iterrows():
-        for i in range(1, num_segments): # excluding first segment
-            new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + i*6,
-                                                              'duration': 6,
+        for i in range(1, num_segments): 
+            new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + i*12,
+                                                              'duration': 12,
                                                               'trial_type': row['trial_type']}, index=[0])], ignore_index=True)
 
     print(f'Events edited for subject {subject}, run {run}.')
