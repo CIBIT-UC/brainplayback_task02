@@ -96,7 +96,14 @@ def extract_samples_with_atlas(img_crop, atlas_name, subject, run):
         coords = np.vstack((atlas.rois["x"], atlas.rois["y"], atlas.rois["z"])).T
         masker = NiftiSpheresMasker(seeds=coords, radius=5.0, 
                                     standardize=False, detrend=False)
-        
+    elif atlas_name == 'koelsch':
+        atlas_path = os.path.join(os.getcwd(),'data','koelsch','Meta_analysis_C05_1k_clust_MNI.nii.gz')
+        masker = NiftiLabelsMasker(labels_img=atlas_path, standardize=False, detrend=False)
+    
+    elif atlas_name == 'koelsch_spheres':
+        atlas_path = os.path.join(os.getcwd(),'data','koelsch','spheres','koelsch_spheres_atlas.nii.gz')
+        masker = NiftiLabelsMasker(labels_img=atlas_path, standardize=False, detrend=False)
+    
     samples = masker.fit_transform(img_crop)
 
     print(f'Samples extracted for subject {subject}, run {run}.')

@@ -18,5 +18,5 @@ for subject in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11'
     for run in ['1', '2', '3', '4']:
         img_crop = clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, False)
         #samples = extract_samples(img_crop, img_mask, subject, run)
-        samples = extract_samples_with_atlas(img_crop, 'pauli', subject, run)
+        samples = extract_samples_with_atlas(img_crop, 'koelsch_spheres', subject, run)
         convert_samples_to_features(samples, data_root, output_feat_dir, subject, run)
