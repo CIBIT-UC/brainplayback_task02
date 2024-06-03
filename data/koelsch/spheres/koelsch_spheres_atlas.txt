@@ -4,11 +4,11 @@ R_nac
 R_caudate
 L_nac
 L_caudate
-L_auditory
-L_auditory
+L_auditory1
+L_auditory2
 L_par_operculum
-R_auditory
-R_auditory
+R_auditory1
+R_auditory2
 L_amygdala
 L_anterior_hippocampus
 L_hippocampal_form
