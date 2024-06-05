@@ -19,7 +19,6 @@ import matplotlib.pyplot as plt
 from nilearn.reporting import get_clusters_table
 from mni_to_atlas import AtlasBrowser
 atlas = AtlasBrowser("AAL3")
-from joblib import Parallel, delayed
 
 # %%
 # Settings
@@ -27,7 +26,7 @@ data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
 space_label = "MNI152NLin2009cAsym"
 derivatives_folder = "derivatives/fmriprep23"
 task_label = "02a"
-smoothing_fwhm = 4.0
+#smoothing_fwhm = 4.0
 high_pass_hz = 0.007
 out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
 
@@ -44,14 +43,14 @@ out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
     space_label,
     hrf_model="spm",
     noise_model="ar2",
-    smoothing_fwhm=smoothing_fwhm,
+    #smoothing_fwhm=smoothing_fwhm,
     high_pass=high_pass_hz,
     drift_model='cosine',
     slice_time_ref=None,
     n_jobs=12,
-    minimize_memory = True,
+    minimize_memory=True,
     derivatives_folder=derivatives_folder,
-    #sub_labels=['16','17'], # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    #sub_labels=['16','17'], # !!
 )
 
 # %%
@@ -91,31 +90,13 @@ contrasts_renamed
 # %% Define function
 def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, out_dir):
 
-    # edit events to remove intersong noise intervals
-    for ii in range(len(events)):
-        # Identify all Noise trials which duration is 6 seconds
-        intersong_trials = events[ii].query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
-
-        # rename noise_trials to 'intersong'
-        events[ii].loc[intersong_trials.index, "trial_type"] = "Intersong"
-
-        # remove all 'intersong' trials
-        events[ii] = events[ii][events[ii].trial_type != 'Intersong']
-
     subject = f"sub-{model.subject_label}"
 
     print(f"Computing 1st level model for subject: {subject}")
 
     # trim confounds and replace NaNs with 0
-    for ii in range(len(confounds)):
-        confounds[ii] = confounds[ii][['trans_x', 'trans_x_derivative1', 'trans_x_power2', 'trans_x_derivative1_power2',
-                                        'trans_y', 'trans_y_derivative1', 'trans_y_power2', 'trans_y_derivative1_power2',
-                                        'trans_z', 'trans_z_derivative1', 'trans_z_power2', 'trans_z_derivative1_power2',
-                                        'rot_x', 'rot_x_derivative1', 'rot_x_power2', 'rot_x_derivative1_power2',
-                                        'rot_y', 'rot_y_derivative1', 'rot_y_power2', 'rot_y_derivative1_power2',
-                                        'rot_z', 'rot_z_derivative1', 'rot_z_power2', 'rot_z_derivative1_power2' ]]
-    
-        confounds[ii] = confounds[ii].fillna(0)
+    confounds = confounds.filter(regex='csf|trans|rot')
+    confounds = confounds.fillna(0)
     
     # Fit and contrasts
     model.fit(imgs, events, confounds)
@@ -133,7 +114,7 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
 
         # create figure with thresholded map for fun
         clean_map, threshold = threshold_stats_img(
-            z_map, alpha=0.05, height_control="bonferroni", cluster_threshold=25
+            z_map, alpha=0.05, height_control="fdr", cluster_threshold=25
         )
 
         plotting.plot_glass_brain(
@@ -147,7 +128,7 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
 
         plt.savefig(os.path.join(
             out_dir,
-            f"{subject}_task-{task_label}_plot-z_con-{contrasts_renamed[ii]}_c-bonferroni_p-0.05_clusterk-25.png"
+            f"{subject}_task-{task_label}_plot-z_con-{contrasts_renamed[ii]}_c-fdr-0.05_clusterk-25.png"
             )
         )
 
@@ -162,7 +143,7 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
         # save table to tsv
         table.to_csv(os.path.join(
             out_dir,
-            f"{subject}_task-{task_label}_table-clusters_con-{contrasts_renamed[ii]}_c-bonferroni_p-0.05_clusterk-25.tsv"
+            f"{subject}_task-{task_label}_table-clusters_con-{contrasts_renamed[ii]}_c-fdr-0.05_clusterk-25.tsv"
             ),
             sep='\t'
         )
@@ -170,4 +151,5 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
 # %%
 # ## 2. Iterate on the subjects
 
-Parallel(n_jobs=6)(delayed(glm_function)(models[idx], models_run_imgs[idx], models_events[idx], models_confounds[idx], contrasts, contrasts_renamed, out_dir) for idx in range(len(models)))
+for idx in range(len(models)):
+    glm_function(models[idx], models_run_imgs[idx], models_events[idx], models_confounds[idx], contrasts, contrasts_renamed, out_dir)
