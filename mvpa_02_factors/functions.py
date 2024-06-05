@@ -7,7 +7,7 @@ from nilearn.glm.first_level import FirstLevelModel, make_first_level_design_mat
 # %%
 def ls_a_factors(root_dir, output_dir, subj, task, run):
 
-    print('Extracting data std for subject ' + subj + ' and run ' + run)
+    print('Extracting data for subject ' + subj + ' and run ' + run)
 
     # define paths
     fmriprep_dir = os.path.join(root_dir, 'derivatives','fmriprep23')

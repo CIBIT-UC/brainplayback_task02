@@ -51,6 +51,7 @@ def clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, over
     data = img_func.get_fdata()
     data = detrend(data)
     data = np.nan_to_num(zscore(data, axis=0))
+    #Todo: inspect this data in the auditory cortex for all subs
     img_standardized = nb.Nifti1Image(data, img_func.affine, img_func.header)
 
     # Multiply functional image with mask and crop image

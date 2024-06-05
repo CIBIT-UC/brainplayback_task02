@@ -6,7 +6,7 @@ from nilearn.glm.first_level import FirstLevelModel, make_first_level_design_mat
 
 def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
 
-    print('Extracting data std for subject ' + subj + ' and run ' + run)
+    print('Extracting data for subject ' + subj + ' and run ' + run)
 
     # define paths
     fmriprep_dir = os.path.join(root_dir, 'derivatives','fmriprep23')
@@ -48,8 +48,8 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
 
     confounds = pd.read_csv(confounds_file, sep='\t')
 
-    # only consider confounds that start with 'trans', 'rot'
-    confounds = confounds.filter(regex='trans|rot')
+    # only consider confounds that start with 'trans', 'rot', and 'csf'
+    confounds = confounds.filter(regex='csf|trans|rot')
 
     confounds = confounds.fillna(0)
 
@@ -64,10 +64,10 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
 
     # GLM
     print('Creating GLM')
-    lsa_glm = FirstLevelModel(t_r=1, 
-                              standardize=True, 
-                              signal_scaling=False, 
-                              minimize_memory=True, 
+    lsa_glm = FirstLevelModel(t_r=1,
+                              standardize=True,
+                              signal_scaling=False,
+                              minimize_memory=True,
                               n_jobs=2)
 
     print('Fitting GLM')
