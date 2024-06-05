@@ -25,22 +25,14 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
     events['onset'] = events['onset'].round(0).astype(int)
     events['duration'] = events['duration'].round(0).astype(int)
 
-    # Identify all Noise trials which duration is 6 seconds
-    intersong_trials = events.query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
-
-    # rename noise_trials to 'intersong'
-    events.loc[intersong_trials.index, "trial_type"] = "Intersong"
-
-    # remove all 'intersong' trials
-    events = events[events.trial_type != 'Intersong']
-
     # rename all trial_types except 'Noise' to 'Music'
-    events['trial_type'] = np.where(events['trial_type'] != 'Noise', 'Music', events['trial_type'])
+    events.loc[~events["trial_type"].str.contains("Noise"), "trial_type"] = "Music"
 
     # Add counter to each trial_type in the format '01'
     events['trial_type'] = events['trial_type'] + events.groupby('trial_type').cumcount().add(1).astype(str).str.zfill(2)
 
     trialwise_conditions = events["trial_type"].unique()
+    trialwise_conditions = [condition for condition in trialwise_conditions if 'InterSong' not in condition]
 
     # fetch confounds to clean image
     confounds_file = os.path.join(fmriprep_dir,subj,'ses-01','func',
@@ -68,7 +60,7 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
                               standardize=True,
                               signal_scaling=False,
                               minimize_memory=True,
-                              n_jobs=2)
+                              n_jobs=3)
 
     print('Fitting GLM')
     lsa_glm.fit(func_file, design_matrices = lsa_design)
