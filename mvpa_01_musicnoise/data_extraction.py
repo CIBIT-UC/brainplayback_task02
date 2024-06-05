@@ -16,6 +16,6 @@ runList     = ['1','2','3','4']
 combinations = [(subj, run) for subj in subjectList for run in runList]
 
 # iterate on combinations in parallel
-Parallel(n_jobs=2)(delayed(ls_a_musicnoise_confounds)(root_dir, output_dir, subj, '02a', run) for subj, run in combinations)
+Parallel(n_jobs=1)(delayed(ls_a_musicnoise_confounds)(root_dir, output_dir, subj, '02a', run) for subj, run in combinations)
 
 print('All done!')

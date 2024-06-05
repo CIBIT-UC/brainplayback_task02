@@ -60,7 +60,7 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
                               standardize=True,
                               signal_scaling=False,
                               minimize_memory=True,
-                              n_jobs=3)
+                              n_jobs=2)
 
     print('Fitting GLM')
     lsa_glm.fit(func_file, design_matrices = lsa_design)

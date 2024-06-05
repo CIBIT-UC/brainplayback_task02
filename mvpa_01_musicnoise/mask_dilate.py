@@ -13,7 +13,7 @@ mask = 'brain' # 'brain' or 'gm'
 if mask == 'brain':
     mask_file = mask_brain_file
     out_name = 'mni_icbm152_t1_tal_nlin_asym_09c_res-2_dilated.nii'
-elif mask == 'gm':
+elif mask == 'gm': #ToDo: this is wrong, do not use
     mask_file = mask_gm_file
     out_name = 'mni_icbm152_gm_tal_nlin_asym_09c_res-2_dilated.nii'
 
