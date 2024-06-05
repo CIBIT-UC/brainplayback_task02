@@ -10,7 +10,8 @@ from joblib import Parallel, delayed
 
 # %%
 # Settings
-data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+#data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+data_dir = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
 out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
 out_dir_group = os.path.join(data_dir,"derivatives","nilearn_glm","group")
 
