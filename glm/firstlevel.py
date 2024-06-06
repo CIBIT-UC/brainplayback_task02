@@ -22,7 +22,8 @@ atlas = AtlasBrowser("AAL3")
 
 # %%
 # Settings
-data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+#data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+data_dir = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
 space_label = "MNI152NLin2009cAsym"
 derivatives_folder = "derivatives/fmriprep23"
 task_label = "02a"
@@ -43,14 +44,16 @@ out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
     space_label,
     hrf_model="spm",
     noise_model="ar2",
-    #smoothing_fwhm=smoothing_fwhm,
+    img_filters=[('desc', 'preproc')],
+    smoothing_fwhm=None,
+    standardize=True,
     high_pass=high_pass_hz,
     drift_model='cosine',
     slice_time_ref=None,
-    n_jobs=12,
+    n_jobs=4,
     minimize_memory=True,
     derivatives_folder=derivatives_folder,
-    #sub_labels=['16','17'], # !!
+    sub_labels=['01'], # !!
 )
 
 # %%
@@ -95,8 +98,9 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
     print(f"Computing 1st level model for subject: {subject}")
 
     # trim confounds and replace NaNs with 0
-    confounds = confounds.filter(regex='csf|trans|rot')
-    confounds = confounds.fillna(0)
+    for jj in range(len(confounds)):
+        confounds[jj] = confounds[jj].filter(regex='csf|trans|rot')
+        confounds[jj] = confounds[jj].fillna(0)
     
     # Fit and contrasts
     model.fit(imgs, events, confounds)
