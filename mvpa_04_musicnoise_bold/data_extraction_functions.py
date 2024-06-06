@@ -151,7 +151,7 @@ def edit_events(root_dir, subject, run):
     events = events.iloc[1:-1]
 
     # remove all 'Noise_Intersong' trials
-    events = events[events.trial_type != 'Noise_Intersong']
+    events = events[events.trial_type != 'Noise_InterSong']
 
     # rename all trial_types except 'Noise' to 'Music'
     events.loc[events['trial_type'] != 'Noise', 'trial_type'] = 'Music'
@@ -177,12 +177,9 @@ def edit_events(root_dir, subject, run):
     print(f'Events edited for subject {subject}, run {run}.')
     return new_events
 
-def convert_samples_to_features(samples, data_root, output_func_dir, subject, run):
+def convert_samples_to_features(samples, data_root, output_func_dir, events_split, subject, run):
 
     print(f'Converting samples to features for subject {subject}, run {run}...')
-
-    # Load events file
-    events_split = edit_events(data_root, subject, run)
 
     # Initialize features numpy array to store the mean of the samples in each segment
     features = np.zeros((len(events_split), samples.shape[1]))
