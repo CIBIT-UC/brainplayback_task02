@@ -10,7 +10,6 @@ def ls_a_musicnoise_confounds(root_dir, output_dir, subj, task, run):
 
     # define paths
     fmriprep_dir = os.path.join(root_dir, 'derivatives','fmriprep23')
-    #output_dir = os.path.join(root_dir, 'derivatives','mvpa_ls_a_data')
 
     # load data
     func_dir = os.path.join(fmriprep_dir, subj, 'ses-01', 'func')
