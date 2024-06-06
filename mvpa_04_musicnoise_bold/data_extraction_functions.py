@@ -5,7 +5,7 @@ import nibabel as nb
 from scipy.signal import detrend
 from scipy.stats import zscore
 from scipy.ndimage import binary_dilation
-from nilearn.image import math_img, resample_to_img, crop_img
+from nilearn.image import math_img, resample_to_img, crop_img, clean_img, binarize_img
 from nilearn.input_data import NiftiMasker, NiftiSpheresMasker, NiftiLabelsMasker
 from nilearn import datasets
 
@@ -44,35 +44,51 @@ def clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, over
     in_file = os.path.join(fmriprep_dir, f'sub-{subject}', 'ses-01',
                         'func', f'sub-{subject}_ses-01_task-02a_run-{run}_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz')
 
-    # Load functional image
-    img_func = nb.load(in_file)
+    # # Load functional image
+    # img_func = nb.load(in_file)
 
-    # Detrend and zscore data and save it under a new NIfTI file
-    data = img_func.get_fdata()
-    data = detrend(data)
-    data = np.nan_to_num(zscore(data, axis=0))
-    #Todo: inspect this data in the auditory cortex for all subs
-    img_standardized = nb.Nifti1Image(data, img_func.affine, img_func.header)
+    # # Detrend and zscore data and save it under a new NIfTI file
+    # data = img_func.get_fdata()
+    # data = detrend(data)
+    # data = np.nan_to_num(zscore(data, axis=0))
+    # #Todo: inspect this data in the auditory cortex for all subs
+    # img_standardized = nb.Nifti1Image(data, img_func.affine, img_func.header)
 
-    # Multiply functional image with mask and crop image
-    img_cleaned = math_img('img1 * img2',
-                        img1=img_standardized, img2=img_mask.slicer[..., None])
-    img_crop = crop_img(img_cleaned)
+    # # Multiply functional image with mask and crop image
+    # img_cleaned = math_img('img1 * img2',
+    #                     img1=img_standardized, img2=img_mask.slicer[..., None])
+    # img_crop = crop_img(img_cleaned)
+
+    confounds_file = os.path.join(fmriprep_dir, f'sub-{subject}', 'ses-01',
+                        'func', f'sub-{subject}_ses-01_task-02a_run-{run}_desc-confounds_timeseries.tsv')
+    
+    confounds = pd.read_csv(confounds_file, sep='\t')
+
+    confounds = confounds.filter(regex='csf|trans|rot').copy()
+    confounds.drop('csf_wm', axis=1, inplace=True)
+    confounds.fillna(0, inplace=True)
+
+    img_clean = clean_img(in_file,
+                          detrend=True,
+                          standardize=True,
+                          confounds=confounds,
+                          high_pass=0.007,
+                          t_r=1,
+                          mask_img=img_mask)
     
     # Save cleaned image
     print(f'Saving cleaned image for subject {subject}, run {run}...')
-    img_crop.to_filename(func_clean_path)
+    img_clean.to_filename(func_clean_path)
 
     print(f'Functional image cleaned for subject {subject}, run {run}.')
 
-    return img_crop
+    return img_clean
 
 def extract_samples(img_crop, img_mask, subject, run):
 
     print(f'Extracting samples for subject {subject}, run {run}...')
 
-    masker = NiftiMasker(mask_img=img_mask, standardize=False, detrend=False,
-                         memory="nilearn_cache", memory_level=2)
+    masker = NiftiMasker(mask_img=img_mask, standardize=False, detrend=False)
     samples = masker.fit_transform(img_crop)
 
     # transform img_crop to 2D array (volumes x voxels)
@@ -104,6 +120,14 @@ def extract_samples_with_atlas(img_crop, atlas_name, subject, run):
     elif atlas_name == 'koelsch_spheres':
         atlas_path = os.path.join(os.getcwd(),'data','koelsch','spheres','koelsch_spheres_atlas.nii.gz')
         masker = NiftiLabelsMasker(labels_img=atlas_path, standardize=False, detrend=False)
+
+    elif atlas_name == 'koelsch_spheres_per_voxel':
+        #atlas_path = os.path.join(os.getcwd(),'data','koelsch','spheres','koelsch_spheres_atlas.nii.gz')
+        atlas_path = '/Users/alexandresayal/GitHub/brainplayback_task02/data/koelsch/spheres/koelsch_spheres_atlas.nii.gz'
+        atlas_resample = resample_to_img(atlas_path, img_crop, interpolation='nearest')
+        atlas_resample_bin = binarize_img(atlas_resample)
+
+        masker = NiftiMasker(mask_img=atlas_resample_bin, standardize=False, detrend=False)
     
     samples = masker.fit_transform(img_crop)
 
@@ -126,17 +150,14 @@ def edit_events(root_dir, subject, run):
     # remove first and last row - first and last noise trials
     events = events.iloc[1:-1]
 
-    # Identify all Noise trials which duration is 6 seconds
-    intersong_trials = events.query("trial_type == 'Noise' and duration > 5.5 and duration < 6.5")
-
-    # rename noise_trials to 'intersong'
-    events.loc[intersong_trials.index, "trial_type"] = "Intersong"
-
-    # remove all 'intersong' trials
-    events = events[events.trial_type != 'Intersong']
+    # remove all 'Noise_Intersong' trials
+    events = events[events.trial_type != 'Noise_Intersong']
 
     # rename all trial_types except 'Noise' to 'Music'
     events.loc[events['trial_type'] != 'Noise', 'trial_type'] = 'Music'
+
+    # add the hemodynamic delay of 4 volumes to all onsets
+    events.loc[:, 'onset'] = events.loc[:, 'onset'] + 4
 
     # let's split the music trials into 4 segments of 6 seconds each
     # and the noise trials into 3 segments of 6 seconds each
@@ -168,7 +189,6 @@ def convert_samples_to_features(samples, data_root, output_func_dir, subject, ru
 
     # Calculate the mean of the sample in each segment from events_split
     for i, row in events_split.iterrows():
-        #features[i,:] = np.mean(samples[0][row['onset']:row['onset']+row['duration']], axis=0)
         features[i,:] = np.mean(samples[row['onset']:row['onset']+row['duration'], :], axis=0)
     
     # save features
