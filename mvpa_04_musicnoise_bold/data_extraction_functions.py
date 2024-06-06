@@ -2,10 +2,9 @@ import os
 import numpy as np
 import pandas as pd
 import nibabel as nb
-from scipy.signal import detrend
-from scipy.stats import zscore
+from nibabel import Nifti1Image
 from scipy.ndimage import binary_dilation
-from nilearn.image import math_img, resample_to_img, crop_img, clean_img, binarize_img
+from nilearn.image import math_img, resample_to_img, clean_img, binarize_img
 from nilearn.input_data import NiftiMasker, NiftiSpheresMasker, NiftiLabelsMasker
 from nilearn import datasets
 
@@ -30,44 +29,72 @@ def get_mask(data_root):
     print('Brain mask loaded.')
     return img_mask
 
-def clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, overwrite=False):
+def clean_func_image(fmriprep_dir: str, output_func_dir: str, img_mask: str, subject: str, run: str, overwrite: bool = False) -> Nifti1Image:
+    """
+    Receives a single fmriprep preprocessed functional image and cleans it using nilearn.image.clean_img().
+    It detrends, standardizes, high-pass filters, and removes confounds.
 
+    Args:
+        fmriprep_dir (str): Directory where the fmriprep preprocessed data is stored.
+        output_func_dir (str): Directory where the cleaned functional image will be saved.
+        img_mask (str): Path to the mask image to be used in cleaning.
+        subject (str): Subject identifier.
+        run (str): Run identifier.
+        overwrite (bool): If True, overwrite existing cleaned image. Default is False.
+
+    Returns:
+        nibabel.Nifti1Image: The cleaned functional image.
+
+    Raises:
+        FileNotFoundError: If the required input files are not found.
+        ValueError: If confounds DataFrame is empty or columns to be dropped are missing.
+    """
+
+    # Define the output path for the cleaned functional image
     func_clean_path = os.path.join(output_func_dir, 
                     f'sub-{subject}_ses-01_task-02a_run-{run}_cleaned.nii.gz')
     
-    if os.path.exists(func_clean_path) and overwrite is False:
+    # Check if the cleaned image already exists and overwrite is set to False
+    if os.path.exists(func_clean_path) and not overwrite:
         print(f'Functional image already cleaned for subject {subject}, run {run}.')
         return nb.load(func_clean_path)
 
     print(f'Cleaning functional image for subject {subject}, run {run}...')
 
+    # Define the input path for the preprocessed functional image
     in_file = os.path.join(fmriprep_dir, f'sub-{subject}', 'ses-01',
                         'func', f'sub-{subject}_ses-01_task-02a_run-{run}_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz')
 
-    # # Load functional image
-    # img_func = nb.load(in_file)
+    # Raise an error if the input functional image does not exist
+    if not os.path.exists(in_file):
+        raise FileNotFoundError(f"Functional image file not found: {in_file}")
 
-    # # Detrend and zscore data and save it under a new NIfTI file
-    # data = img_func.get_fdata()
-    # data = detrend(data)
-    # data = np.nan_to_num(zscore(data, axis=0))
-    # #Todo: inspect this data in the auditory cortex for all subs
-    # img_standardized = nb.Nifti1Image(data, img_func.affine, img_func.header)
-
-    # # Multiply functional image with mask and crop image
-    # img_cleaned = math_img('img1 * img2',
-    #                     img1=img_standardized, img2=img_mask.slicer[..., None])
-    # img_crop = crop_img(img_cleaned)
-
+    # Define the path for the confounds file
     confounds_file = os.path.join(fmriprep_dir, f'sub-{subject}', 'ses-01',
                         'func', f'sub-{subject}_ses-01_task-02a_run-{run}_desc-confounds_timeseries.tsv')
     
+    # Raise an error if the confounds file does not exist
+    if not os.path.exists(confounds_file):
+        raise FileNotFoundError(f"Confounds file not found: {confounds_file}")
+
+    # Load the confounds file into a DataFrame
     confounds = pd.read_csv(confounds_file, sep='\t')
 
+    # Raise an error if the confounds DataFrame is empty
+    if confounds.empty:
+        raise ValueError("Confounds DataFrame is empty.")
+
+    # Drop 'csf_wm' column if it exists
+    if 'csf_wm' in confounds.columns:
+        confounds.drop('csf_wm', axis=1, inplace=True)
+    
+    # Filter the confounds to include only 'csf', 'trans', and 'rot' related columns, and copy the DataFrame to avoid SettingWithCopyWarning
     confounds = confounds.filter(regex='csf|trans|rot').copy()
-    confounds.drop('csf_wm', axis=1, inplace=True)
+    
+    # Fill any NaN values in the confounds DataFrame with 0
     confounds.fillna(0, inplace=True)
 
+    # Clean the functional image using the provided mask, detrend, standardize, high-pass filter, and confounds
     img_clean = clean_img(in_file,
                           detrend=True,
                           standardize=True,
@@ -76,7 +103,7 @@ def clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, over
                           t_r=1,
                           mask_img=img_mask)
     
-    # Save cleaned image
+    # Save the cleaned image to the specified output path
     print(f'Saving cleaned image for subject {subject}, run {run}...')
     img_clean.to_filename(func_clean_path)
 
