@@ -111,6 +111,16 @@ def clean_func_image(fmriprep_dir: str, output_func_dir: str, img_mask: str, sub
 
     return img_clean
 
+def extract_samples(img_crop, img_mask, subject, run):
+
+    print(f'Extracting samples for subject {subject}, run {run}...')
+
+    masker = NiftiMasker(mask_img=img_mask, standardize=False, detrend=False)
+    samples = masker.fit_transform(img_crop)
+
+    print(f'Samples extracted for subject {subject}, run {run}.')
+    return samples
+
 def extract_samples_with_atlas(img_crop, atlas_name, subject, run):
 
     print(f'Extracting samples from atlas {atlas_name} for subject {subject}, run {run}...')
