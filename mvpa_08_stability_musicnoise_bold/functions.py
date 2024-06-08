@@ -6,15 +6,7 @@ import itertools
 from nibabel import Nifti1Image
 from nilearn.image import clean_img
 
-def get_brain_mask(data_root):
-    """ Load MNI-152 template brain mask """
-    print('Loading brain mask...')
-    mask_file = os.path.join(data_root, 'derivatives', 'mni_icbm152_t1_tal_nlin_asym_09c_mask_dilate_resample_crop.nii.gz')
-    img_mask = nb.load(mask_file)
-    print('Brain mask loaded.')
-    return img_mask
-
-def clean_func_image(fmriprep_dir: str, output_func_dir: str, img_mask: str, subject: str, run: str, overwrite: bool = False) -> Nifti1Image:
+def clean_func_image(fmriprep_dir: str, output_func_dir: str, mask_img: str, subject: str, run: str, overwrite: bool = False) -> Nifti1Image:
 
     """
     Receives a single fmriprep preprocessed functional image and cleans it using nilearn.image.clean_img().
@@ -87,7 +79,7 @@ def clean_func_image(fmriprep_dir: str, output_func_dir: str, img_mask: str, sub
                           confounds=confounds,
                           high_pass=0.007,
                           t_r=1,
-                          mask_img=img_mask)
+                          mask_img=mask_img)
     
     # Save the cleaned image to the specified output path
     print(f'Saving cleaned image for subject {subject}, run {run}...')
@@ -131,9 +123,9 @@ def edit_events_musicnoise_stability(root_dir, subject, run):
 
     # loop through the events and split the trials
     for _, row in events.iterrows():
-        num_segments = 4 if row['trial_type'] == 'Music' else 3
+        num_segments = 1
         for i in range(num_segments):
-            t_name = f"{row['trial_type']}{i}"
+            t_name = f"{row['trial_type']}"
             new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + i*6,
                                                               'duration': 6,
                                                               'trial_type': t_name}, index=[0])], ignore_index=True)
@@ -142,82 +134,137 @@ def edit_events_musicnoise_stability(root_dir, subject, run):
     return new_events
 
 def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, run):
+    """
+    Extracts and saves features for stability mask from functional imaging data.
 
-    print(f"Extracting features for sub {subject} run {run}...")
+    Parameters:
+    - img_clean (Nifti1Image): A Nifti image containing the cleaned functional data.
+    - events (DataFrame): A pandas DataFrame containing event-related information with at least 'trial_type', 'onset', and 'duration' columns.
+    - output_feat_stab_dir (str): Directory where the output feature file will be saved.
+    - subject (str): Subject identifier.
+    - run (str): Run identifier.
 
-    # fetch unique conditions
+    The function processes the input data to extract features for different trial types and saves the results in a .npy file.
+    """
+    print(f"Extracting features for subject {subject} run {run}...")
+
+    # Fetch unique conditions
     stab_cond_list = np.unique(events['trial_type'])
     n_stab_cond = len(stab_cond_list)
 
+    # Count the number of trials for each condition
     stab_trial_counts = events["trial_type"].value_counts()
     max_stab_trial_counts = np.max(stab_trial_counts)
 
-    # get functional data
+    # Get functional data
     img_data = img_clean.get_fdata()
 
-    # initialize outputs 
-    FEAT_STAB = np.zeros((img_data.shape[0],img_data.shape[1],img_data.shape[2],n_stab_cond,max_stab_trial_counts))
+    # Initialize output array
+    FEAT_STAB = np.zeros((img_data.shape[0], img_data.shape[1], img_data.shape[2], n_stab_cond, max_stab_trial_counts))
 
-    # iterate on the condition list
-    for jj in range(len(stab_cond_list)):
+    # Iterate over the condition list
+    for jj, current_cond in enumerate(stab_cond_list):
+        # Grab all events of that condition
+        new_a = events[events['trial_type'] == current_cond].reset_index()
 
-        current_cond = stab_cond_list[jj]
-        new_a = events[events['trial_type'] == current_cond].reset_index() # grab all events of that condition
-        auxImg = np.zeros((img_data.shape[0],img_data.shape[1],img_data.shape[2],len(new_a))) # matrix to save features of current condition
+        # Initialize matrix to save features of current condition
+        auxImg = np.zeros((img_data.shape[0], img_data.shape[1], img_data.shape[2], len(new_a)))
 
-        for zz in range(len(new_a)): #iterate on the trials
-            auxImg[...,zz] = np.mean(img_data[..., new_a['onset'][zz]:new_a['onset'][zz]+new_a['duration'][zz]])
-        
-        if len(new_a) != max_stab_trial_counts: # some conditions have less trials, so we replicate them
-            auxImg = np.concatenate([auxImg,auxImg,auxImg], axis=-1)
-        
-        FEAT_STAB[:,:,:,jj,:] = auxImg[:,:,:,:max_stab_trial_counts]
+        # Iterate over the trials
+        for zz in range(len(new_a)):
+            onset = new_a['onset'][zz]
+            duration = new_a['duration'][zz]
+            auxImg[..., zz] = np.mean(img_data[..., onset:onset + duration], axis=-1)
 
-    # export
-    np.save(os.path.join(output_feat_stab_dir, f'sub-{subject}_ses-01_task-02a_run-{run}_stab_features.npy'), FEAT_STAB)
+        # Handle conditions with fewer trials
+        if len(new_a) < max_stab_trial_counts:
+            # Calculate how many times to repeat the array to match max_stab_trial_counts
+            repeats = int(np.ceil(max_stab_trial_counts / len(new_a)))
+            auxImg = np.tile(auxImg, (1, 1, 1, repeats))
+
+        # Ensure the shape matches before assignment
+        FEAT_STAB[:, :, :, jj, :] = auxImg[:, :, :, :max_stab_trial_counts]
+
+    # Export the result
+    output_file = os.path.join(output_feat_stab_dir, f'sub-{subject}_ses-01_task-02a_run-{run}_stab_features.npy')
+    np.save(output_file, FEAT_STAB)
 
     print(f"Done exporting features for subject {subject} run {run}.")
 
-def estimate_stability(feat_dir, output_stab_dir, subject):
+from multiprocessing import Pool
 
+def process_voxel(i, stab_feat, combinations):
+    """
+    Process a single x-coordinate slice of the voxel grid to estimate stability.
+    
+    Parameters:
+    - i (int): The x-coordinate to process.
+    - stab_feat (ndarray): The concatenated feature data.
+    - combinations (ndarray): Array of index combinations for correlation calculation.
+    
+    Returns:
+    - (int, ndarray): The x-coordinate and the calculated stability values for that slice.
+    """
+    print(f"X coordinate {i}/{stab_feat.shape[0]}...")
+    STAB_slice = np.zeros((stab_feat.shape[1], stab_feat.shape[2]))
+
+    for j in range(stab_feat.shape[1]):  # iterate on y
+        for k in range(stab_feat.shape[2]):  # iterate on z
+            # Extract the time series data for the current voxel
+            voxel_data = stab_feat[i, j, k, :, :]
+
+            # Check if voxel_data is all zeros
+            if np.all(voxel_data == 0):
+                STAB_slice[j, k] = 0
+                continue
+
+            # Calculate correlations for all pairs in combinations
+            C = np.array([np.corrcoef(voxel_data[:, comb[0]], voxel_data[:, comb[1]])[0, 1] for comb in combinations])
+
+            # Handle NaN values
+            if np.isnan(C).any():
+                STAB_slice[j, k] = 0
+            else:
+                STAB_slice[j, k] = np.mean(C)
+
+    return i, STAB_slice
+
+def estimate_stability(feat_dir, output_stab_dir, subject):
+    """
+    Estimate the stability of voxel time series data for a given subject.
+
+    Parameters:
+    - feat_dir (str): Directory containing the feature files.
+    - output_stab_dir (str): Directory to save the output stability file.
+    - subject (str): Subject identifier.
+    """
     print(f"Estimating stability for subject {subject}...")
-    # find the files
-    stab_feat_files = [os.path.join(feat_dir, f) for f in os.listdir(feat_dir) if f.endswith('_stab_features.npy') & f.startswith(f'sub-{subject}')]
+
+    # Find the files
+    stab_feat_files = [os.path.join(feat_dir, f) for f in os.listdir(feat_dir) if f.endswith('_stab_features.npy') and f.startswith(f'sub-{subject}')]
     stab_feat_files.sort()
 
-    # concatenating the runs
+    # Concatenating the runs
     stab_feat = np.concatenate([np.load(f) for f in stab_feat_files], axis=-1)
 
     # Generate a list of indexes
-    indexes = list(range(stab_feat.shape[-1]))
-
-    # Generate all combinations of the indexes taken two at a time
-    combinations = list(itertools.combinations(indexes, 2))
+    indexes = np.arange(stab_feat.shape[-1])
+    combinations = np.array(list(itertools.combinations(indexes, 2)))
     n_combinations = len(combinations)
+    print(n_combinations)
 
-    # to save stability per voxel and condition
-    STAB = np.zeros((stab_feat.shape[0],stab_feat.shape[1],stab_feat.shape[2]))
+    # Initialize STAB array
+    STAB = np.zeros((stab_feat.shape[0], stab_feat.shape[1], stab_feat.shape[2]))
 
-    for i in range(stab_feat.shape[0]): # iterate on x
+    # Use multiprocessing to process each x-coordinate slice in parallel
+    with Pool() as pool:
+        results = pool.starmap(process_voxel, [(i, stab_feat, combinations) for i in range(stab_feat.shape[0])])
 
-        print(f"X coordinate {i}/{stab_feat.shape[0]}...")
+    # Collect the results
+    for i, STAB_slice in results:
+        STAB[i, :, :] = STAB_slice
 
-        for j in range(stab_feat.shape[1]): # iterate on y
-
-            for k in range(stab_feat.shape[2]): # interate on z
-
-                C = np.zeros((n_combinations, 1)) # initialize matrix for pairwise correlations
-
-                for p in range(n_combinations): # iterate on the combinations
-
-                    C[p] = np.corrcoef(stab_feat[i, j, k, :, combinations[p][0]], stab_feat[i, j, k, :, combinations[p][1]])[0,1]
-
-                if np.isnan(C).any():
-                    STAB[i, j, k] = 0
-                else:
-                    STAB[i, j, k] = np.mean(C)
-
-    # save STAB
+    # Save STAB
     np.save(os.path.join(output_stab_dir, f'sub-{subject}_STAB.npy'), STAB)
 
-    print(f"Done stimating stability for subject {subject}.")
+    print(f"Done estimating stability for subject {subject}.")
