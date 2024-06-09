@@ -179,6 +179,48 @@ def edit_events_musicnoise_stability(root_dir, subject, run):
     print(f'Events edited for subject {subject}, run {run}.')
     return new_events
 
+def edit_events_full_stability(root_dir, subject, run):
+    """Edit events file."""
+
+    print(f'Editing events for subject {subject}, run {run}...')
+    events = pd.read_csv(
+                    os.path.join(root_dir,f'sub-{subject}','ses-01','func',
+                        f'sub-{subject}' + '_ses-01_task-02a_run-' + run + '_events.tsv'),
+                    sep='\t')
+
+    # round onset and duration to integer
+    events['onset'] = events['onset'].round(0).astype(int)
+    events['duration'] = events['duration'].round(0).astype(int)
+
+    # remove first and last row - first and last noise trials
+    events = events.iloc[1:-1]
+
+    # remove all 'Noise_Intersong' trials
+    events = events[events.trial_type != 'Noise']
+    events = events[events.trial_type != 'Noise_InterSong']
+
+    # add the hemodynamic delay of 4 volumes to all onsets
+    events.loc[:, 'onset'] = events.loc[:, 'onset'] + 4
+
+    # let's split the music trials into 4 segments of 6 seconds each
+    # and the noise trials into 3 segments of 6 seconds each
+    # we will use the onsets and durations from the events file to do this
+
+    # create a new dataframe to store the new events
+    new_events = pd.DataFrame(columns=['onset', 'duration', 'trial_type'])
+
+    # loop through the events and split the trials
+    for _, row in events.iterrows():
+        num_segments = 2
+        for i in range(1,num_segments):
+            t_name = f"{row['trial_type']}"
+            new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + i*6,
+                                                              'duration': 12,
+                                                              'trial_type': t_name}, index=[0])], ignore_index=True)
+
+    print(f'Events edited for subject {subject}, run {run}.')
+    return new_events
+
 def edit_events_full(root_dir, subject, run):
     """Edit events file."""
 
@@ -291,10 +333,12 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
     # Fetch unique conditions
     stab_cond_list = np.unique(events['trial_type'])
     n_stab_cond = len(stab_cond_list)
+    print(f'{n_stab_cond} conditions found per run.')
 
     # Count the number of trials for each condition
     stab_trial_counts = events["trial_type"].value_counts()
     max_stab_trial_counts = np.max(stab_trial_counts)
+    print(f'Maximum number of trials per condition per run: {max_stab_trial_counts}')
 
     # Get functional data
     img_data = img_clean.get_fdata()
@@ -385,11 +429,13 @@ def estimate_stability(feat_dir, output_stab_dir, subject):
     # Concatenating the runs
     stab_feat = np.concatenate([np.load(f) for f in stab_feat_files], axis=-1)
 
+    print(f'Number of trials per condition per subject: {stab_feat.shape[-1]}')
+
     # Generate a list of indexes
     indexes = np.arange(stab_feat.shape[-1])
     combinations = np.array(list(itertools.combinations(indexes, 2)))
     n_combinations = len(combinations)
-    print(n_combinations)
+    print(f'Number of pairwise combinations: {n_combinations}')
 
     # Initialize STAB array
     STAB = np.zeros((stab_feat.shape[0], stab_feat.shape[1], stab_feat.shape[2]))
