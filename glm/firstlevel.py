@@ -50,10 +50,10 @@ out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
     high_pass=high_pass_hz,
     drift_model='cosine',
     slice_time_ref=None,
-    n_jobs=4,
+    n_jobs=2,
     minimize_memory=True,
     derivatives_folder=derivatives_folder,
-    sub_labels=['01'], # !!
+    sub_labels=['18'], # !!
 )
 
 # %%
