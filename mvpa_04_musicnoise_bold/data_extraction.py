@@ -14,8 +14,10 @@ output_feat_dir = os.path.join(data_root, 'derivatives', 'mvpa_04_musicnoise_bol
 
 #%% Iterate on the subjects and runs
 img_mask = get_mask(data_root)
-for subject in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17']:
+for subject in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19']:
     for run in ['1', '2', '3', '4']:
+        if subject == '18' and run == '2': # missing data
+            continue
         img_crop = clean_func_image(fmriprep_dir, output_func_dir, img_mask, subject, run, overwrite=False)
         samples = extract_samples_with_atlas(img_crop, 'koelsch_spheres_per_voxel', subject, run)
         events_split = edit_events(data_root, subject, run)
