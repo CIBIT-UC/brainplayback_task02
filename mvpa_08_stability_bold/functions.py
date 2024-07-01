@@ -332,6 +332,11 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
 
     # Fetch unique conditions
     stab_cond_list = np.unique(events['trial_type'])
+
+    # subject 18 run 2 is missing the Power condition
+    if subject == '18' and run == '2': 
+        stab_cond_list = ['JoyfulActivation','Nostalgia','Peacefulness','Power','Sadness','Tenderness','Tension','Transcendence','Wonder']
+    
     n_stab_cond = len(stab_cond_list)
     print(f'{n_stab_cond} conditions found per run.')
 
@@ -348,6 +353,12 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
 
     # Iterate over the condition list
     for jj, current_cond in enumerate(stab_cond_list):
+
+        # Handle missing condition for subject 18, run 2
+        if subject == '18' and run == '2' and current_cond == 'Power':
+            FEAT_STAB[:, :, :, jj, :] = np.zeros((img_data.shape[0], img_data.shape[1], img_data.shape[2], max_stab_trial_counts))
+            continue
+
         # Grab all events of that condition
         new_a = events[events['trial_type'] == current_cond].reset_index()
 
@@ -368,6 +379,7 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
 
         # Ensure the shape matches before assignment
         FEAT_STAB[:, :, :, jj, :] = auxImg[:, :, :, :max_stab_trial_counts]
+
 
     # Export the result
     output_file = os.path.join(output_feat_stab_dir, f'sub-{subject}_ses-01_task-02a_run-{run}_stab_features.npy')
