@@ -37,6 +37,9 @@ def secondLevel(contrast_name):
     )
     zmap_files.sort()
 
+    # print number of zmap files
+    print(f"Number of zmap files: {len(zmap_files)}")
+
     # create design matrix for 2nd level
     design_matrix_g = pd.DataFrame(
         [1] * len(zmap_files),
