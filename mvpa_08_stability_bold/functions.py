@@ -202,21 +202,20 @@ def edit_events_full_stability(root_dir, subject, run):
     # add the hemodynamic delay of 4 volumes to all onsets
     events.loc[:, 'onset'] = events.loc[:, 'onset'] + 4
 
-    # let's split the music trials into 4 segments of 6 seconds each
-    # and the noise trials into 3 segments of 6 seconds each
-    # we will use the onsets and durations from the events file to do this
+    # let's split the music trials into 2 segments of 9 seconds each, centered around the middle of the block
 
     # create a new dataframe to store the new events
     new_events = pd.DataFrame(columns=['onset', 'duration', 'trial_type'])
 
     # loop through the events and split the trials
     for _, row in events.iterrows():
-        num_segments = 2
-        for i in range(1,num_segments):
-            t_name = f"{row['trial_type']}"
-            new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + i*6,
-                                                              'duration': 12,
-                                                              'trial_type': t_name}, index=[0])], ignore_index=True)
+        t_name = f"{row['trial_type']}"
+        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 3,
+                                                          'duration': 9,
+                                                          'trial_type': t_name}, index=[0])], ignore_index=True)
+        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 3 + 9,
+                                                          'duration': 9,
+                                                          'trial_type': t_name}, index=[0])], ignore_index=True)
 
     print(f'Events edited for subject {subject}, run {run}.')
     return new_events
@@ -374,6 +373,7 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
         # Handle conditions with fewer trials
         if len(new_a) < max_stab_trial_counts:
             # Calculate how many times to repeat the array to match max_stab_trial_counts
+            print(f"Condition {current_cond} has {len(new_a)} trials. Repeating to match {max_stab_trial_counts} trials.")
             repeats = int(np.ceil(max_stab_trial_counts / len(new_a)))
             auxImg = np.tile(auxImg, (1, 1, 1, repeats))
 
