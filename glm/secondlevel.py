@@ -1,39 +1,56 @@
 # %%
 # Imports
-import os
 import glob
+import os
+
 import pandas as pd
-from nilearn.glm.second_level import SecondLevelModel
-from mni_to_atlas import AtlasBrowser
-atlas = AtlasBrowser("AAL3")
 from joblib import Parallel, delayed
+from mni_to_atlas import AtlasBrowser
+from nilearn.glm.second_level import SecondLevelModel
+
+atlas = AtlasBrowser("AAL3")
 
 # %%
 # Settings
-#data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
-data_dir = '/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2'
-out_dir = os.path.join(data_dir,"derivatives","nilearn_glm")
-out_dir_group = os.path.join(data_dir,"derivatives","nilearn_glm","group")
+# data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
+data_dir = "/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2"
+out_dir = os.path.join(data_dir, "derivatives", "nilearn_glm")
+out_dir_group = os.path.join(data_dir, "derivatives", "nilearn_glm", "group")
 
 # %%
-contrasts_renamed = ['All','JoyfulActivation', 'Nostalgia', 'Peacefulness', 'Power', 'Sadness', 'Tenderness', 'Tension', 'Transcendence', 'Wonder',
-                     'Sublimity', 'Vitality', 'Unease', 'SublimityMinusVitality', 'VitalityMinusUnease', 'UneaseMinusSublimity']
+contrasts_renamed = [
+    "All",
+    "JoyfulActivation",
+    "Nostalgia",
+    "Peacefulness",
+    "Power",
+    "Sadness",
+    "Tenderness",
+    "Tension",
+    "Transcendence",
+    "Wonder",
+    "Sublimity",
+    "Vitality",
+    "Unease",
+    "SublimityMinusVitality",
+    "VitalityMinusUnease",
+    "UneaseMinusSublimity",
+]
 
 # %%
 # check folder
 if not os.path.exists(out_dir_group):
     os.makedirs(out_dir_group)
 
+
 # %%
 # define function to run the second-level analysis
 def secondLevel(contrast_name):
-    print(f'Running 2nd level for contrast {contrast_name}')
+    print(f"Running 2nd level for contrast {contrast_name}")
 
     # List all zmap nii.gz files
     zmap_files = glob.glob(
-        os.path.join(out_dir,
-            f"sub-*_task-02a_stat-z_con-{contrast_name}.nii.gz"
-        )
+        os.path.join(out_dir, f"sub-*_task-02a_stat-z_con-{contrast_name}.nii.gz")
     )
     zmap_files.sort()
 
@@ -61,12 +78,12 @@ def secondLevel(contrast_name):
     )
 
     # save group map
-    z_map_g.to_filename(os.path.join(out_dir_group,
-        f"group_task-02a_stat-z_con-{contrast_name}.nii.gz"
-        )
+    z_map_g.to_filename(
+        os.path.join(out_dir_group, f"group_task-02a_stat-z_con-{contrast_name}.nii.gz")
     )
-    
-    print(f'Finished 2nd level for contrast {contrast_name}')
+
+    print(f"Finished 2nd level for contrast {contrast_name}")
+
 
 # %%
 # Iterate on the contrasts in parallel

@@ -210,11 +210,11 @@ def edit_events_full_stability(root_dir, subject, run):
     # loop through the events and split the trials
     for _, row in events.iterrows():
         t_name = f"{row['trial_type']}"
-        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 3,
-                                                          'duration': 9,
+        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 6,
+                                                          'duration': 6,
                                                           'trial_type': t_name}, index=[0])], ignore_index=True)
-        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 3 + 9,
-                                                          'duration': 9,
+        new_events = pd.concat([new_events, pd.DataFrame({'onset': row['onset'] + 6 + 6,
+                                                          'duration': 6,
                                                           'trial_type': t_name}, index=[0])], ignore_index=True)
 
     print(f'Events edited for subject {subject}, run {run}.')

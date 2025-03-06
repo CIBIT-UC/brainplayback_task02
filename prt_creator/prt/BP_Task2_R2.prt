@@ -1,0 +1,102 @@
+
+FileVersion:		2 
+
+ResolutionOfTime:	Volumes 
+
+Experiment:			BrainPlayback_Task02 
+
+BackgroundColor:	0  0  0 
+TextColor:			255  255  255 
+
+TimeCourseColor:	1  1  1 
+TimeCourseThick:	3 
+ReferenceFuncColor:	0   0  80 
+ReferenceFuncThick:	2 
+
+NrOfConditions:		12 
+ 
+Discard 
+1 
+1	12 
+Color:	0 115 190 
+
+Noise 
+9 
+67	84 
+139	156 
+211	228 
+283	300 
+355	372 
+427	444 
+499	516 
+571	588 
+643	660 
+Color:	216 83 25 
+
+Noise_InterSong 
+9 
+37	42 
+109	114 
+181	186 
+253	258 
+325	330 
+397	402 
+469	474 
+541	546 
+613	618 
+Color:	236 177 32 
+
+Tension 
+2 
+13	36 
+43	66 
+Color:	110 115 190 
+
+Peacefulness 
+2 
+85	108 
+115	138 
+Color:	150 83 25 
+
+JoyfulActivation 
+2 
+157	180 
+187	210 
+Color:	190 177 32 
+
+Tenderness 
+2 
+229	252 
+259	282 
+Color:	150 115 190 
+
+Power 
+2 
+301	324 
+331	354 
+Color:	100 83 25 
+
+Sadness 
+2 
+373	396 
+403	426 
+Color:	120 177 32 
+
+Wonder 
+2 
+445	468 
+475	498 
+Color:	120 160 120 
+
+Nostalgia 
+2 
+517	540 
+547	570 
+Color:	120 220 120 
+
+Transcendence 
+2 
+589	612 
+619	642 
+Color:	50 50 50 
+
