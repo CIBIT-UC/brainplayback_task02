@@ -24,8 +24,10 @@ atlas = AtlasBrowser("AAL3")
 
 # %%
 # Settings
-# data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
-data_dir = "/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2"
+# data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/' # incd dir
+data_dir = "/DATAPOOL/BRAINPLAYBACK/BIDS-BRAINPLAYBACK-TASK2"  # sim01 dir
+#data_dir = "/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2" # mac dir
+
 space_label = "MNI152NLin2009cAsym"
 derivatives_folder = "derivatives/fmriprep23"
 task_label = "02a"
@@ -52,11 +54,42 @@ out_dir = os.path.join(data_dir, "derivatives", "nilearn_glm")
     high_pass=high_pass_hz,
     drift_model="cosine",
     slice_time_ref=None,
-    n_jobs=2,
+    n_jobs=4,
     minimize_memory=True,
     derivatives_folder=derivatives_folder,
-    sub_labels=["20"],
+    sub_labels=["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"],
 )
+
+# %%
+# Confounds of interest
+confounds_of_interest = [
+        "csf",
+        "white_matter",
+        "trans_x",
+        "trans_x_derivative1",
+        "trans_x_power2",
+        "trans_x_derivative1_power2",
+        "trans_y",
+        "trans_y_derivative1",
+        "trans_y_power2",
+        "trans_y_derivative1_power2",
+        "trans_z",
+        "trans_z_derivative1",
+        "trans_z_derivative1_power2",
+        "trans_z_power2",
+        "rot_x",
+        "rot_x_derivative1",
+        "rot_x_power2",
+        "rot_x_derivative1_power2",
+        "rot_y",
+        "rot_y_derivative1",
+        "rot_y_power2",
+        "rot_y_derivative1_power2",
+        "rot_z",
+        "rot_z_derivative1",
+        "rot_z_power2",
+        "rot_z_derivative1_power2",
+    ]
 
 # %%
 # condition names
@@ -135,7 +168,7 @@ def glm_function(model, imgs, events, confounds, contrasts, contrasts_renamed, o
 
     # trim confounds and replace NaNs with 0
     for jj in range(len(confounds)):
-        confounds[jj] = confounds[jj].filter(regex="csf|white_matter|trans|rot")
+        confounds[jj] = confounds[jj][confounds_of_interest]
         confounds[jj] = confounds[jj].fillna(0)
 
     # Fit and contrasts
