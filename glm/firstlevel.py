@@ -55,7 +55,7 @@ out_dir = os.path.join(data_dir, "derivatives", "nilearn_glm")
     n_jobs=2,
     minimize_memory=True,
     derivatives_folder=derivatives_folder,
-    sub_labels=["18", "19"],
+    sub_labels=["20"],
 )
 
 # %%

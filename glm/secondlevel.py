@@ -64,7 +64,7 @@ def secondLevel(contrast_name):
     )
 
     # define 2nd level model
-    second_level_model = SecondLevelModel(smoothing_fwhm=4.0, n_jobs=3)
+    second_level_model = SecondLevelModel(smoothing_fwhm=4.0, n_jobs=4)
 
     second_level_model = second_level_model.fit(
         zmap_files,
