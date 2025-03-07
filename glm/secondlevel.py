@@ -13,7 +13,8 @@ atlas = AtlasBrowser("AAL3")
 # %%
 # Settings
 # data_dir = '/users3/uccibit/alexsayal/BIDS-BRAINPLAYBACK-TASK2/'
-data_dir = "/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2"
+# data_dir = "/Volumes/T7/BIDS-BRAINPLAYBACK-TASK2"
+data_dir = "/DATAPOOL/BRAINPLAYBACK/BIDS-BRAINPLAYBACK-TASK2"  # sim01 dir
 out_dir = os.path.join(data_dir, "derivatives", "nilearn_glm")
 out_dir_group = os.path.join(data_dir, "derivatives", "nilearn_glm", "group")
 
@@ -64,7 +65,7 @@ def secondLevel(contrast_name):
     )
 
     # define 2nd level model
-    second_level_model = SecondLevelModel(smoothing_fwhm=4.0, n_jobs=4)
+    second_level_model = SecondLevelModel(smoothing_fwhm=4, n_jobs=4)
 
     second_level_model = second_level_model.fit(
         zmap_files,
