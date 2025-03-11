@@ -227,7 +227,7 @@ def edit_events_full_stability(root_dir, subject, run):
     # add the hemodynamic delay of 4 volumes to all onsets
     events.loc[:, "onset"] = events.loc[:, "onset"] + 4
 
-    # let's split the music trials into 2 segments of 6 seconds each, centered around the middle of the block
+    # let's split the music trials into 2 segments of 6 seconds each, centered around the middle of the block #FIXME
 
     # create a new dataframe to store the new events
     new_events = pd.DataFrame(columns=["onset", "duration", "trial_type"])
@@ -236,11 +236,11 @@ def edit_events_full_stability(root_dir, subject, run):
     for _, row in events.iterrows():
         t_name = f"{row['trial_type']}"
         new_events = pd.concat(
-            [new_events, pd.DataFrame({"onset": row["onset"] + 6, "duration": 6, "trial_type": t_name}, index=[0])], ignore_index=True
+            [new_events, pd.DataFrame({"onset": row["onset"] + 6, "duration": 12, "trial_type": t_name}, index=[0])], ignore_index=True
         )
-        new_events = pd.concat(
-            [new_events, pd.DataFrame({"onset": row["onset"] + 6 + 6, "duration": 6, "trial_type": t_name}, index=[0])], ignore_index=True
-        )
+        # new_events = pd.concat(
+        #     [new_events, pd.DataFrame({"onset": row["onset"] + 6 + 6, "duration": 6, "trial_type": t_name}, index=[0])], ignore_index=True
+        # )
 
     print(f"Events edited for subject {subject}, run {run}.")
     return new_events
@@ -385,14 +385,14 @@ def extract_features_for_stab(img_clean, events, output_feat_stab_dir, subject, 
             duration = new_a["duration"][zz]
             auxImg[..., zz] = np.mean(img_data[..., onset : onset + duration], axis=-1)
 
-        # Handle conditions with fewer trials
+        # Handle conditions with fewer trials #TODO why is this needed?
         if len(new_a) < max_stab_trial_counts:
             # Calculate how many times to repeat the array to match max_stab_trial_counts
             print(f"Condition {current_cond} has {len(new_a)} trials. Repeating to match {max_stab_trial_counts} trials.")
             repeats = int(np.ceil(max_stab_trial_counts / len(new_a)))
             auxImg = np.tile(auxImg, (1, 1, 1, repeats))
 
-        # Ensure the shape matches before assignment
+        # Ensure the shape matches before assignment # TODO why is this needed?
         FEAT_STAB[:, :, :, jj, :] = auxImg[:, :, :, :max_stab_trial_counts]
 
     # Export the result
