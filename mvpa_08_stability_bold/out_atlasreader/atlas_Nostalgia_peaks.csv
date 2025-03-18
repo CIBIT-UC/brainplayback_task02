@@ -22,32 +22,21 @@ cluster_id,peak_x,peak_y,peak_z,peak_value,volume_mm,aal,destrieux,harvard_oxfor
 21.0,-24.5,-4.5,-18.5,0.008317044004797935,240.0,Amygdala_L,Left-Amygdala,98.0% Left_Amygdala,82.0% GM_Amygdala_laterobasal_group_L; 32.0% GM_Amygdala_superficial_group_L,Amygdala
 22.0,-10.5,49.5,-6.5,0.007489232812076807,240.0,Frontal_Med_Orb_L,ctx_lh_G_and_S_cingul-Ant,33.0% Left_Paracingulate_Gyrus; 25.0% Left_Frontal_Medial_Cortex,0% no_label,Brodmann_area_10
 23.0,-36.5,59.5,5.5,0.007498539984226227,232.0,no_label,Unknown,82.0% Left_Frontal_Pole,0% no_label,Brodmann_area_10
-24.0,65.5,-52.5,9.5,0.008278456516563892,216.0,Temporal_Mid_R,Unknown,0% no_label,0% no_label,Background
-25.0,-44.5,-66.5,-44.5,0.0072165364399552345,216.0,Cerebelum_Crus2_L,Left-Cerebellum-Cortex,0% no_label,0% no_label,Background
+24.0,-44.5,-66.5,-44.5,0.0072165364399552345,216.0,Cerebelum_Crus2_L,Left-Cerebellum-Cortex,0% no_label,0% no_label,Background
+25.0,65.5,-52.5,9.5,0.008278456516563892,216.0,Temporal_Mid_R,Unknown,0% no_label,0% no_label,Background
 26.0,65.5,-28.5,-20.5,0.008207136765122414,208.0,Temporal_Inf_R,ctx_rh_G_temporal_middle,42.0% Right_Inferior_Temporal_Gyrus_posterior_division; 34.0% Right_Middle_Temporal_Gyrus_posterior_division,0% no_label,Background
 27.0,5.5,-74.5,57.5,0.006475504953414202,200.0,Precuneus_R,Unknown,25.0% Right_Precuneous_Cortex,29.0% GM_Superior_parietal_lobule_7P_R,Background
 28.0,43.5,-62.5,-32.5,0.007888230495154858,200.0,Cerebelum_Crus1_R,Right-Cerebellum-Cortex,0% no_label,0% no_label,Background
-29.0,-56.5,19.5,13.5,0.009236074984073639,184.0,Frontal_Inf_Tri_L,ctx_lh_G_front_inf-Opercular,68.0% Left_Inferior_Frontal_Gyrus_pars_opercularis,59.0% GM_Broca's_area_BA44_L; 52.0% GM_Broca's_area_BA45_L,Brodmann_area_45
-30.0,13.5,39.5,17.5,0.007194987963885069,184.0,Cingulate_Ant_R,ctx_rh_G_and_S_cingul-Ant,33.0% Right_Paracingulate_Gyrus,0% no_label,Brodmann_area_9
+29.0,13.5,39.5,17.5,0.007194987963885069,184.0,Cingulate_Ant_R,ctx_rh_G_and_S_cingul-Ant,33.0% Right_Paracingulate_Gyrus,0% no_label,Brodmann_area_9
+30.0,-56.5,19.5,13.5,0.009236074984073639,184.0,Frontal_Inf_Tri_L,ctx_lh_G_front_inf-Opercular,68.0% Left_Inferior_Frontal_Gyrus_pars_opercularis,59.0% GM_Broca's_area_BA44_L; 52.0% GM_Broca's_area_BA45_L,Brodmann_area_45
 31.0,3.5,-36.5,45.5,0.006801529321819544,184.0,Cingulate_Mid_R,ctx_rh_G_cingul-Post-dorsal,57.0% Right_Cingulate_Gyrus_posterior_division; 38.0% Right_Precuneous_Cortex,40.0% GM_Superior_parietal_lobule_5M_R; 33.0% GM_Superior_parietal_lobule_5Ci_R,Brodmann_area_7
-32.0,-2.5,-14.5,57.5,0.007105312310159206,176.0,Supp_Motor_Area_L,Unknown,48.0% Left_Precentral_Gyrus; 35.0% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex),88.0% GM_Premotor_cortex_BA6_L; 32.0% GM_Primary_motor_cortex_BA4a_L,Brodmann_area_6
-33.0,-6.5,59.5,3.5,0.00738777918741107,176.0,Frontal_Sup_Medial_L,Unknown,78.0% Left_Frontal_Pole,0% no_label,Background
+32.0,-6.5,59.5,3.5,0.00738777918741107,176.0,Frontal_Sup_Medial_L,Unknown,78.0% Left_Frontal_Pole,0% no_label,Background
+33.0,-2.5,-14.5,57.5,0.007105312310159206,176.0,Supp_Motor_Area_L,Unknown,48.0% Left_Precentral_Gyrus; 35.0% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex),88.0% GM_Premotor_cortex_BA6_L; 32.0% GM_Primary_motor_cortex_BA4a_L,Brodmann_area_6
 34.0,-62.5,-34.5,35.5,0.007529591675847769,176.0,SupraMarginal_L,Unknown,80.0% Left_Supramarginal_Gyrus_anterior_division,90.0% GM_Inferior_parietal_lobule_PF_L,Brodmann_area_40
-35.0,59.5,-62.5,-2.5,0.006854156963527203,168.0,Temporal_Mid_R,ctx_rh_G_temporal_inf,49.0% Right_Lateral_Occipital_Cortex_inferior_division,0% no_label,Brodmann_area_37
-36.0,13.5,3.5,75.5,0.008788720704615116,168.0,Frontal_Sup_2_R,Unknown,0% no_label,81.0% GM_Premotor_cortex_BA6_R,Background
-37.0,5.5,-24.5,41.5,0.007107112091034651,160.0,Cingulate_Mid_R,ctx_rh_S_cingul-Marginalis,77.0% Right_Cingulate_Gyrus_posterior_division,0% no_label,Brodmann_area_31
-38.0,25.5,21.5,47.5,0.007204058580100536,160.0,Frontal_Sup_2_R,Unknown,31.0% Right_Middle_Frontal_Gyrus; 26.0% Right_Superior_Frontal_Gyrus,0% no_label,Background
+35.0,13.5,3.5,75.5,0.008788720704615116,168.0,Frontal_Sup_2_R,Unknown,0% no_label,81.0% GM_Premotor_cortex_BA6_R,Background
+36.0,59.5,-62.5,-2.5,0.006854156963527203,168.0,Temporal_Mid_R,ctx_rh_G_temporal_inf,49.0% Right_Lateral_Occipital_Cortex_inferior_division,0% no_label,Brodmann_area_37
+37.0,-26.5,63.5,5.5,0.0068058534525334835,160.0,Frontal_Sup_2_L,ctx_lh_S_front_middle,82.0% Left_Frontal_Pole,0% no_label,Background
+38.0,5.5,-24.5,41.5,0.007107112091034651,160.0,Cingulate_Mid_R,ctx_rh_S_cingul-Marginalis,77.0% Right_Cingulate_Gyrus_posterior_division,0% no_label,Brodmann_area_31
 39.0,-48.5,-62.5,47.5,0.0072657461278140545,160.0,Angular_L,ctx_lh_G_pariet_inf-Angular,59.0% Left_Lateral_Occipital_Cortex_superior_division,37.0% GM_Inferior_parietal_lobule_Pga_L,Background
-40.0,-26.5,63.5,5.5,0.0068058534525334835,160.0,Frontal_Sup_2_L,ctx_lh_S_front_middle,82.0% Left_Frontal_Pole,0% no_label,Background
-41.0,23.5,-96.5,-6.5,0.007411980535835028,160.0,Occipital_Inf_R,Right-Cerebral-White-Matter,68.0% Right_Occipital_Pole,64.0% GM_Visual_cortex_V1_BA17_R; 57.0% GM_Visual_cortex_V2_BA18_R; 46.0% WM_Optic_radiation_R,Background
-42.0,-36.5,-42.5,45.5,0.006418256554752588,152.0,Parietal_Inf_L,Unknown,34.0% Left_Superior_Parietal_Lobule,32.0% GM_Anterior_intra-parietal_sulcus_hIP3_L; 28.0% GM_Anterior_intra-parietal_sulcus_hIP2_L,Background
-43.0,-14.5,-62.5,69.5,0.006570675875991583,152.0,Precuneus_L,ctx_lh_G_parietal_sup,26.0% Left_Lateral_Occipital_Cortex_superior_division,37.0% GM_Superior_parietal_lobule_7A_L,Background
-44.0,47.5,-42.5,59.5,0.007061217911541462,144.0,Parietal_Sup_R,Unknown,0% no_label,27.0% GM_Inferior_parietal_lobule_PFm_R,Background
-45.0,-32.5,-2.5,-42.5,0.007780721876770258,136.0,Temporal_Inf_L,ctx_lh_Pole_temporal,73.0% Left_Temporal_Fusiform_Cortex_anterior_division,0% no_label,Brodmann_area_20
-46.0,35.5,33.5,31.5,0.0073774997144937515,128.0,Frontal_Mid_2_R,Right-Cerebral-White-Matter,48.0% Right_Middle_Frontal_Gyrus,0% no_label,Brodmann_area_9
-47.0,45.5,-76.5,23.5,0.006803722586482763,128.0,Occipital_Mid_R,ctx_rh_G_occipital_middle,78.0% Right_Lateral_Occipital_Cortex_superior_division,72.0% GM_Inferior_parietal_lobule_PGp_R,Background
-48.0,11.5,21.5,-6.5,0.00665700901299715,128.0,Caudate_R,Right-Accumbens-area,32.0% Right_Accumbens; 31.0% Right_Caudate,52.0% WM_Callosal_body,Background
-49.0,11.5,-30.5,43.5,0.006274518556892872,128.0,Cingulate_Mid_R,Unknown,37.0% Right_Cingulate_Gyrus_posterior_division; 31.0% Right_Precentral_Gyrus,68.0% GM_Superior_parietal_lobule_5Ci_R,Background
-50.0,-12.5,-54.5,3.5,0.007305750623345375,120.0,Calcarine_L,Unknown,40.0% Left_Precuneous_Cortex; 37.0% Left_Lingual_Gyrus,66.0% GM_Visual_cortex_V1_BA17_L; 43.0% GM_Visual_cortex_V2_BA18_L,Brodmann_area_18
-51.0,13.5,-78.5,-36.5,0.00700710853561759,120.0,Cerebelum_Crus2_R,Right-Cerebellum-White-Matter,0% no_label,0% no_label,Background
-52.0,59.5,-8.5,-28.5,0.007553525734692812,120.0,Temporal_Inf_R,ctx_rh_G_temporal_middle,44.0% Right_Middle_Temporal_Gyrus_posterior_division; 27.0% Right_Middle_Temporal_Gyrus_anterior_division,0% no_label,Background
+40.0,23.5,-96.5,-6.5,0.007411980535835028,160.0,Occipital_Inf_R,Right-Cerebral-White-Matter,68.0% Right_Occipital_Pole,64.0% GM_Visual_cortex_V1_BA17_R; 57.0% GM_Visual_cortex_V2_BA18_R; 46.0% WM_Optic_radiation_R,Background
+41.0,25.5,21.5,47.5,0.007204058580100536,160.0,Frontal_Sup_2_R,Unknown,31.0% Right_Middle_Frontal_Gyrus; 26.0% Right_Superior_Frontal_Gyrus,0% no_label,Background
