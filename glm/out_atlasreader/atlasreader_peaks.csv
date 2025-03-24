@@ -1,0 +1,31 @@
+cluster_id,peak_x,peak_y,peak_z,peak_value,volume_mm,aal,destrieux,harvard_oxford,juelich,talairach_ba
+1.0,-56.5,-20.5,5.5,2.0,24456.0,Temporal_Sup_L,ctx_lh_S_temporal_transverse,49.0% Left_Planum_Temporale; 17.0% Left_Heschl's_Gyrus_(includes_H1_and_H2); 5.0% Left_Superior_Temporal_Gyrus_posterior_division; 2.0% Left_Central_Opercular_Cortex,10.0% GM_Secondary_somatosensory_cortex_/_Parietal_operculum_OP1_L; 10.0% GM_Primary_auditory_cortex_TE1.0_L; 2.0% GM_Primary_auditory_cortex_TE1.2_L,Brodmann_area_41
+2.0,55.5,-14.5,1.5,1.0,22864.0,Temporal_Sup_R,ctx_rh_S_temporal_transverse,16.0% Right_Planum_Temporale; 10.0% Right_Heschl's_Gyrus_(includes_H1_and_H2); 4.0% Right_Superior_Temporal_Gyrus_posterior_division; 2.0% Right_Superior_Temporal_Gyrus_anterior_division; 1.0% Right_Planum_Polare,13.0% GM_Primary_auditory_cortex_TE1.0_R; 5.0% GM_Primary_auditory_cortex_TE1.1_R; 2.0% WM_Acoustic_radiation_R,Brodmann_area_22
+3.0,17.5,-72.5,-26.5,3.0,12848.0,Cerebelum_6_R,Right-Cerebellum-Cortex,0% no_label,0% no_label,Background
+4.0,-26.5,-64.5,-22.5,4.0,5848.0,Cerebelum_6_L,Left-Cerebellum-Cortex,0% no_label,0% no_label,Background
+5.0,27.5,-70.5,-48.5,10.0,4648.0,Cerebelum_8_R,Right-Cerebellum-Cortex,0% no_label,0% no_label,Background
+6.0,-0.5,-2.5,67.5,6.0,4592.0,Supp_Motor_Area_L,Unknown,35.0% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex); 11.0% Right_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex); 1.0% Left_Precentral_Gyrus,86.0% GM_Premotor_cortex_BA6_L,Background
+7.0,-48.5,33.5,11.5,13.0,3512.0,Frontal_Inf_Tri_L,Unknown,49.0% Left_Inferior_Frontal_Gyrus_pars_triangularis; 12.0% Left_Frontal_Pole; 10.0% Left_Middle_Frontal_Gyrus,58.0% GM_Broca's_area_BA45_L; 16.0% GM_Broca's_area_BA44_L,Background
+8.0,51.5,-0.5,47.5,0.0,2240.0,Precentral_R,ctx_rh_G_precentral,80.0% Right_Precentral_Gyrus; 5.0% Right_Middle_Frontal_Gyrus; 1.0% Right_Postcentral_Gyrus,72.0% GM_Premotor_cortex_BA6_R; 10.0% GM_Primary_somatosensory_cortex_BA3b_R,Brodmann_area_6
+9.0,-54.5,-6.5,47.5,7.0,2040.0,Postcentral_L,ctx_lh_G_precentral,68.0% Left_Precentral_Gyrus; 6.0% Left_Postcentral_Gyrus,69.0% GM_Premotor_cortex_BA6_L; 21.0% GM_Primary_somatosensory_cortex_BA1_L; 20.0% GM_Primary_motor_cortex_BA4a_L,Background
+10.0,-28.5,-62.5,-54.5,8.0,1856.0,Cerebelum_8_L,Left-Cerebellum-Cortex,0% no_label,0% no_label,Background
+11.0,-4.5,47.5,-16.5,23.0,1112.0,Rectus_L,ctx_lh_G_rectus,85.0% Left_Frontal_Medial_Cortex; 2.0% Left_Paracingulate_Gyrus; 1.0% Left_Frontal_Pole,0% no_label,Brodmann_area_11
+12.0,-14.5,-78.5,-46.5,11.0,1096.0,Cerebelum_7b_L,Left-Cerebellum-Cortex,0% no_label,0% no_label,Background
+13.0,21.5,3.5,5.5,9.0,944.0,Putamen_R,Right-Putamen,89.0% Right_Putamen; 4.0% Right_Pallidum,0% no_label,Putamen
+14.0,53.5,33.5,1.5,12.0,880.0,Frontal_Inf_Tri_R,ctx_rh_G_front_inf-Triangul,51.0% Right_Inferior_Frontal_Gyrus_pars_triangularis; 29.0% Right_Frontal_Pole,47.0% GM_Broca's_area_BA45_R,Background
+15.0,-26.5,-0.5,3.5,0.0,600.0,Putamen_L,Left-Putamen,100.0% Left_Putamen,0% no_label,Putamen
+16.0,-6.5,23.5,47.5,0.0,552.0,Supp_Motor_Area_L,ctx_lh_G_front_sup,32.0% Left_Superior_Frontal_Gyrus; 24.0% Left_Paracingulate_Gyrus,0% no_label,Background
+17.0,-40.5,43.5,-16.5,14.0,528.0,OFClat_L,ctx_lh_G_orbital,71.0% Left_Frontal_Pole; 1.0% Left_Frontal_Orbital_Cortex,0% no_label,Background
+18.0,-22.5,35.5,49.5,16.0,528.0,Frontal_Sup_2_L,ctx_lh_G_front_sup,56.0% Left_Superior_Frontal_Gyrus; 17.0% Left_Frontal_Pole; 6.0% Left_Middle_Frontal_Gyrus,0% no_label,Brodmann_area_8
+19.0,-6.5,57.5,27.5,17.0,528.0,Frontal_Sup_Medial_L,ctx_lh_G_front_sup,41.0% Left_Superior_Frontal_Gyrus; 34.0% Left_Frontal_Pole; 2.0% Left_Paracingulate_Gyrus,0% no_label,Brodmann_area_9
+20.0,-40.5,31.5,-0.5,21.0,416.0,Frontal_Inf_Tri_L,Unknown,26.0% Left_Inferior_Frontal_Gyrus_pars_triangularis; 19.0% Left_Frontal_Orbital_Cortex; 6.0% Left_Frontal_Operculum_Cortex; 1.0% Left_Frontal_Pole,0% no_label,Background
+21.0,-16.5,-26.5,-8.5,15.0,344.0,Hippocampus_L,Left-VentralDC,3.0% Left_Hippocampus; 1.0% Brain-Stem; 1.0% Left_Cingulate_Gyrus_posterior_division,49.0% GM_Medial_geniculate_body_L; 41.0% WM_Acoustic_radiation_L; 23.0% GM_Hippocampus_subiculum_L; 4.0% WM_Corticospinal_tract_L; 1.0% GM_Lateral_geniculate_body_L,Background
+22.0,-8.5,-40.5,-26.5,0.0,248.0,Cerebelum_3_L,Left-Cerebellum-Cortex,55.0% Brain-Stem,0% no_label,Background
+23.0,-26.5,27.5,-16.5,24.0,224.0,OFCpost_L,ctx_lh_S_orbital-H_Shaped,70.0% Left_Frontal_Orbital_Cortex; 1.0% Left_Frontal_Pole,0% no_label,Brodmann_area_11
+24.0,-48.5,3.5,37.5,30.0,224.0,Precentral_L,Unknown,46.0% Left_Precentral_Gyrus; 25.0% Left_Middle_Frontal_Gyrus; 3.0% Left_Inferior_Frontal_Gyrus_pars_opercularis,13.0% GM_Premotor_cortex_BA6_L,Background
+25.0,-26.5,-52.5,13.5,0.0,200.0,no_label,WM-hypointensities,30.0% Left_Lateral_Ventrical,10.0% WM_Callosal_body,Background
+26.0,-44.5,19.5,5.5,0.0,200.0,Frontal_Inf_Tri_L,Unknown,24.0% Left_Frontal_Operculum_Cortex; 17.0% Left_Inferior_Frontal_Gyrus_pars_opercularis; 17.0% Left_Inferior_Frontal_Gyrus_pars_triangularis,30.0% GM_Broca's_area_BA44_L; 28.0% GM_Broca's_area_BA45_L,Brodmann_area_13
+27.0,-42.5,21.5,19.5,25.0,192.0,Frontal_Inf_Tri_L,ctx_lh_S_front_inf,27.0% Left_Inferior_Frontal_Gyrus_pars_opercularis; 13.0% Left_Middle_Frontal_Gyrus; 9.0% Left_Inferior_Frontal_Gyrus_pars_triangularis,20.0% GM_Broca's_area_BA45_L; 20.0% GM_Broca's_area_BA44_L,Background
+28.0,-2.5,-34.5,-12.5,20.0,184.0,no_label,Brain-Stem,95.0% Brain-Stem,0% no_label,Background
+29.0,13.5,13.5,3.5,27.0,168.0,Caudate_R,Right-Cerebral-White-Matter,59.0% Right_Caudate,0% no_label,Caudate_Head
+30.0,19.5,-38.5,-44.5,26.0,168.0,Cerebelum_10_R,Right-Cerebellum-Cortex,0% no_label,0% no_label,Background
