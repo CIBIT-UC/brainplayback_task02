@@ -2,7 +2,6 @@
 version: 1
 project:
   exclude:
-    - glm/*
     - legacy
     - bids
     - legacy_mvpa
