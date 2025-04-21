@@ -1,6 +1,18 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
+  exclude:
+    - glm/*
+    - legacy
+    - bids
+    - legacy_mvpa
+    - music_feature_extraction
+    - music_wav_extraction
+    - prt_creator
+    - tests
+    - data
+    - fmriprep
+    - docs/u*
   id: 78947bdd-991b-4498-a28e-0bf747663b22
   # title:
   # description:
@@ -9,7 +21,9 @@ project:
   github: https://github.com/CIBIT-UC/brainplayback_task02
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
-  template: book-theme
-  # options:
+  template: article-theme
+  options:
+    hide_footer_links: false
+
   #   favicon: favicon.ico
   #   logo: site_logo.png

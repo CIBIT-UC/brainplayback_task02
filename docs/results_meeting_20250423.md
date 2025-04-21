@@ -3,8 +3,9 @@ numbering:
   headings: true
 ---
 
-# Meeting for Results Discussion
-Date: 2025-04-23
+# Zoom Meeting - Results Discussion
+
+April 23, 2025
 
 Decoding music-evoked emotions from brain activity: a personalized experiment towards the understanding of the neural mechanisms of emotion in music
 
