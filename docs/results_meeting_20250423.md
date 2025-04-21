@@ -60,13 +60,17 @@ Diagram of the fMRI paradigm trial. Each trial was repeated twice for each of th
 
 :::{figure} #glm_2ndlevel_view_img
 :label: fig-my-cell
+
+GLM group activation map.
 :::
 
 :::{figure} #glm_2ndlevel_mosaic
 :label: fig-my-cell
+
+GLM group activation map.
 :::
 
-:::{table} This is my table
+:::{table} Cluster table.
 :label: mytable
 ![](#glm_2ndlevel_cluster_table)
 :::
@@ -74,29 +78,43 @@ Diagram of the fMRI paradigm trial. Each trial was repeated twice for each of th
 
 ## Decoding
 
+### Feature selection - stability mask
 :::{figure} #mvpa_stab_mask_mosaic
-:label: fig-my-cell
+:label: stability_mask_mosaic
+
+Stability mask.
 :::
 
 :::{figure} #mvpa_stab_mask_view_img
-:label: fig-my-cell
+:label: stability_mask_view
+
+Stability mask.
 :::
 
-:::{table} This is my table
-:label: mytable
+
+:::{table} Cluster table of the stability mask.
+:label: stability_mask_table
 ![](#mvpa_stab_mask_cluster_table)
 :::
 
+### Overall accuracy
 :::{figure} #mvpa_confusion_matrix
-:label: fig-my-cell
+:label: confusion_matrix
+
+Confusion matrix.
 :::
 
+### Predictive power map (classifier weights)
 :::{figure} #mvpa_weights_per_condition_mosaic
-:label: fig-my-cell
+:label: weights_per_condition_mosaic
+
+Classifier weights per condition.
 :::
 
 :::{figure} #mvpa_weights_mosaic
-:label: fig-my-cell
+:label: weights_mosaic
+
+Classifier weights.
 :::
 
 
