@@ -1,7 +1,7 @@
 cluster_id,peak_x,peak_y,peak_z,cluster_mean,volume_mm,aal,destrieux,harvard_oxford,juelich,talairach_ba
 1.0,-54.5,-18.5,3.5,0.009161080875905734,26912.0,36.83% Temporal_Sup_L,48.10% Unknown,,31.36% no_label,58.56% Background
 2.0,57.5,-10.5,3.5,0.009881601372086815,19856.0,57.09% Temporal_Sup_R,44.68% Unknown,,37.79% no_label,57.01% Background
-3.0,-10.5,-6.5,65.5,0.006997402250857615,3280.0,73.90% Supp_Motor_Area_L; 25.85% Supp_Motor_Area_R,36.83% ctx_lh_G_front_sup; 34.15% Unknown,60.49% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex),73.90% GM_Premotor_cortex_BA6_L,69.27% Background; 30.73% Brodmann_area_6
+3.0,-10.5,-6.5,65.5,0.006997402253129134,3280.0,73.90% Supp_Motor_Area_L; 25.85% Supp_Motor_Area_R,36.83% ctx_lh_G_front_sup; 34.15% Unknown,60.49% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex),73.90% GM_Premotor_cortex_BA6_L,69.27% Background; 30.73% Brodmann_area_6
 4.0,55.5,-4.5,43.5,0.008265795225158261,3248.0,65.76% Precentral_R; 28.82% Frontal_Mid_2_R,46.80% Unknown; 31.28% ctx_rh_G_precentral,72.41% Right_Precentral_Gyrus,67.00% GM_Premotor_cortex_BA6_R,68.97% Background
 5.0,-56.5,-8.5,49.5,0.009577171558048577,3200.0,56.50% Postcentral_L; 26.75% no_label,50.75% Unknown,69.50% Left_Precentral_Gyrus; 25.50% Left_Postcentral_Gyrus,31.50% no_label; 28.50% GM_Primary_somatosensory_cortex_BA1_L,64.50% Background
 6.0,39.5,59.5,-8.5,0.006536494210201631,1112.0,62.59% Frontal_Mid_2_R,46.04% ctx_rh_G_orbital; 28.06% Unknown,100.00% Right_Frontal_Pole,100.00% no_label,63.31% Background; 25.90% Brodmann_area_10

@@ -6,3 +6,6 @@ conn/conn_project01.qlog/
 conn_projects/conn_project01/
 conn_projects/conn_project01.qlog/
 data/wav_files/
+
+# MyST build outputs
+_build

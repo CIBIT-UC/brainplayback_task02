@@ -1,6 +1,6 @@
 cluster_id,peak_x,peak_y,peak_z,cluster_mean,volume_mm,aal,destrieux,harvard_oxford,juelich,talairach_ba
 1.0,-54.5,-18.5,3.5,0.009278711830887696,27496.0,36.78% Temporal_Sup_L; 27.35% Temporal_Mid_L,47.86% Unknown,,36.81% no_label,59.35% Background
-2.0,59.5,-8.5,3.5,0.009715245500599004,19688.0,56.68% Temporal_Sup_R,46.28% Unknown,,40.23% no_label,58.03% Background
+2.0,59.5,-8.5,3.5,0.009715245500788219,19688.0,56.68% Temporal_Sup_R,46.28% Unknown,,40.23% no_label,58.03% Background
 3.0,-2.5,3.5,65.5,0.007063796412527063,3824.0,70.29% Supp_Motor_Area_L; 28.87% Supp_Motor_Area_R,38.70% ctx_lh_G_front_sup; 38.70% Unknown,52.93% Left_Juxtapositional_Lobule_Cortex_(formerly_Supplementary_Motor_Cortex),70.29% GM_Premotor_cortex_BA6_L; 28.03% GM_Premotor_cortex_BA6_R,65.06% Background; 34.94% Brodmann_area_6
 4.0,-58.5,-4.5,45.5,0.010015817935672704,3560.0,53.71% Postcentral_L,47.87% Unknown; 25.39% ctx_lh_G_precentral,72.81% Left_Precentral_Gyrus,29.44% GM_Premotor_cortex_BA6_L; 27.64% no_label,61.80% Background
 5.0,55.5,-4.5,43.5,0.008194778975425178,3384.0,69.03% Precentral_R,43.03% Unknown; 34.99% ctx_rh_G_precentral,78.01% Right_Precentral_Gyrus,68.79% GM_Premotor_cortex_BA6_R,69.03% Background
