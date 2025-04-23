@@ -28,6 +28,9 @@ The nine aesthetic emotions framework (GEMS).
 
 # Research questions
 
+In this study, we focus on felt emotions, seeking to decode the neural representations of personal, aesthetically driven affective experiences. This perspective is important, as felt emotions are highly individualized, influenced by factors such as familiarity and personal meaning. Familiarity has been shown to enhance emotional engagement with music, leading to stronger activation in the brain’s limbic and reward systems [](doi:10.1371/journal.pone.0027241). By allowing participants to select familiar, personally meaningful musical stimuli, we aim to maximize the intensity and ecological validity of the emotions experienced during the study.
+
+
 - **Q1**: What are the brain regions involved in the processing of music-evoked emotions?
 - **Q2**: Can we decode the emotional content of music from brain activity?
 - **Q3**: What are the specific brain regions contributing to this discrimination?
