@@ -81,6 +81,18 @@ GLM group activation map.
 ![](#glm_2ndlevel_cluster_table)
 :::
 
+## ANOVA searching for any effect of emotion
+
+:::{figure} #anova_2ndlevel_view_img
+:label: fig-my-cell
+
+ANOVA group activation map (any effect), z-scores. Bonferroni-corrected p < 0.05. Cluster size > 25 voxels.
+:::
+
+:::{table} Cluster table of the ANOVA.
+:label: mytable
+![](#anova_2ndlevel_cluster_table)
+:::
 
 ## Decoding
 
