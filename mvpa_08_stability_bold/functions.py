@@ -511,7 +511,7 @@ def process_voxel(i, stab_feat, combinations):
     return i, STAB_slice
 
 
-def estimate_stability(feat_dir, output_stab_dir, subject, n_jobs=8):
+def estimate_stability(feat_dir, output_stab_dir, subject, n_jobs: int = 10):
     """
     Estimate the stability of voxel time series data for a given subject.
 
